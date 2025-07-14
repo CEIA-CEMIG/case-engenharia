@@ -94,4 +94,23 @@ POSTGRES_USER=seu_usuario
 POSTGRES_PASSWORD=sua_senha
 POSTGRES_DATABASE=case-engenharia
 POSTGRES_DEFAULT_DB=postgres
+
+# Google Cloud Configuration
+GOOGLE_GENAI_USE_VERTEXAI=TRUE
+GOOGLE_CLOUD_PROJECT=ufg-prd-energygpt
+GOOGLE_CLOUD_LOCATION=us-central1
+```
+-----
+
+## Executando:
+
+1. Caso queira executar o sistema via terminal:
+```python
+python main.py
+```
+
+2. Interface do ADK:
+```python
+# No terminal, digite
+adk web
 ```
