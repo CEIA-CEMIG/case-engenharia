@@ -3,7 +3,19 @@ import io
 import re
 from typing import Optional
 
+PATH_PDFS = 'src/data/dicionario_de_dados'
 
+tabela_para_arquivo = {
+    "distribuicao_ocorrencias_emergenciais_rede_distribuicao_2025": "dm-ocorrencias-emergenciais-nas-redes-de-distribuicao.pdf",
+    "distribuicao_ouvidoria_aneel_2025": "dm-ouvidoriaaneel.pdf",
+    "distribuicao_seguranca_trabalho_instalacoes": "dm-seguranca-do-trabalho-e-das-instalacoes.pdf",  
+    "geracao_componentes_tarifarias_2025": "dm-componentes-tarifarias.pdf",  
+    "geracao_ouvidoria_aneel_2025": "dm-ouvidoriaaneel.pdf", 
+    "geracao_siga_empreendimentos_geracao": "dm-siga-sistema-de-informacoes-de-geracao-da-aneel.pdf",
+    "tarifas_componentes_tarifarias_2025": "dm-componentes-tarifarias.pdf",
+    "tarifas_subsidios_tarifarios": "dm-subsidios-tarifarios.pdf",  
+    "tarifas_tarifas_homologadas_distribuidoras_energia_eletrica": "dd-tarifas-por-distribuidora.pdf"
+}
 
 def read_pdf_to_markdown(pdf_path: str) -> str:
    try:
@@ -173,5 +185,12 @@ def extract_key_value(line: str) -> tuple:
 def is_list_item(line: str) -> bool:
    return line.startswith(('•', '-', '*', '·'))
 
-def get_schema_dictionary(pdf_path: str) -> str:
-   return read_pdf_to_markdown(pdf_path)
+def get_schema_dictionary(table_name: str) -> str:
+    """Obtém o dicionário de dados para uma tabela específica."""
+    pdf_file = tabela_para_arquivo.get(table_name)
+    
+    if not pdf_file:
+        return f"# Erro\n\nTabela não encontrada: {table_name}"
+    
+    pdf_path = f"{PATH_PDFS}/{pdf_file}"
+    return read_pdf_to_markdown(pdf_path)

@@ -3,7 +3,7 @@ from src.common.config import Config
 
 from src.agents.tools.connector.database_connector import PostgreSQLConnector
 
-def get_schema():
+def get_schema_db():
     """Retorna o esquema do banco de dados PostgreSQL."""
 
     db_config = {
