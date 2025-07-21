@@ -121,10 +121,6 @@ class CSVToGCP:
         try:
             df = self.try_read_csv(csv_path)
             
-            # Limpa os nomes das colunas
-            df.columns = df.columns.astype(str)
-            df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('-', '_').str.lower()
-            
             # Remove valores vazios
             df = df.replace({'': None})
             
