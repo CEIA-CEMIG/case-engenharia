@@ -1,2 +1,0 @@
-google-adk==0.1.0
-google-cloud==0.34.0

@@ -3,7 +3,7 @@ import io
 import re
 from typing import Optional
 
-PATH_PDFS = 'src/data/dicionario_de_dados'
+PATH_PDFS = '../data/dicionario_de_dados'
 
 tabela_para_arquivo = {
     "distribuicao_ocorrencias_emergenciais_rede_distribuicao_2025": "dm-ocorrencias-emergenciais-nas-redes-de-distribuicao.pdf",
