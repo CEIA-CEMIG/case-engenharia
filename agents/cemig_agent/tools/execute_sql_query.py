@@ -2,7 +2,15 @@ from .connector.database_connector import PostgreSQLConnector
 from ..common.config import Config
 
 def execute_sql_query(query_sql: str): 
-    """String contendo a consulta SQL a ser executada."""
+    """
+    Executa uma consulta SQL em um banco de dados PostgreSQL.
+
+    Parâmetros:
+    - query_sql (str): Consulta SQL a ser executada. Deve ser uma string completa e válida em SQL.
+
+    Retorno:
+    - Resultado da execução da consulta SQL, que pode ser uma lista de dicionários ou uma mensagem de erro.
+    """
     
     db_config = {
         "host": Config.POSTGRES_HOST,
