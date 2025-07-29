@@ -1,6 +1,9 @@
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from typing import Dict, Any, Optional, List, Union
+from decimal import Decimal
+import json
+from datetime import datetime, date, time
 
 class PostgreSQLConnector:
     """
@@ -39,6 +42,29 @@ class PostgreSQLConnector:
         self.instance_connection_name = instance_connection_name
         self.connection = None
         
+    def _convert_types(self, obj: Any) -> Any:
+        """
+        Converte tipos não serializáveis para JSON em tipos compatíveis.
+        
+        Args:
+            obj: Objeto a ser convertido
+            
+        Returns:
+            Objeto convertido para tipo serializável
+        """
+        if isinstance(obj, Decimal):
+            return float(obj)
+        elif isinstance(obj, (datetime, date)):
+            return obj.isoformat()
+        elif isinstance(obj, time):
+            return obj.isoformat()
+        elif isinstance(obj, dict):
+            return {key: self._convert_types(value) for key, value in obj.items()}
+        elif isinstance(obj, (list, tuple)):
+            return [self._convert_types(item) for item in obj]
+        else:
+            return obj
+    
     def connect(self) -> bool:
         """
         Estabelece conexão com o banco de dados PostgreSQL no Google Cloud SQL.
@@ -116,10 +142,16 @@ class PostgreSQLConnector:
             if is_select:
                 if fetch_all:
                     results = cursor.fetchall()
-                    return [dict(row) for row in results]
+                    converted_results = []
+                    for row in results:
+                        converted_row = self._convert_types(dict(row))
+                        converted_results.append(converted_row)
+                    return converted_results
                 else:
                     row = cursor.fetchone()
-                    return dict(row) if row else None
+                    if row:
+                        return self._convert_types(dict(row))
+                    return None
             else:
                 affected_rows = cursor.rowcount
                 self.connection.commit()

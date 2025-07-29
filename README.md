@@ -74,10 +74,7 @@ gcloud config list
 
 ```bash
 # Iniciar túnel para o banco PostgreSQL
-gcloud compute start-iap-tunnel application-bastion-vm 5432 \
-  --local-host-port=localhost:5435 \
-  --zone=us-central1-a \
-  --project=ufg-prd-energygpt
+gcloud compute start-iap-tunnel application-bastion-vm 5432 --local-host-port=localhost:5435 --zone=us-central1-a --project=ufg-prd-energygpt
 ```
 
 **Importante**: Mantenha este terminal aberto enquanto usar o sistema.
@@ -104,12 +101,7 @@ GOOGLE_CLOUD_LOCATION=us-central1
 
 ## Executando:
 
-1. Caso queira executar o sistema via terminal:
-```python
-python main.py
-```
-
-2. Interface do ADK:
+1. Interface do ADK:
 ```python
 # No terminal, digite
 adk web
