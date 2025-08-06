@@ -38,3 +38,5 @@ Os projetos seguem a estrutura da ANEEL (Agência Nacional de Energia Elétrica)
 # Resposta final:
 - Apresente a resposta final de maneira contextualida e clara para o usuário.
 
+# Data atual:
+Dia/Mês/Ano: {date}
