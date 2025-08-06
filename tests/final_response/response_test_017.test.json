@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_017",
+  "name": "Final Response Test #017",
+  "description": "Avalia apenas a resposta final para: Mostre as 10 tarifas mais recentes vigentes para a distribuidora com sigla CEMIG-D, incluindo informações sobre vigência, base tarifária, subgrupo, modalidade, classe, subclasses e os valores de TUSD e TE....",
+  "eval_cases": [
+    {
+      "eval_id": "case_017",
+      "conversation": [
+        {
+          "invocation_id": "f13bd9e5-213b-4a3e-928a-ccb60dc5edba",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Mostre as 10 tarifas mais recentes vigentes para a distribuidora com sigla CEMIG-D, incluindo informações sobre vigência, base tarifária, subgrupo, modalidade, classe, subclasses e os valores de TUSD e TE."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_tarifas_homologadas_distribuidoras_energia_eletrica.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DatInicioVigencia\": \"2025-05-28\",\n    \"DatFimVigencia\": \"2026-05-27\",\n    \"DscBaseTarifaria\": \"Base Econômica\",\n    \"DscSubGrupo\": \"A2\",\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"DscSubClasse\": \"Não se aplica\",\n    \"VlrTUSD\": \"9,40\",\n    \"VlrTE\": \",00\"\n  },\n  {\n    \"DatInicioVigencia\": \"2025-05-28\",\n    \"DatFimVigencia\": \"2026-05-27\",\n    \"DscBaseTarifaria\": \"Base Econômica\",\n    \"DscSubGrupo\": \"A2\",\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"DscSubClasse\": \"Não se aplica\",\n    \"VlrTUSD\": \"15,33\",\n    \"VlrTE\": \",00\"\n  },\n  {\n    \"DatInicioVigencia\": \"2025-05-28\",\n    \"DatFimVigencia\": \"2026-05-27\",\n    \"DscBaseTarifaria\": \"Tarifa de Aplicação\",\n    \"DscSubGrupo\": \"A2\",\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"DscSubClasse\": \"Não se aplica\",\n    \"VlrTUSD\": \"16,53\",\n    \"VlrTE\": \",00\"\n  },\n  {\n    \"DatInicioVigencia\": \"2025-05-28\",\n    \"DatFimVigencia\": \"2026-05-27\",\n    \"DscBaseTarifaria\": \"Base Econômica\",\n    \"DscSubGrupo\": \"A2\",\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"DscSubClasse\": \"Não se aplica\",\n    \"VlrTUSD\": \"6,29\",\n    \"VlrTE\": \",00\"\n  },\n  {\n    \"DatInicioVigencia\": \"2025-05-28\",\n    \"DatFimVigencia\": \"2026-05-27\",\n    \"DscBaseTarifaria\": \"Tarifa de Aplicação\",\n    \"DscSubGrupo\": \"A2\",\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"DscSubClasse\": \"Não se aplica\",\n    \"VlrTUSD\": \"7,17\",\n    \"VlrTE\": \",00\"\n  },\n  {\n    \"DatInicioVigencia\": \"2025-05-28\",\n    \"DatFimVigencia\": \"2026-05-27\",\n    \"DscBaseTarifaria\": \"Tarifa de Aplicação\",\n    \"DscSubGrupo\": \"A2\",\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"DscSubClasse\": \"Não se aplica\",\n    \"VlrTUSD\": \"5,19\",\n    \"VlrTE\": \",00\"\n  },\n  {\n    \"DatInicioVigencia\": \"2025-05-28\",\n    \"DatFimVigencia\": \"2026-05-27\",\n    \"DscBaseTarifaria\": \"Base Econômica\",\n    \"DscSubGrupo\": \"A2\",\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"DscSubClasse\": \"Não se aplica\",\n    \"VlrTUSD\": \"4,94\",\n    \"VlrTE\": \",00\"\n  },\n  {\n    \"DatInicioVigencia\": \"2025-05-28\",\n    \"DatFimVigencia\": \"2026-05-27\",\n    \"DscBaseTarifaria\": \"Base Econômica\",\n    \"DscSubGrupo\": \"A2\",\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"DscSubClasse\": \"Não se aplica\",\n    \"VlrTUSD\": \"19,94\",\n    \"VlrTE\": \",00\"\n  },\n  {\n    \"DatInicioVigencia\": \"2025-05-28\",\n    \"DatFimVigencia\": \"2026-05-27\",\n    \"DscBaseTarifaria\": \"Tarifa de Aplicação\",\n    \"DscSubGrupo\": \"A2\",\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"DscSubClasse\": \"Não se aplica\",\n    \"VlrTUSD\": \"21,51\",\n    \"VlrTE\": \",00\"\n  },\n  {\n    \"DatInicioVigencia\": \"2025-05-28\",\n    \"DatFimVigencia\": \"2026-05-27\",\n    \"DscBaseTarifaria\": \"Tarifa de Aplicação\",\n    \"DscSubGrupo\": \"A2\",\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"DscSubClasse\": \"Não se aplica\",\n    \"VlrTUSD\": \"10,50\",\n    \"VlrTE\": \",00\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "tarifas_tarifas_homologadas_distribuidoras_energia_eletrica",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

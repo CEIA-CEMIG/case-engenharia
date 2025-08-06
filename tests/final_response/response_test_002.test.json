@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_002",
+  "name": "Final Response Test #002",
+  "description": "Avalia apenas a resposta final para: Liste os 10 municípios que registraram mais de 50 solicitações consideradas improcedentes. Mostre apenas o nome do município e o total de casos improcedentes, em ordem decrescente....",
+  "eval_cases": [
+    {
+      "eval_id": "case_002",
+      "conversation": [
+        {
+          "invocation_id": "8ede1202-39f1-4306-bf24-7ebe992d9ec5",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Liste os 10 municípios que registraram mais de 50 solicitações consideradas improcedentes. Mostre apenas o nome do município e o total de casos improcedentes, em ordem decrescente."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ouvidoria_aneel.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"NomMunicipio\": \"São Paulo\",\n    \"totalimprocedentes\": 16713\n  },\n  {\n    \"NomMunicipio\": \"Rio de Janeiro\",\n    \"totalimprocedentes\": 14700\n  },\n  {\n    \"NomMunicipio\": \"Fortaleza\",\n    \"totalimprocedentes\": 5025\n  },\n  {\n    \"NomMunicipio\": \"Brasília\",\n    \"totalimprocedentes\": 4322\n  },\n  {\n    \"NomMunicipio\": \"São Gonçalo\",\n    \"totalimprocedentes\": 4192\n  },\n  {\n    \"NomMunicipio\": \"Belo Horizonte\",\n    \"totalimprocedentes\": 4189\n  },\n  {\n    \"NomMunicipio\": \"Belém\",\n    \"totalimprocedentes\": 4070\n  },\n  {\n    \"NomMunicipio\": \"Salvador\",\n    \"totalimprocedentes\": 3764\n  },\n  {\n    \"NomMunicipio\": \"Goiânia\",\n    \"totalimprocedentes\": 3054\n  },\n  {\n    \"NomMunicipio\": \"Niterói\",\n    \"totalimprocedentes\": 3014\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "distribuicao_ouvidoria_aneel",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

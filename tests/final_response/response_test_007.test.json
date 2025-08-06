@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_007",
+  "name": "Final Response Test #007",
+  "description": "Avalia apenas a resposta final para: Quero saber o valor total que foi enviado para cada tipo de indicador em cada ano. Agrupe os dados por ano e pelo tipo de indicador e some os valores enviados. Organize o resultado por ano e indicador e me retorne apenas 10 resultados....",
+  "eval_cases": [
+    {
+      "eval_id": "case_007",
+      "conversation": [
+        {
+          "invocation_id": "02232db8-c24a-49f7-83b3-b52b7acaac24",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Quero saber o valor total que foi enviado para cada tipo de indicador em cada ano. Agrupe os dados por ano e pelo tipo de indicador e some os valores enviados. Organize o resultado por ano e indicador e me retorne apenas 10 resultados."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_seguranca_trabalho_instalacoes.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NACTER\",\n    \"totalindiceenviado\": \"910.00\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOFUPR\",\n    \"totalindiceenviado\": \"4.00\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOFUTE\",\n    \"totalindiceenviado\": \"58.00\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOTER\",\n    \"totalindiceenviado\": \"292.00\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"TXFQAC\",\n    \"totalindiceenviado\": \"8110.79\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"TXGRAC\",\n    \"totalindiceenviado\": \"589562.73\"\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NACTER\",\n    \"totalindiceenviado\": \"895.00\"\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOFUPR\",\n    \"totalindiceenviado\": \"9.00\"\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOFUTE\",\n    \"totalindiceenviado\": \"74.00\"\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOTER\",\n    \"totalindiceenviado\": \"314.00\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "distribuicao_seguranca_trabalho_instalacoes",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_009",
+  "name": "Final Response Test #009",
+  "description": "Avalia apenas a resposta final para: Quero ver o top 10 do ranking dos agentes para cada tipo de indicador. Mostre os 10 maiores valores totais acumulados por agente e indicador, organizando por indicador e valor total em ordem decrescente....",
+  "eval_cases": [
+    {
+      "eval_id": "case_009",
+      "conversation": [
+        {
+          "invocation_id": "ac0b6644-c9d4-4eec-a849-7b274c444484",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Quero ver o top 10 do ranking dos agentes para cada tipo de indicador. Mostre os 10 maiores valores totais acumulados por agente e indicador, organizando por indicador e valor total em ordem decrescente."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_seguranca_trabalho_instalacoes.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CERAL ARARUAMA\",\n    \"totalporagente\": \"70.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"COOPERSUL\",\n    \"totalporagente\": \"18.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"COPREL\",\n    \"totalporagente\": \"4.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEEE-D\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEGERO\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEDRAP\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CELESC\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEJAMA\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEDRI\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CASTRO-DIS\",\n    \"totalporagente\": \"0.00\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "distribuicao_seguranca_trabalho_instalacoes",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

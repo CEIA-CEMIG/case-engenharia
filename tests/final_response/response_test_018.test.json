@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_018",
+  "name": "Final Response Test #018",
+  "description": "Avalia apenas a resposta final para: Mostre a média dos valores da TUSD e TE por modalidade tarifária e classe de consumidor para as tarifas que começaram e terminaram completamente no ano de 2024....",
+  "eval_cases": [
+    {
+      "eval_id": "case_018",
+      "conversation": [
+        {
+          "invocation_id": "be1443ec-2bf2-4a70-b370-7c69326afa77",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Mostre a média dos valores da TUSD e TE por modalidade tarifária e classe de consumidor para as tarifas que começaram e terminaram completamente no ano de 2024."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_tarifas_homologadas_distribuidoras_energia_eletrica.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"91.8192500000000000\",\n    \"MediaTe\": \"61.4187500000000000\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Branca\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"762.0875000000000000\",\n    \"MediaTe\": \"135.5029166666666667\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Branca\",\n    \"DscClasse\": \"Residencial\",\n    \"MediaTusd\": \"732.9316666666666667\",\n    \"MediaTe\": \"135.5029166666666667\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Branca\",\n    \"DscClasse\": \"Rural\",\n    \"MediaTusd\": \"648.8925000000000000\",\n    \"MediaTe\": \"130.2688888888888889\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional\",\n    \"DscClasse\": \"Iluminação pública\",\n    \"MediaTusd\": \"265.7975000000000000\",\n    \"MediaTe\": \"72.9856250000000000\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"286.8912500000000000\",\n    \"MediaTe\": \"99.4337500000000000\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional\",\n    \"DscClasse\": \"Residencial\",\n    \"MediaTusd\": \"415.6400000000000000\",\n    \"MediaTe\": \"126.2425000000000000\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional\",\n    \"DscClasse\": \"Rural\",\n    \"MediaTusd\": \"448.8666666666666667\",\n    \"MediaTe\": \"123.1954166666666667\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional pré-pagamento\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"465.9100000000000000\",\n    \"MediaTe\": \"127.9250000000000000\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional pré-pagamento\",\n    \"DscClasse\": \"Residencial\",\n    \"MediaTusd\": \"415.6400000000000000\",\n    \"MediaTe\": \"126.2425000000000000\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional pré-pagamento\",\n    \"DscClasse\": \"Rural\",\n    \"MediaTusd\": \"448.8666666666666667\",\n    \"MediaTe\": \"123.1954166666666667\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Distribuição\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"26.3300000000000000\",\n    \"MediaTe\": \"0E-20\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Geração\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"13.4245000000000000\",\n    \"MediaTe\": \"0E-20\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Verde\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"600.7058333333333333\",\n    \"MediaTe\": \"74.5070833333333333\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "tarifas_tarifas_homologadas_distribuidoras_energia_eletrica",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

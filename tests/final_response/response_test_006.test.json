@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_006",
+  "name": "Final Response Test #006",
+  "description": "Avalia apenas a resposta final para: Liste as primeiras 10 ocorrências em que o tempo total (soma do tempo de preparo, deslocamento e execução) foi maior que 180 minutos. Mostre o número da ocorrência, o nome do agente, a data e hora de início e fim, e o tempo total calculado....",
+  "eval_cases": [
+    {
+      "eval_id": "case_006",
+      "conversation": [
+        {
+          "invocation_id": "a445cd70-432d-4fbe-abe9-aa941c3ca72d",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Liste as primeiras 10 ocorrências em que o tempo total (soma do tempo de preparo, deslocamento e execução) foi maior que 180 minutos. Mostre o número da ocorrência, o nome do agente, a data e hora de início e fim, e o tempo total calculado."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"NumOcorrencia\": \"5284\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  },\n  {\n    \"NumOcorrencia\": \"5213\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  },\n  {\n    \"NumOcorrencia\": \"5252\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-02 15:50:00\",\n    \"tempototal\": \"2389.98333\"\n  },\n  {\n    \"NumOcorrencia\": \"5230\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  },\n  {\n    \"NumOcorrencia\": \"5240\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  },\n  {\n    \"NumOcorrencia\": \"5266\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  },\n  {\n    \"NumOcorrencia\": \"5222\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  },\n  {\n    \"NumOcorrencia\": \"5223\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 17:45:00\",\n    \"tempototal\": \"44264.98333\"\n  },\n  {\n    \"NumOcorrencia\": \"5267\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-17 15:42:00\",\n    \"tempototal\": \"23981.98333\"\n  },\n  {\n    \"NumOcorrencia\": \"5222\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

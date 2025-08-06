@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_003",
+  "name": "Final Response Test #003",
+  "description": "Avalia apenas a resposta final para: Me mostre como evoluíram as solicitações ao longo do tempo, mês a mês, separadas por categoria. Agrupe por mês e categoria e ordene por mês e total de solicitações com no máximo 10 instâncias....",
+  "eval_cases": [
+    {
+      "eval_id": "case_003",
+      "conversation": [
+        {
+          "invocation_id": "4cad24d3-4c55-4c60-b9e6-1afb26b7b7c6",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Me mostre como evoluíram as solicitações ao longo do tempo, mês a mês, separadas por categoria. Agrupe por mês e categoria e ordene por mês e total de solicitações com no máximo 10 instâncias."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ouvidoria_aneel.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"mes\": \"2014-01\",\n    \"NomCategoria\": \"Informação\",\n    \"totalsolicitacoes\": 21900\n  },\n  {\n    \"mes\": \"2014-01\",\n    \"NomCategoria\": \"Reclamações\",\n    \"totalsolicitacoes\": 8349\n  },\n  {\n    \"mes\": \"2014-01\",\n    \"NomCategoria\": \"Denúncias\",\n    \"totalsolicitacoes\": 77\n  },\n  {\n    \"mes\": \"2014-01\",\n    \"NomCategoria\": \"Sugestão/Crítica\",\n    \"totalsolicitacoes\": 26\n  },\n  {\n    \"mes\": \"2014-01\",\n    \"NomCategoria\": \"Elogio\",\n    \"totalsolicitacoes\": 5\n  },\n  {\n    \"mes\": \"2014-02\",\n    \"NomCategoria\": \"Informação\",\n    \"totalsolicitacoes\": 22768\n  },\n  {\n    \"mes\": \"2014-02\",\n    \"NomCategoria\": \"Reclamações\",\n    \"totalsolicitacoes\": 8866\n  },\n  {\n    \"mes\": \"2014-02\",\n    \"NomCategoria\": \"Denúncias\",\n    \"totalsolicitacoes\": 84\n  },\n  {\n    \"mes\": \"2014-02\",\n    \"NomCategoria\": \"Sugestão/Crítica\",\n    \"totalsolicitacoes\": 17\n  },\n  {\n    \"mes\": \"2014-02\",\n    \"NomCategoria\": \"Elogio\",\n    \"totalsolicitacoes\": 9\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "distribuicao_ouvidoria_aneel",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

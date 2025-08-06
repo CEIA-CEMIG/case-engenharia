@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_008",
+  "name": "Final Response Test #008",
+  "description": "Avalia apenas a resposta final para: Me mostre como o valor do indicador 'DIADEBPDO' evoluiu período a período ao longo do tempo para o agente 'AME'. Quero ver os dados ordenados de forma cronológica, por ano e período....",
+  "eval_cases": [
+    {
+      "eval_id": "case_008",
+      "conversation": [
+        {
+          "invocation_id": "08c0f57c-e1f6-4a96-b6e6-a0d170d6bf72",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Me mostre como o valor do indicador 'DIADEBPDO' evoluiu período a período ao longo do tempo para o agente 'AME'. Quero ver os dados ordenados de forma cronológica, por ano e período."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_seguranca_trabalho_instalacoes.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"AnoIndice\": 2022,\n    \"NumPeriodoIndice\": 1,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2022,\n    \"NumPeriodoIndice\": 2,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2022,\n    \"NumPeriodoIndice\": 3,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2022,\n    \"NumPeriodoIndice\": 4,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2022,\n    \"NumPeriodoIndice\": 5,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2022,\n    \"NumPeriodoIndice\": 6,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2022,\n    \"NumPeriodoIndice\": 7,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2022,\n    \"NumPeriodoIndice\": 8,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2022,\n    \"NumPeriodoIndice\": 9,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2022,\n    \"NumPeriodoIndice\": 10,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2022,\n    \"NumPeriodoIndice\": 11,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2022,\n    \"NumPeriodoIndice\": 12,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2023,\n    \"NumPeriodoIndice\": 1,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2023,\n    \"NumPeriodoIndice\": 2,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2023,\n    \"NumPeriodoIndice\": 3,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2023,\n    \"NumPeriodoIndice\": 4,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2023,\n    \"NumPeriodoIndice\": 5,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2023,\n    \"NumPeriodoIndice\": 6,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2023,\n    \"NumPeriodoIndice\": 7,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2023,\n    \"NumPeriodoIndice\": 8,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2023,\n    \"NumPeriodoIndice\": 9,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2023,\n    \"NumPeriodoIndice\": 10,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2023,\n    \"NumPeriodoIndice\": 11,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2023,\n    \"NumPeriodoIndice\": 12,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2024,\n    \"NumPeriodoIndice\": 1,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2024,\n    \"NumPeriodoIndice\": 2,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2024,\n    \"NumPeriodoIndice\": 3,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2024,\n    \"NumPeriodoIndice\": 4,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2024,\n    \"NumPeriodoIndice\": 5,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2024,\n    \"NumPeriodoIndice\": 6,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2024,\n    \"NumPeriodoIndice\": 7,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2024,\n    \"NumPeriodoIndice\": 8,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2024,\n    \"NumPeriodoIndice\": 9,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2024,\n    \"NumPeriodoIndice\": 10,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2024,\n    \"NumPeriodoIndice\": 11,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2024,\n    \"NumPeriodoIndice\": 12,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2025,\n    \"NumPeriodoIndice\": 1,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2025,\n    \"NumPeriodoIndice\": 2,\n    \"VlrIndiceEnviado\": \",00\"\n  },\n  {\n    \"AnoIndice\": 2025,\n    \"NumPeriodoIndice\": 3,\n    \"VlrIndiceEnviado\": \",00\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "distribuicao_seguranca_trabalho_instalacoes",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

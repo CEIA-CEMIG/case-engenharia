@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_015",
+  "name": "Final Response Test #015",
+  "description": "Avalia apenas a resposta final para: Liste 10 dos componentes tarifários com valor superior a 500 reais por MWh. Mostre também a classe de consumidor e a unidade de medida, ordenando do maior para o menor valor....",
+  "eval_cases": [
+    {
+      "eval_id": "case_015",
+      "conversation": [
+        {
+          "invocation_id": "6aaa390a-168b-4cee-bfc4-fb9e96d2706c",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Liste 10 dos componentes tarifários com valor superior a 500 reais por MWh. Mostre também a classe de consumidor e a unidade de medida, ordenando do maior para o menor valor."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_componentes_tarifarias.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Residencial\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"1765594.1499999999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Residencial\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"1765594.1499999999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"1203635.3670000001\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"1203635.3670000001\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"1143895.1399999999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"1143895.1399999999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Rural\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"621722.31599999999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Rural\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"621722.31599999999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"488904.70899999997\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"488904.70899999997\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "tarifas_componentes_tarifarias",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

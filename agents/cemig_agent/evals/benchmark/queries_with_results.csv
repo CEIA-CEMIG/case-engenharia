@@ -1,0 +1,2192 @@
+"table_name","query_sql","query_lang","result_expected"
+"distribuicao_ouvidoria_aneel","SELECT ""SigUF"", ""NomDecisao"", COUNT(*) AS TotalSolicitacoes FROM distribuicao_ouvidoria_aneel GROUP BY ""SigUF"", ""NomDecisao"" ORDER BY TotalSolicitacoes DESC","Quero saber quantas solicitações foram feitas em cada Estado (UF), separadas por tipo de decisão (como procedente ou improcedente). Agrupe por Estado e decisão e ordene pelo total de solicitações em ordem decrescente.","[
+  {
+    ""SigUF"": ""SP"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 1072452
+  },
+  {
+    ""SigUF"": ""RJ"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 450746
+  },
+  {
+    ""SigUF"": ""GO"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 424074
+  },
+  {
+    ""SigUF"": ""PE"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 421054
+  },
+  {
+    ""SigUF"": ""CE"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 413946
+  },
+  {
+    ""SigUF"": ""MG"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 406460
+  },
+  {
+    ""SigUF"": ""BA"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 404232
+  },
+  {
+    ""SigUF"": ""RS"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 339502
+  },
+  {
+    ""SigUF"": ""PR"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 160595
+  },
+  {
+    ""SigUF"": ""PA"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 152440
+  },
+  {
+    ""SigUF"": ""AL"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 85562
+  },
+  {
+    ""SigUF"": ""RN"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 84088
+  },
+  {
+    ""SigUF"": ""MS"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 70503
+  },
+  {
+    ""SigUF"": ""SP"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 70193
+  },
+  {
+    ""SigUF"": ""ES"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 65506
+  },
+  {
+    ""SigUF"": ""MA"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 61886
+  },
+  {
+    ""SigUF"": ""SC"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 61131
+  },
+  {
+    ""SigUF"": ""MT"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 58256
+  },
+  {
+    ""SigUF"": ""PI"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 54861
+  },
+  {
+    ""SigUF"": ""RJ"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 54845
+  },
+  {
+    ""SigUF"": ""DF"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 53345
+  },
+  {
+    ""SigUF"": ""RJ"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 51341
+  },
+  {
+    ""SigUF"": ""SP"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 50206
+  },
+  {
+    ""SigUF"": ""PB"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 47787
+  },
+  {
+    ""SigUF"": ""AM"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 47684
+  },
+  {
+    ""SigUF"": ""MG"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 35084
+  },
+  {
+    ""SigUF"": ""MG"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 30694
+  },
+  {
+    ""SigUF"": ""RO"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 24899
+  },
+  {
+    ""SigUF"": ""GO"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 22217
+  },
+  {
+    ""SigUF"": ""RS"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 21719
+  },
+  {
+    ""SigUF"": ""BA"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 21591
+  },
+  {
+    ""SigUF"": ""CE"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 20153
+  },
+  {
+    ""SigUF"": ""BA"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 18357
+  },
+  {
+    ""SigUF"": ""PA"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 15666
+  },
+  {
+    ""SigUF"": ""SE"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 15445
+  },
+  {
+    ""SigUF"": ""CE"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 14849
+  },
+  {
+    ""SigUF"": ""RS"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 14410
+  },
+  {
+    ""SigUF"": ""AC"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 12897
+  },
+  {
+    ""SigUF"": ""GO"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 12815
+  },
+  {
+    ""SigUF"": ""PE"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 12644
+  },
+  {
+    ""SigUF"": ""TO"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 12608
+  },
+  {
+    ""SigUF"": ""PA"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 12244
+  },
+  {
+    ""SigUF"": ""PI"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 9925
+  },
+  {
+    ""SigUF"": ""PE"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 8769
+  },
+  {
+    ""SigUF"": ""RR"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 8200
+  },
+  {
+    ""SigUF"": ""AP"",
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 7847
+  },
+  {
+    ""SigUF"": ""SC"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 6651
+  },
+  {
+    ""SigUF"": ""MT"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 6256
+  },
+  {
+    ""SigUF"": ""SC"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 6095
+  },
+  {
+    ""SigUF"": ""AL"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 5430
+  },
+  {
+    ""SigUF"": ""PR"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 5307
+  },
+  {
+    ""SigUF"": ""MS"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 5195
+  },
+  {
+    ""SigUF"": ""MA"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 4849
+  },
+  {
+    ""SigUF"": ""PR"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 4694
+  },
+  {
+    ""SigUF"": ""MT"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 4254
+  },
+  {
+    ""SigUF"": ""PI"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 4072
+  },
+  {
+    ""SigUF"": ""AM"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 4066
+  },
+  {
+    ""SigUF"": ""MS"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 3944
+  },
+  {
+    ""SigUF"": ""ES"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 3786
+  },
+  {
+    ""SigUF"": ""ES"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 3781
+  },
+  {
+    ""SigUF"": ""DF"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 3634
+  },
+  {
+    ""SigUF"": ""AM"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 3620
+  },
+  {
+    ""SigUF"": ""PB"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 3380
+  },
+  {
+    ""SigUF"": ""PB"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 2988
+  },
+  {
+    ""SigUF"": ""MA"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 2802
+  },
+  {
+    ""SigUF"": ""AL"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 2739
+  },
+  {
+    ""SigUF"": ""RO"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 2697
+  },
+  {
+    ""SigUF"": ""TO"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 2415
+  },
+  {
+    ""SigUF"": ""DF"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 2402
+  },
+  {
+    ""SigUF"": ""RO"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 1967
+  },
+  {
+    ""SigUF"": ""RN"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 1712
+  },
+  {
+    ""SigUF"": ""RN"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 1675
+  },
+  {
+    ""SigUF"": ""SE"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 1294
+  },
+  {
+    ""SigUF"": ""AP"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 983
+  },
+  {
+    ""SigUF"": ""TO"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 916
+  },
+  {
+    ""SigUF"": ""AC"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 797
+  },
+  {
+    ""SigUF"": ""SE"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 777
+  },
+  {
+    ""SigUF"": ""AC"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 617
+  },
+  {
+    ""SigUF"": ""AP"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 434
+  },
+  {
+    ""SigUF"": ""RR"",
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 349
+  },
+  {
+    ""SigUF"": ""RR"",
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 245
+  },
+  {
+    ""SigUF"": null,
+    ""NomDecisao"": ""Improcedente"",
+    ""totalsolicitacoes"": 4
+  },
+  {
+    ""SigUF"": null,
+    ""NomDecisao"": ""Procedente"",
+    ""totalsolicitacoes"": 3
+  },
+  {
+    ""SigUF"": null,
+    ""NomDecisao"": ""Sem decisão"",
+    ""totalsolicitacoes"": 3
+  }
+]"
+"distribuicao_ouvidoria_aneel","SELECT ""NomMunicipio"", COUNT(*) AS TotalImprocedentes FROM distribuicao_ouvidoria_aneel WHERE ""NomDecisao"" = 'Improcedente' GROUP BY ""NomMunicipio"" HAVING COUNT(*) > 50 ORDER BY TotalImprocedentes DESC LIMIT 10","Liste os 10 municípios que registraram mais de 50 solicitações consideradas improcedentes. Mostre apenas o nome do município e o total de casos improcedentes, em ordem decrescente.","[
+  {
+    ""NomMunicipio"": ""São Paulo"",
+    ""totalimprocedentes"": 16713
+  },
+  {
+    ""NomMunicipio"": ""Rio de Janeiro"",
+    ""totalimprocedentes"": 14700
+  },
+  {
+    ""NomMunicipio"": ""Fortaleza"",
+    ""totalimprocedentes"": 5025
+  },
+  {
+    ""NomMunicipio"": ""Brasília"",
+    ""totalimprocedentes"": 4322
+  },
+  {
+    ""NomMunicipio"": ""São Gonçalo"",
+    ""totalimprocedentes"": 4192
+  },
+  {
+    ""NomMunicipio"": ""Belo Horizonte"",
+    ""totalimprocedentes"": 4189
+  },
+  {
+    ""NomMunicipio"": ""Belém"",
+    ""totalimprocedentes"": 4070
+  },
+  {
+    ""NomMunicipio"": ""Salvador"",
+    ""totalimprocedentes"": 3764
+  },
+  {
+    ""NomMunicipio"": ""Goiânia"",
+    ""totalimprocedentes"": 3054
+  },
+  {
+    ""NomMunicipio"": ""Niterói"",
+    ""totalimprocedentes"": 3014
+  }
+]"
+"distribuicao_ouvidoria_aneel","SELECT TO_CHAR(TO_DATE(""DtCriacao"", 'YYYY-MM-DD'), 'YYYY-MM') AS Mes, ""NomCategoria"", COUNT(*) AS TotalSolicitacoes FROM distribuicao_ouvidoria_aneel GROUP BY TO_CHAR(TO_DATE(""DtCriacao"", 'YYYY-MM-DD'), 'YYYY-MM'), ""NomCategoria"" ORDER BY Mes, TotalSolicitacoes DESC LIMIT 10","Me mostre como evoluíram as solicitações ao longo do tempo, mês a mês, separadas por categoria. Agrupe por mês e categoria e ordene por mês e total de solicitações com no máximo 10 instâncias.","[
+  {
+    ""mes"": ""2014-01"",
+    ""NomCategoria"": ""Informação"",
+    ""totalsolicitacoes"": 21900
+  },
+  {
+    ""mes"": ""2014-01"",
+    ""NomCategoria"": ""Reclamações"",
+    ""totalsolicitacoes"": 8349
+  },
+  {
+    ""mes"": ""2014-01"",
+    ""NomCategoria"": ""Denúncias"",
+    ""totalsolicitacoes"": 77
+  },
+  {
+    ""mes"": ""2014-01"",
+    ""NomCategoria"": ""Sugestão/Crítica"",
+    ""totalsolicitacoes"": 26
+  },
+  {
+    ""mes"": ""2014-01"",
+    ""NomCategoria"": ""Elogio"",
+    ""totalsolicitacoes"": 5
+  },
+  {
+    ""mes"": ""2014-02"",
+    ""NomCategoria"": ""Informação"",
+    ""totalsolicitacoes"": 22768
+  },
+  {
+    ""mes"": ""2014-02"",
+    ""NomCategoria"": ""Reclamações"",
+    ""totalsolicitacoes"": 8866
+  },
+  {
+    ""mes"": ""2014-02"",
+    ""NomCategoria"": ""Denúncias"",
+    ""totalsolicitacoes"": 84
+  },
+  {
+    ""mes"": ""2014-02"",
+    ""NomCategoria"": ""Sugestão/Crítica"",
+    ""totalsolicitacoes"": 17
+  },
+  {
+    ""mes"": ""2014-02"",
+    ""NomCategoria"": ""Elogio"",
+    ""totalsolicitacoes"": 9
+  }
+]"
+"distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao","SELECT ""NomAgente"", COUNT(""NumOcorrencia"") AS total_ocorrencias FROM distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao GROUP BY ""NomAgente"" ORDER BY total_ocorrencias DESC LIMIT 10","Liste os 10 agentes que mais registraram ocorrências emergenciais na rede de distribuição. Quero ver o nome do agente e o total de ocorrências, em ordem decrescente.","[
+  {
+    ""NomAgente"": ""EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A"",
+    ""total_ocorrencias"": 563780
+  },
+  {
+    ""NomAgente"": ""COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA COELBA"",
+    ""total_ocorrencias"": 476429
+  },
+  {
+    ""NomAgente"": ""COMPANHIA ENERGÉTICA DO CEARÁ"",
+    ""total_ocorrencias"": 419645
+  },
+  {
+    ""NomAgente"": ""COMPANHIA ENERGÉTICA DE PERNAMBUCO"",
+    ""total_ocorrencias"": 301800
+  },
+  {
+    ""NomAgente"": ""COMPANHIA PAULISTA DE FORÇA E LUZ"",
+    ""total_ocorrencias"": 186422
+  },
+  {
+    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""total_ocorrencias"": 177006
+  },
+  {
+    ""NomAgente"": ""ENERGISA TOCANTINS DISTRIBUIDORA DE ENERGIA S.A."",
+    ""total_ocorrencias"": 172382
+  },
+  {
+    ""NomAgente"": ""COMPANHIA ENERGÉTICA DO RIO GRANDE DO NORTE COSERN"",
+    ""total_ocorrencias"": 88307
+  },
+  {
+    ""NomAgente"": ""COMPANHIA DE ELETRICIDADE DO AMAPÁ"",
+    ""total_ocorrencias"": 38665
+  },
+  {
+    ""NomAgente"": ""COMPANHIA SUL SERGIPANA DE ELETRICIDADE"",
+    ""total_ocorrencias"": 16614
+  }
+]"
+"distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao","SELECT ""CodIBGE"", AVG(REPLACE(""MdaExecucao"", ',', '.')::numeric) AS MediaExecucao, AVG(REPLACE(""MdaDeslocamento"", ',', '.')::numeric) AS MediaDeslocamento, AVG(REPLACE(""MdaPreparo"", ',', '.')::numeric) AS MediaPreparo FROM distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao GROUP BY ""CodIBGE"" LIMIT 10","Quero saber, para cada código IBGE, qual é o tempo médio de preparo, deslocamento e execução das ocorrências. Mostre a média de cada uma dessas etapas por código IBGE me retornando apenas 10 valores.","[
+  {
+    ""CodIBGE"": ""1600055"",
+    ""mediaexecucao"": ""64.5727923627684964"",
+    ""mediadeslocamento"": ""26.7231503579952267"",
+    ""mediapreparo"": ""51.9021479713603819""
+  },
+  {
+    ""CodIBGE"": ""1600105"",
+    ""mediaexecucao"": ""33.8850574712643678"",
+    ""mediadeslocamento"": ""27.4281609195402299"",
+    ""mediapreparo"": ""26.5459770114942529""
+  },
+  {
+    ""CodIBGE"": ""1600154"",
+    ""mediaexecucao"": ""37.4292343387470998"",
+    ""mediadeslocamento"": ""35.0000000000000000"",
+    ""mediapreparo"": ""51.6334106728538283""
+  },
+  {
+    ""CodIBGE"": ""1600204"",
+    ""mediaexecucao"": ""59.3636363636363636"",
+    ""mediadeslocamento"": ""31.4969696969696970"",
+    ""mediapreparo"": ""33.4363636363636364""
+  },
+  {
+    ""CodIBGE"": ""1600212"",
+    ""mediaexecucao"": ""46.1558704453441296"",
+    ""mediadeslocamento"": ""33.8967611336032389"",
+    ""mediapreparo"": ""42.3380566801619433""
+  },
+  {
+    ""CodIBGE"": ""1600238"",
+    ""mediaexecucao"": ""72.0516129032258065"",
+    ""mediadeslocamento"": ""35.3397849462365591"",
+    ""mediapreparo"": ""36.1720430107526882""
+  },
+  {
+    ""CodIBGE"": ""1600253"",
+    ""mediaexecucao"": ""55.0219435736677116"",
+    ""mediadeslocamento"": ""49.0909090909090909"",
+    ""mediapreparo"": ""52.1097178683385580""
+  },
+  {
+    ""CodIBGE"": ""1600279"",
+    ""mediaexecucao"": ""45.6694677871148459"",
+    ""mediadeslocamento"": ""24.6708683473389356"",
+    ""mediapreparo"": ""20.3627450980392157""
+  },
+  {
+    ""CodIBGE"": ""1600303"",
+    ""mediaexecucao"": ""28.9135437060923644"",
+    ""mediadeslocamento"": ""17.3703021229221851"",
+    ""mediapreparo"": ""42.2453721831932128""
+  },
+  {
+    ""CodIBGE"": ""1600402"",
+    ""mediaexecucao"": ""51.5452865064695009"",
+    ""mediadeslocamento"": ""32.3696857670979667"",
+    ""mediapreparo"": ""40.1330868761552680""
+  }
+]"
+"distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao","SELECT ""NumOcorrencia"", ""NomAgente"", ""DthInicioOcorrenciaAberta"", ""DthFimOcorrenciaAberta"", (REPLACE(""MdaPreparo"", ',', '.')::numeric + REPLACE(""MdaDeslocamento"", ',', '.')::numeric + REPLACE(""MdaExecucao"", ',', '.')::numeric) AS TempoTotal FROM distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao WHERE (REPLACE(""MdaPreparo"", ',', '.')::numeric + REPLACE(""MdaDeslocamento"", ',', '.')::numeric + REPLACE(""MdaExecucao"", ',', '.')::numeric) > 180 LIMIT 10","Liste as primeiras 10 ocorrências em que o tempo total (soma do tempo de preparo, deslocamento e execução) foi maior que 180 minutos. Mostre o número da ocorrência, o nome do agente, a data e hora de início e fim, e o tempo total calculado.","[
+  {
+    ""NumOcorrencia"": ""5284"",
+    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
+    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
+    ""tempototal"": ""44639.96667""
+  },
+  {
+    ""NumOcorrencia"": ""5213"",
+    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
+    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
+    ""tempototal"": ""44639.96667""
+  },
+  {
+    ""NumOcorrencia"": ""5252"",
+    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
+    ""DthFimOcorrenciaAberta"": ""2017-01-02 15:50:00"",
+    ""tempototal"": ""2389.98333""
+  },
+  {
+    ""NumOcorrencia"": ""5230"",
+    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
+    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
+    ""tempototal"": ""44639.96667""
+  },
+  {
+    ""NumOcorrencia"": ""5240"",
+    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
+    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
+    ""tempototal"": ""44639.96667""
+  },
+  {
+    ""NumOcorrencia"": ""5266"",
+    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
+    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
+    ""tempototal"": ""44639.96667""
+  },
+  {
+    ""NumOcorrencia"": ""5222"",
+    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
+    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
+    ""tempototal"": ""44639.96667""
+  },
+  {
+    ""NumOcorrencia"": ""5223"",
+    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
+    ""DthFimOcorrenciaAberta"": ""2017-01-31 17:45:00"",
+    ""tempototal"": ""44264.98333""
+  },
+  {
+    ""NumOcorrencia"": ""5267"",
+    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
+    ""DthFimOcorrenciaAberta"": ""2017-01-17 15:42:00"",
+    ""tempototal"": ""23981.98333""
+  },
+  {
+    ""NumOcorrencia"": ""5222"",
+    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
+    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
+    ""tempototal"": ""44639.96667""
+  }
+]"
+"distribuicao_seguranca_trabalho_instalacoes","SELECT ""AnoIndice"", ""SigIndicador"", SUM(REPLACE(""VlrIndiceEnviado"", ',', '.')::numeric) AS TotalIndiceEnviado FROM distribuicao_seguranca_trabalho_instalacoes GROUP BY ""AnoIndice"", ""SigIndicador"" ORDER BY ""AnoIndice"", ""SigIndicador"" LIMIT 10","Quero saber o valor total que foi enviado para cada tipo de indicador em cada ano. Agrupe os dados por ano e pelo tipo de indicador e some os valores enviados. Organize o resultado por ano e indicador e me retorne apenas 10 resultados.","[
+  {
+    ""AnoIndice"": 2009,
+    ""SigIndicador"": ""NACTER"",
+    ""totalindiceenviado"": ""910.00""
+  },
+  {
+    ""AnoIndice"": 2009,
+    ""SigIndicador"": ""NMOFUPR"",
+    ""totalindiceenviado"": ""4.00""
+  },
+  {
+    ""AnoIndice"": 2009,
+    ""SigIndicador"": ""NMOFUTE"",
+    ""totalindiceenviado"": ""58.00""
+  },
+  {
+    ""AnoIndice"": 2009,
+    ""SigIndicador"": ""NMOTER"",
+    ""totalindiceenviado"": ""292.00""
+  },
+  {
+    ""AnoIndice"": 2009,
+    ""SigIndicador"": ""TXFQAC"",
+    ""totalindiceenviado"": ""8110.79""
+  },
+  {
+    ""AnoIndice"": 2009,
+    ""SigIndicador"": ""TXGRAC"",
+    ""totalindiceenviado"": ""589562.73""
+  },
+  {
+    ""AnoIndice"": 2010,
+    ""SigIndicador"": ""NACTER"",
+    ""totalindiceenviado"": ""895.00""
+  },
+  {
+    ""AnoIndice"": 2010,
+    ""SigIndicador"": ""NMOFUPR"",
+    ""totalindiceenviado"": ""9.00""
+  },
+  {
+    ""AnoIndice"": 2010,
+    ""SigIndicador"": ""NMOFUTE"",
+    ""totalindiceenviado"": ""74.00""
+  },
+  {
+    ""AnoIndice"": 2010,
+    ""SigIndicador"": ""NMOTER"",
+    ""totalindiceenviado"": ""314.00""
+  }
+]"
+"distribuicao_seguranca_trabalho_instalacoes","SELECT ""AnoIndice"", ""NumPeriodoIndice"", ""VlrIndiceEnviado"" FROM distribuicao_seguranca_trabalho_instalacoes WHERE ""SigAgente"" = 'AME' AND ""SigIndicador"" = 'DIADEBPDO' ORDER BY ""AnoIndice"", ""NumPeriodoIndice""","Me mostre como o valor do indicador 'DIADEBPDO' evoluiu período a período ao longo do tempo para o agente 'AME'. Quero ver os dados ordenados de forma cronológica, por ano e período.","[
+  {
+    ""AnoIndice"": 2022,
+    ""NumPeriodoIndice"": 1,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2022,
+    ""NumPeriodoIndice"": 2,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2022,
+    ""NumPeriodoIndice"": 3,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2022,
+    ""NumPeriodoIndice"": 4,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2022,
+    ""NumPeriodoIndice"": 5,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2022,
+    ""NumPeriodoIndice"": 6,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2022,
+    ""NumPeriodoIndice"": 7,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2022,
+    ""NumPeriodoIndice"": 8,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2022,
+    ""NumPeriodoIndice"": 9,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2022,
+    ""NumPeriodoIndice"": 10,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2022,
+    ""NumPeriodoIndice"": 11,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2022,
+    ""NumPeriodoIndice"": 12,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2023,
+    ""NumPeriodoIndice"": 1,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2023,
+    ""NumPeriodoIndice"": 2,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2023,
+    ""NumPeriodoIndice"": 3,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2023,
+    ""NumPeriodoIndice"": 4,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2023,
+    ""NumPeriodoIndice"": 5,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2023,
+    ""NumPeriodoIndice"": 6,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2023,
+    ""NumPeriodoIndice"": 7,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2023,
+    ""NumPeriodoIndice"": 8,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2023,
+    ""NumPeriodoIndice"": 9,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2023,
+    ""NumPeriodoIndice"": 10,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2023,
+    ""NumPeriodoIndice"": 11,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2023,
+    ""NumPeriodoIndice"": 12,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2024,
+    ""NumPeriodoIndice"": 1,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2024,
+    ""NumPeriodoIndice"": 2,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2024,
+    ""NumPeriodoIndice"": 3,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2024,
+    ""NumPeriodoIndice"": 4,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2024,
+    ""NumPeriodoIndice"": 5,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2024,
+    ""NumPeriodoIndice"": 6,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2024,
+    ""NumPeriodoIndice"": 7,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2024,
+    ""NumPeriodoIndice"": 8,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2024,
+    ""NumPeriodoIndice"": 9,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2024,
+    ""NumPeriodoIndice"": 10,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2024,
+    ""NumPeriodoIndice"": 11,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2024,
+    ""NumPeriodoIndice"": 12,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2025,
+    ""NumPeriodoIndice"": 1,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2025,
+    ""NumPeriodoIndice"": 2,
+    ""VlrIndiceEnviado"": "",00""
+  },
+  {
+    ""AnoIndice"": 2025,
+    ""NumPeriodoIndice"": 3,
+    ""VlrIndiceEnviado"": "",00""
+  }
+]"
+"distribuicao_seguranca_trabalho_instalacoes","SELECT ""SigIndicador"", ""SigAgente"", SUM(REPLACE(""VlrIndiceEnviado"", ',', '.')::numeric) AS TotalPorAgente FROM distribuicao_seguranca_trabalho_instalacoes GROUP BY ""SigIndicador"", ""SigAgente"" ORDER BY ""SigIndicador"", TotalPorAgente DESC LIMIT 10","Quero ver o top 10 do ranking dos agentes para cada tipo de indicador. Mostre os 10 maiores valores totais acumulados por agente e indicador, organizando por indicador e valor total em ordem decrescente.","[
+  {
+    ""SigIndicador"": ""DIADEBPDO"",
+    ""SigAgente"": ""CERAL ARARUAMA"",
+    ""totalporagente"": ""70.00""
+  },
+  {
+    ""SigIndicador"": ""DIADEBPDO"",
+    ""SigAgente"": ""COOPERSUL"",
+    ""totalporagente"": ""18.00""
+  },
+  {
+    ""SigIndicador"": ""DIADEBPDO"",
+    ""SigAgente"": ""COPREL"",
+    ""totalporagente"": ""4.00""
+  },
+  {
+    ""SigIndicador"": ""DIADEBPDO"",
+    ""SigAgente"": ""CEEE-D"",
+    ""totalporagente"": ""0.00""
+  },
+  {
+    ""SigIndicador"": ""DIADEBPDO"",
+    ""SigAgente"": ""CEGERO"",
+    ""totalporagente"": ""0.00""
+  },
+  {
+    ""SigIndicador"": ""DIADEBPDO"",
+    ""SigAgente"": ""CEDRAP"",
+    ""totalporagente"": ""0.00""
+  },
+  {
+    ""SigIndicador"": ""DIADEBPDO"",
+    ""SigAgente"": ""CELESC"",
+    ""totalporagente"": ""0.00""
+  },
+  {
+    ""SigIndicador"": ""DIADEBPDO"",
+    ""SigAgente"": ""CEJAMA"",
+    ""totalporagente"": ""0.00""
+  },
+  {
+    ""SigIndicador"": ""DIADEBPDO"",
+    ""SigAgente"": ""CEDRI"",
+    ""totalporagente"": ""0.00""
+  },
+  {
+    ""SigIndicador"": ""DIADEBPDO"",
+    ""SigAgente"": ""CASTRO-DIS"",
+    ""totalporagente"": ""0.00""
+  }
+]"
+"geracao_siga_empreendimentos_geracao","SELECT ""SigTipoGeracao"", SUM(REPLACE(""MdaPotenciaOutorgadaKw"", ',', '.')::numeric) AS PotenciaTotalOutorgada FROM geracao_siga_empreendimentos_geracao GROUP BY ""SigTipoGeracao"" ORDER BY PotenciaTotalOutorgada DESC","Quero saber qual é a potência total outorgada (em kW) para cada tipo de geração. Agrupe os dados por tipo de geração e some as potências outorgadas, ordenando do maior para o menor total.","[
+  {
+    ""SigTipoGeracao"": ""UFV"",
+    ""potenciatotaloutorgada"": ""139891045.75""
+  },
+  {
+    ""SigTipoGeracao"": ""UHE"",
+    ""potenciatotaloutorgada"": ""103450901.00""
+  },
+  {
+    ""SigTipoGeracao"": ""UTE"",
+    ""potenciatotaloutorgada"": ""56336922.96""
+  },
+  {
+    ""SigTipoGeracao"": ""EOL"",
+    ""potenciatotaloutorgada"": ""54884721.86""
+  },
+  {
+    ""SigTipoGeracao"": ""PCH"",
+    ""potenciatotaloutorgada"": ""7071097.22""
+  },
+  {
+    ""SigTipoGeracao"": ""UTN"",
+    ""potenciatotaloutorgada"": ""3340000.00""
+  },
+  {
+    ""SigTipoGeracao"": ""CGH"",
+    ""potenciatotaloutorgada"": ""900924.53""
+  }
+]"
+"geracao_siga_empreendimentos_geracao","SELECT ""SigTipoGeracao"", SUM(REPLACE(""MdaPotenciaOutorgadaKw"", ',', '.')::numeric) AS PotenciaTotalOutorgada FROM geracao_siga_empreendimentos_geracao GROUP BY ""SigTipoGeracao"" ORDER BY PotenciaTotalOutorgada DESC","Quero saber qual é a soma da potência outorgada para cada tipo de geração (como solar, eólica, hidrelétrica, etc.). Mostre o tipo de geração e o total de potência outorgada, ordenando do maior para o menor.","[
+  {
+    ""SigTipoGeracao"": ""UFV"",
+    ""potenciatotaloutorgada"": ""139891045.75""
+  },
+  {
+    ""SigTipoGeracao"": ""UHE"",
+    ""potenciatotaloutorgada"": ""103450901.00""
+  },
+  {
+    ""SigTipoGeracao"": ""UTE"",
+    ""potenciatotaloutorgada"": ""56336922.96""
+  },
+  {
+    ""SigTipoGeracao"": ""EOL"",
+    ""potenciatotaloutorgada"": ""54884721.86""
+  },
+  {
+    ""SigTipoGeracao"": ""PCH"",
+    ""potenciatotaloutorgada"": ""7071097.22""
+  },
+  {
+    ""SigTipoGeracao"": ""UTN"",
+    ""potenciatotaloutorgada"": ""3340000.00""
+  },
+  {
+    ""SigTipoGeracao"": ""CGH"",
+    ""potenciatotaloutorgada"": ""900924.53""
+  }
+]"
+"geracao_siga_empreendimentos_geracao","SELECT ""SigUFPrincipal"", ""DscFaseUsina"", COUNT(*) AS TotalEmpreendimentos FROM geracao_siga_empreendimentos_geracao GROUP BY ""SigUFPrincipal"", ""DscFaseUsina"" ORDER BY ""SigUFPrincipal"", TotalEmpreendimentos DESC","Me mostre quantos empreendimentos existem em cada Estado (UF), separados por fase da usina. Quero ver a contagem por UF e por fase, ordenando por Estado e pelo total de empreendimentos em cada fase.","[
+  {
+    ""SigUFPrincipal"": ""AC"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 30
+  },
+  {
+    ""SigUFPrincipal"": ""AL"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 51
+  },
+  {
+    ""SigUFPrincipal"": ""AL"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 4
+  },
+  {
+    ""SigUFPrincipal"": ""AM"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 159
+  },
+  {
+    ""SigUFPrincipal"": ""AM"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 8
+  },
+  {
+    ""SigUFPrincipal"": ""AM"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 3
+  },
+  {
+    ""SigUFPrincipal"": ""AP"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 11
+  },
+  {
+    ""SigUFPrincipal"": ""AP"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 1
+  },
+  {
+    ""SigUFPrincipal"": ""BA"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 705
+  },
+  {
+    ""SigUFPrincipal"": ""BA"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 591
+  },
+  {
+    ""SigUFPrincipal"": ""BA"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 31
+  },
+  {
+    ""SigUFPrincipal"": ""CE"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 463
+  },
+  {
+    ""SigUFPrincipal"": ""CE"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 187
+  },
+  {
+    ""SigUFPrincipal"": ""CE"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 24
+  },
+  {
+    ""SigUFPrincipal"": ""DF"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 24
+  },
+  {
+    ""SigUFPrincipal"": ""ES"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 86
+  },
+  {
+    ""SigUFPrincipal"": ""ES"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 1
+  },
+  {
+    ""SigUFPrincipal"": ""GO"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 176
+  },
+  {
+    ""SigUFPrincipal"": ""GO"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 101
+  },
+  {
+    ""SigUFPrincipal"": ""GO"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 11
+  },
+  {
+    ""SigUFPrincipal"": ""MA"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 55
+  },
+  {
+    ""SigUFPrincipal"": ""MA"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 7
+  },
+  {
+    ""SigUFPrincipal"": ""MA"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 1
+  },
+  {
+    ""SigUFPrincipal"": ""MG"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 903
+  },
+  {
+    ""SigUFPrincipal"": ""MG"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 724
+  },
+  {
+    ""SigUFPrincipal"": ""MG"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 37
+  },
+  {
+    ""SigUFPrincipal"": ""MS"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 2966
+  },
+  {
+    ""SigUFPrincipal"": ""MS"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 62
+  },
+  {
+    ""SigUFPrincipal"": ""MS"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 1
+  },
+  {
+    ""SigUFPrincipal"": ""MT"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 245
+  },
+  {
+    ""SigUFPrincipal"": ""MT"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 43
+  },
+  {
+    ""SigUFPrincipal"": ""MT"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 10
+  },
+  {
+    ""SigUFPrincipal"": ""PA"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 13197
+  },
+  {
+    ""SigUFPrincipal"": ""PA"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 2
+  },
+  {
+    ""SigUFPrincipal"": ""PB"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 118
+  },
+  {
+    ""SigUFPrincipal"": ""PB"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 92
+  },
+  {
+    ""SigUFPrincipal"": ""PB"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 31
+  },
+  {
+    ""SigUFPrincipal"": ""PE"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 196
+  },
+  {
+    ""SigUFPrincipal"": ""PE"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 96
+  },
+  {
+    ""SigUFPrincipal"": ""PE"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 8
+  },
+  {
+    ""SigUFPrincipal"": ""PI"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 472
+  },
+  {
+    ""SigUFPrincipal"": ""PI"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 220
+  },
+  {
+    ""SigUFPrincipal"": ""PI"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 9
+  },
+  {
+    ""SigUFPrincipal"": ""PR"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 290
+  },
+  {
+    ""SigUFPrincipal"": ""PR"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 9
+  },
+  {
+    ""SigUFPrincipal"": ""PR"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 6
+  },
+  {
+    ""SigUFPrincipal"": ""RJ"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 214
+  },
+  {
+    ""SigUFPrincipal"": ""RJ"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 5
+  },
+  {
+    ""SigUFPrincipal"": ""RJ"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 5
+  },
+  {
+    ""SigUFPrincipal"": ""RN"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 401
+  },
+  {
+    ""SigUFPrincipal"": ""RN"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 245
+  },
+  {
+    ""SigUFPrincipal"": ""RN"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 38
+  },
+  {
+    ""SigUFPrincipal"": ""RO"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 73
+  },
+  {
+    ""SigUFPrincipal"": ""RO"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 2
+  },
+  {
+    ""SigUFPrincipal"": ""RO"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 1
+  },
+  {
+    ""SigUFPrincipal"": ""RR"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 149
+  },
+  {
+    ""SigUFPrincipal"": ""RR"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 1
+  },
+  {
+    ""SigUFPrincipal"": ""RS"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 453
+  },
+  {
+    ""SigUFPrincipal"": ""RS"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 67
+  },
+  {
+    ""SigUFPrincipal"": ""RS"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 3
+  },
+  {
+    ""SigUFPrincipal"": ""SC"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 458
+  },
+  {
+    ""SigUFPrincipal"": ""SC"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 13
+  },
+  {
+    ""SigUFPrincipal"": ""SC"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 9
+  },
+  {
+    ""SigUFPrincipal"": ""SE"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 46
+  },
+  {
+    ""SigUFPrincipal"": ""SE"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 18
+  },
+  {
+    ""SigUFPrincipal"": ""SP"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 1160
+  },
+  {
+    ""SigUFPrincipal"": ""SP"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 13
+  },
+  {
+    ""SigUFPrincipal"": ""SP"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 4
+  },
+  {
+    ""SigUFPrincipal"": ""TO"",
+    ""DscFaseUsina"": ""Operação"",
+    ""totalempreendimentos"": 62
+  },
+  {
+    ""SigUFPrincipal"": ""TO"",
+    ""DscFaseUsina"": ""Construção não iniciada"",
+    ""totalempreendimentos"": 19
+  },
+  {
+    ""SigUFPrincipal"": ""TO"",
+    ""DscFaseUsina"": ""Construção"",
+    ""totalempreendimentos"": 1
+  }
+]"
+"tarifas_componentes_tarifarias","SELECT ""DscComponenteTarifario"", ""DscUnidade"", AVG(REPLACE(""VlrComponenteTarifario"", ',', '.')::numeric) AS MediaValor FROM tarifas_componentes_tarifarias GROUP BY ""DscComponenteTarifario"", ""DscUnidade"" ORDER BY MediaValor DESC","Quero saber o valor médio de cada componente tarifário, separado por unidade de medição (como R$/kW ou R$/MWh). Mostre os resultados ordenados do maior para o menor valor médio.","[
+  {
+    ""DscComponenteTarifario"": ""TUSD"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""209.244422491923327657""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_FioB"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""136.7529910396034478""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""92.402446653215497951""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_ENERGIA"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""81.3202716001130296928""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CFURH"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""72.8019472689751399724962337""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_CUSD"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""20.5770176148620260704""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_CDE"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""17.89210728341969647030""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""10.793521571575747773""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_PT"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""9.770249642603640863083""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_FioB"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""7.501800502315789469""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_RB"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""7.387226902413410707780""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_PNT"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""4.4462790741879247986449120""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_PROINFA"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""4.1993120010572416598547209""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_ESSERR"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""3.2572704134302124312""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_FR"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""2.71313309246330480451""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_Per_RB"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""1.22612964426468233522""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_RB"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""1.2055635207146567969920""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_PeD"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""1.0929392363798413510655927""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_CUSD"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""1.00920961632834256570""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_CCT"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.7919100118600160110751131""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_PeD"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.6883890579907786479647783""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_CDE_COVID"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.6577053680602113406175694""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CDE_COVID"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.6126839054448564262861413""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_TRANSPORTE_ITAIPU"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.55740972592847773827""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_FR"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.4775120789319947823436""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_TUST_ITAIPU"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.47456208169494585813""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_TFSEE"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.44159532424708567844""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_RI"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.42173997373772521016""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_Per_RB_D"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.2220778695304662343322""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_CCC"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.1558860519347294067818774""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_CCT"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.13107272603351207920""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_PT"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.0578507233714088228480""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_RGR"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.0540621830397131386700414""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_PeD"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.0529336579552726334981967""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSDG_T"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.04357234273982987549""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_PNT"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.02972551713951103142""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSDG_ONS"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.027546479801614287778""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_TFSEE"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.01226572935933510965""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_RGR"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.0077301024529593417902""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_CCD"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.00726705815455985654""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_Liminar"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.00543750446848898112""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_Per_RB_D"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.005157974550162209163""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_ONS"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0.003086802215912510715""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_ONS"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.001817178980612938821""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_ENERGIA"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.00067563457657275999""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_CCD"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.00054327268378688725""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_CDE"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.000004683967000746942775""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_CCC"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.000002403779729985841514""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_PROINFA"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0.000002021701501688982174""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_Liminar"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_BENEFICIO_L14299"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_CDE_COVID"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_TUST_ITAIPU"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_TUST_CI"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_TRANSPORTE_ITAIPU"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_SUBSIDIO"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSDG_ONS"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_Per_RB"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSDG_T"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_Liminar"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_PeD"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_Liminar"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_ESSERR"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CFURH"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CDE_GD"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CDE_GD"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CDE_ELET"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CDE_COVID"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_RI"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""0E-24""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_OUTROS"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""-0.0002032124914993478121""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_OUTROS"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""-0.001247460829234639123""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD BENEFICIO_L14299"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""-0.00592132361825661384""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_TUST_CI"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""-0.0090473145443493666806823""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_SUBSIDIO"",
+    ""DscUnidade"": ""R$/kW"",
+    ""mediavalor"": ""-0.0280876025741758548724""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_BENEFICIO_L14299"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""-0.03445834630450903712""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD BENEFICIO_L14299"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""-0.37868467511359184658""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_SUBSIDIO"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""-0.63324739529684350225""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CDE_ELET"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""-0.80765553662507594222""
+  },
+  {
+    ""DscComponenteTarifario"": ""TUSD_SUBSIDIO"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""mediavalor"": ""-1.065138240194596650454""
+  }
+]"
+"tarifas_componentes_tarifarias","SELECT ""DscSubGrupoTarifario"", ""DscComponenteTarifario"", MAX(""VlrComponenteTarifario"") AS ValorMaximo FROM ""tarifas_componentes_tarifarias"" GROUP BY ""DscSubGrupoTarifario"", ""DscComponenteTarifario"" ORDER BY ValorMaximo DESC LIMIT 10","Liste os 10 maiores valores de componentes tarifárias, mostrando o subgrupo tarifário e o tipo da componente. Quero identificar onde os valores estão mais altos.","[
+  {
+    ""DscSubGrupoTarifario"": ""A4"",
+    ""DscComponenteTarifario"": ""TUSD_TFSEE"",
+    ""valormaximo"": ""9,9999010000000003E-3""
+  },
+  {
+    ""DscSubGrupoTarifario"": ""A4"",
+    ""DscComponenteTarifario"": ""TUSD"",
+    ""valormaximo"": ""999,99000000000001""
+  },
+  {
+    ""DscSubGrupoTarifario"": ""B2"",
+    ""DscComponenteTarifario"": ""TUSD_CUSD"",
+    ""valormaximo"": ""9,9998574090000005""
+  },
+  {
+    ""DscSubGrupoTarifario"": ""A4"",
+    ""DscComponenteTarifario"": ""TUSD_FioB"",
+    ""valormaximo"": ""99,998133151000005""
+  },
+  {
+    ""DscSubGrupoTarifario"": ""A3a"",
+    ""DscComponenteTarifario"": ""TUSD_FioB"",
+    ""valormaximo"": ""9,9996775580000001""
+  },
+  {
+    ""DscSubGrupoTarifario"": ""A2"",
+    ""DscComponenteTarifario"": ""TUSD_TFSEE"",
+    ""valormaximo"": ""9,9996649999999996E-3""
+  },
+  {
+    ""DscSubGrupoTarifario"": ""B2"",
+    ""DscComponenteTarifario"": ""TUSD_RB"",
+    ""valormaximo"": ""9,9996384240000005""
+  },
+  {
+    ""DscSubGrupoTarifario"": ""B3"",
+    ""DscComponenteTarifario"": ""TUSD_CUSD"",
+    ""valormaximo"": ""999,95054147600001""
+  },
+  {
+    ""DscSubGrupoTarifario"": ""B2"",
+    ""DscComponenteTarifario"": ""TUSD"",
+    ""valormaximo"": ""999,95000000000005""
+  },
+  {
+    ""DscSubGrupoTarifario"": ""B2"",
+    ""DscComponenteTarifario"": ""TE_ENERGIA"",
+    ""valormaximo"": ""99,993826518000006""
+  }
+]"
+"tarifas_componentes_tarifarias","SELECT ""DscComponenteTarifario"", ""DscClasseConsumidor"", ""DscUnidade"", REPLACE(""VlrComponenteTarifario"", ',', '.')::numeric AS VlrComponenteTarifario FROM tarifas_componentes_tarifarias WHERE REPLACE(""VlrComponenteTarifario"", ',', '.')::numeric > 500 AND ""DscUnidade"" = 'R$/MWh' ORDER BY REPLACE(""VlrComponenteTarifario"", ',', '.')::numeric DESC LIMIT 10","Liste 10 dos componentes tarifários com valor superior a 500 reais por MWh. Mostre também a classe de consumidor e a unidade de medida, ordenando do maior para o menor valor.","[
+  {
+    ""DscComponenteTarifario"": ""TE_CFURH"",
+    ""DscClasseConsumidor"": ""Residencial"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""vlrcomponentetarifario"": ""1765594.1499999999""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CFURH"",
+    ""DscClasseConsumidor"": ""Residencial"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""vlrcomponentetarifario"": ""1765594.1499999999""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CFURH"",
+    ""DscClasseConsumidor"": ""Não se aplica"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""vlrcomponentetarifario"": ""1203635.3670000001""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CFURH"",
+    ""DscClasseConsumidor"": ""Não se aplica"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""vlrcomponentetarifario"": ""1203635.3670000001""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CFURH"",
+    ""DscClasseConsumidor"": ""Não se aplica"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""vlrcomponentetarifario"": ""1143895.1399999999""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CFURH"",
+    ""DscClasseConsumidor"": ""Não se aplica"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""vlrcomponentetarifario"": ""1143895.1399999999""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CFURH"",
+    ""DscClasseConsumidor"": ""Rural"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""vlrcomponentetarifario"": ""621722.31599999999""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CFURH"",
+    ""DscClasseConsumidor"": ""Rural"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""vlrcomponentetarifario"": ""621722.31599999999""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CFURH"",
+    ""DscClasseConsumidor"": ""Não se aplica"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""vlrcomponentetarifario"": ""488904.70899999997""
+  },
+  {
+    ""DscComponenteTarifario"": ""TE_CFURH"",
+    ""DscClasseConsumidor"": ""Não se aplica"",
+    ""DscUnidade"": ""R$/MWh"",
+    ""vlrcomponentetarifario"": ""488904.70899999997""
+  }
+]"
+"tarifas_tarifas_homologadas_distribuidoras_energia_eletrica","SELECT ""DscSubGrupo"", AVG(CAST(REPLACE(""VlrTUSD"", ',', '.') AS NUMERIC)) AS ""MediaTusd"", AVG(CAST(REPLACE(""VlrTE"", ',', '.') AS NUMERIC)) AS ""MediaTe"" FROM tarifas_tarifas_homologadas_distribuidoras_energia_eletrica GROUP BY ""DscSubGrupo"" ORDER BY ""DscSubGrupo""","Quero saber o valor médio da Tarifa de Uso do Sistema de Distribuição (TUSD) e da Tarifa de Energia (TE) para cada subgrupo tarifário.","[
+  {
+    ""DscSubGrupo"": ""A1"",
+    ""MediaTusd"": ""136.9863130779392338"",
+    ""MediaTe"": ""28.6912919418758256""
+  },
+  {
+    ""DscSubGrupo"": ""A2"",
+    ""MediaTusd"": ""10.3418716667225707"",
+    ""MediaTe"": ""22.8450555126958038""
+  },
+  {
+    ""DscSubGrupo"": ""A3"",
+    ""MediaTusd"": ""22.7467021712412946"",
+    ""MediaTe"": ""49.9183291391116053""
+  },
+  {
+    ""DscSubGrupo"": ""A3a"",
+    ""MediaTusd"": ""144.6752918580007065"",
+    ""MediaTe"": ""71.0018050158954433""
+  },
+  {
+    ""DscSubGrupo"": ""A4"",
+    ""MediaTusd"": ""177.5501057795698925"",
+    ""MediaTe"": ""61.6538817204301075""
+  },
+  {
+    ""DscSubGrupo"": ""A4a"",
+    ""MediaTusd"": ""34.4795833333333333"",
+    ""MediaTe"": ""0E-20""
+  },
+  {
+    ""DscSubGrupo"": ""A4b"",
+    ""MediaTusd"": ""22.6841666666666667"",
+    ""MediaTe"": ""0E-20""
+  },
+  {
+    ""DscSubGrupo"": ""AS"",
+    ""MediaTusd"": ""235.1419611848825332"",
+    ""MediaTe"": ""85.3771767109295199""
+  },
+  {
+    ""DscSubGrupo"": ""B"",
+    ""MediaTusd"": ""14.2832627526467757"",
+    ""MediaTe"": ""0.21632820019249278152""
+  },
+  {
+    ""DscSubGrupo"": ""B1"",
+    ""MediaTusd"": ""448.0027417731320170"",
+    ""MediaTe"": ""170.0441958962446767""
+  },
+  {
+    ""DscSubGrupo"": ""B2"",
+    ""MediaTusd"": ""429.0939500555336606"",
+    ""MediaTe"": ""136.0773501486868976""
+  },
+  {
+    ""DscSubGrupo"": ""B3"",
+    ""MediaTusd"": ""539.6664477211796247"",
+    ""MediaTe"": ""170.2756766756032172""
+  },
+  {
+    ""DscSubGrupo"": ""B4"",
+    ""MediaTusd"": ""201.7464129946043165"",
+    ""MediaTe"": ""93.5038612859712230""
+  }
+]"
+"tarifas_tarifas_homologadas_distribuidoras_energia_eletrica","SELECT ""DatInicioVigencia"", ""DatFimVigencia"", ""DscBaseTarifaria"", ""DscSubGrupo"", ""DscModalidadeTarifaria"", ""DscClasse"", ""DscSubClasse"", ""VlrTUSD"", ""VlrTE"" FROM tarifas_tarifas_homologadas_distribuidoras_energia_eletrica WHERE ""SigAgente"" = 'CEMIG-D' AND ""DatFimVigencia""::date >= CURRENT_DATE ORDER BY ""DatInicioVigencia""::date DESC LIMIT 10","Mostre as 10 tarifas mais recentes vigentes para a distribuidora com sigla CEMIG-D, incluindo informações sobre vigência, base tarifária, subgrupo, modalidade, classe, subclasses e os valores de TUSD e TE.","[
+  {
+    ""DatInicioVigencia"": ""2025-05-28"",
+    ""DatFimVigencia"": ""2026-05-27"",
+    ""DscBaseTarifaria"": ""Base Econômica"",
+    ""DscSubGrupo"": ""A2"",
+    ""DscModalidadeTarifaria"": ""Azul"",
+    ""DscClasse"": ""Não se aplica"",
+    ""DscSubClasse"": ""Não se aplica"",
+    ""VlrTUSD"": ""9,40"",
+    ""VlrTE"": "",00""
+  },
+  {
+    ""DatInicioVigencia"": ""2025-05-28"",
+    ""DatFimVigencia"": ""2026-05-27"",
+    ""DscBaseTarifaria"": ""Base Econômica"",
+    ""DscSubGrupo"": ""A2"",
+    ""DscModalidadeTarifaria"": ""Azul"",
+    ""DscClasse"": ""Não se aplica"",
+    ""DscSubClasse"": ""Não se aplica"",
+    ""VlrTUSD"": ""15,33"",
+    ""VlrTE"": "",00""
+  },
+  {
+    ""DatInicioVigencia"": ""2025-05-28"",
+    ""DatFimVigencia"": ""2026-05-27"",
+    ""DscBaseTarifaria"": ""Tarifa de Aplicação"",
+    ""DscSubGrupo"": ""A2"",
+    ""DscModalidadeTarifaria"": ""Azul"",
+    ""DscClasse"": ""Não se aplica"",
+    ""DscSubClasse"": ""Não se aplica"",
+    ""VlrTUSD"": ""16,53"",
+    ""VlrTE"": "",00""
+  },
+  {
+    ""DatInicioVigencia"": ""2025-05-28"",
+    ""DatFimVigencia"": ""2026-05-27"",
+    ""DscBaseTarifaria"": ""Base Econômica"",
+    ""DscSubGrupo"": ""A2"",
+    ""DscModalidadeTarifaria"": ""Azul"",
+    ""DscClasse"": ""Não se aplica"",
+    ""DscSubClasse"": ""Não se aplica"",
+    ""VlrTUSD"": ""6,29"",
+    ""VlrTE"": "",00""
+  },
+  {
+    ""DatInicioVigencia"": ""2025-05-28"",
+    ""DatFimVigencia"": ""2026-05-27"",
+    ""DscBaseTarifaria"": ""Tarifa de Aplicação"",
+    ""DscSubGrupo"": ""A2"",
+    ""DscModalidadeTarifaria"": ""Azul"",
+    ""DscClasse"": ""Não se aplica"",
+    ""DscSubClasse"": ""Não se aplica"",
+    ""VlrTUSD"": ""7,17"",
+    ""VlrTE"": "",00""
+  },
+  {
+    ""DatInicioVigencia"": ""2025-05-28"",
+    ""DatFimVigencia"": ""2026-05-27"",
+    ""DscBaseTarifaria"": ""Tarifa de Aplicação"",
+    ""DscSubGrupo"": ""A2"",
+    ""DscModalidadeTarifaria"": ""Azul"",
+    ""DscClasse"": ""Não se aplica"",
+    ""DscSubClasse"": ""Não se aplica"",
+    ""VlrTUSD"": ""5,19"",
+    ""VlrTE"": "",00""
+  },
+  {
+    ""DatInicioVigencia"": ""2025-05-28"",
+    ""DatFimVigencia"": ""2026-05-27"",
+    ""DscBaseTarifaria"": ""Base Econômica"",
+    ""DscSubGrupo"": ""A2"",
+    ""DscModalidadeTarifaria"": ""Azul"",
+    ""DscClasse"": ""Não se aplica"",
+    ""DscSubClasse"": ""Não se aplica"",
+    ""VlrTUSD"": ""4,94"",
+    ""VlrTE"": "",00""
+  },
+  {
+    ""DatInicioVigencia"": ""2025-05-28"",
+    ""DatFimVigencia"": ""2026-05-27"",
+    ""DscBaseTarifaria"": ""Base Econômica"",
+    ""DscSubGrupo"": ""A2"",
+    ""DscModalidadeTarifaria"": ""Azul"",
+    ""DscClasse"": ""Não se aplica"",
+    ""DscSubClasse"": ""Não se aplica"",
+    ""VlrTUSD"": ""19,94"",
+    ""VlrTE"": "",00""
+  },
+  {
+    ""DatInicioVigencia"": ""2025-05-28"",
+    ""DatFimVigencia"": ""2026-05-27"",
+    ""DscBaseTarifaria"": ""Tarifa de Aplicação"",
+    ""DscSubGrupo"": ""A2"",
+    ""DscModalidadeTarifaria"": ""Azul"",
+    ""DscClasse"": ""Não se aplica"",
+    ""DscSubClasse"": ""Não se aplica"",
+    ""VlrTUSD"": ""21,51"",
+    ""VlrTE"": "",00""
+  },
+  {
+    ""DatInicioVigencia"": ""2025-05-28"",
+    ""DatFimVigencia"": ""2026-05-27"",
+    ""DscBaseTarifaria"": ""Tarifa de Aplicação"",
+    ""DscSubGrupo"": ""A2"",
+    ""DscModalidadeTarifaria"": ""Azul"",
+    ""DscClasse"": ""Não se aplica"",
+    ""DscSubClasse"": ""Não se aplica"",
+    ""VlrTUSD"": ""10,50"",
+    ""VlrTE"": "",00""
+  }
+]"
+"tarifas_tarifas_homologadas_distribuidoras_energia_eletrica","SELECT ""DscModalidadeTarifaria"", ""DscClasse"", AVG(CAST(REPLACE(""VlrTUSD"", ',', '.') AS NUMERIC)) AS ""MediaTusd"", AVG(CAST(REPLACE(""VlrTE"", ',', '.') AS NUMERIC)) AS ""MediaTe"" FROM tarifas_tarifas_homologadas_distribuidoras_energia_eletrica WHERE ""DatInicioVigencia"" >= '2024-01-01' AND ""DatFimVigencia"" <= '2024-12-31' GROUP BY ""DscModalidadeTarifaria"", ""DscClasse"" ORDER BY ""DscModalidadeTarifaria"", ""DscClasse""","Mostre a média dos valores da TUSD e TE por modalidade tarifária e classe de consumidor para as tarifas que começaram e terminaram completamente no ano de 2024.","[
+  {
+    ""DscModalidadeTarifaria"": ""Azul"",
+    ""DscClasse"": ""Não se aplica"",
+    ""MediaTusd"": ""91.8192500000000000"",
+    ""MediaTe"": ""61.4187500000000000""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Branca"",
+    ""DscClasse"": ""Não se aplica"",
+    ""MediaTusd"": ""762.0875000000000000"",
+    ""MediaTe"": ""135.5029166666666667""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Branca"",
+    ""DscClasse"": ""Residencial"",
+    ""MediaTusd"": ""732.9316666666666667"",
+    ""MediaTe"": ""135.5029166666666667""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Branca"",
+    ""DscClasse"": ""Rural"",
+    ""MediaTusd"": ""648.8925000000000000"",
+    ""MediaTe"": ""130.2688888888888889""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Convencional"",
+    ""DscClasse"": ""Iluminação pública"",
+    ""MediaTusd"": ""265.7975000000000000"",
+    ""MediaTe"": ""72.9856250000000000""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Convencional"",
+    ""DscClasse"": ""Não se aplica"",
+    ""MediaTusd"": ""286.8912500000000000"",
+    ""MediaTe"": ""99.4337500000000000""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Convencional"",
+    ""DscClasse"": ""Residencial"",
+    ""MediaTusd"": ""415.6400000000000000"",
+    ""MediaTe"": ""126.2425000000000000""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Convencional"",
+    ""DscClasse"": ""Rural"",
+    ""MediaTusd"": ""448.8666666666666667"",
+    ""MediaTe"": ""123.1954166666666667""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Convencional pré-pagamento"",
+    ""DscClasse"": ""Não se aplica"",
+    ""MediaTusd"": ""465.9100000000000000"",
+    ""MediaTe"": ""127.9250000000000000""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Convencional pré-pagamento"",
+    ""DscClasse"": ""Residencial"",
+    ""MediaTusd"": ""415.6400000000000000"",
+    ""MediaTe"": ""126.2425000000000000""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Convencional pré-pagamento"",
+    ""DscClasse"": ""Rural"",
+    ""MediaTusd"": ""448.8666666666666667"",
+    ""MediaTe"": ""123.1954166666666667""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Distribuição"",
+    ""DscClasse"": ""Não se aplica"",
+    ""MediaTusd"": ""26.3300000000000000"",
+    ""MediaTe"": ""0E-20""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Geração"",
+    ""DscClasse"": ""Não se aplica"",
+    ""MediaTusd"": ""13.4245000000000000"",
+    ""MediaTe"": ""0E-20""
+  },
+  {
+    ""DscModalidadeTarifaria"": ""Verde"",
+    ""DscClasse"": ""Não se aplica"",
+    ""MediaTusd"": ""600.7058333333333333"",
+    ""MediaTe"": ""74.5070833333333333""
+  }
+]"

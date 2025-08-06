@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_004",
+  "name": "Final Response Test #004",
+  "description": "Avalia apenas a resposta final para: Liste os 10 agentes que mais registraram ocorrências emergenciais na rede de distribuição. Quero ver o nome do agente e o total de ocorrências, em ordem decrescente....",
+  "eval_cases": [
+    {
+      "eval_id": "case_004",
+      "conversation": [
+        {
+          "invocation_id": "75c3439a-4adc-46de-a187-bed2ad7e14c6",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Liste os 10 agentes que mais registraram ocorrências emergenciais na rede de distribuição. Quero ver o nome do agente e o total de ocorrências, em ordem decrescente."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"NomAgente\": \"EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A\",\n    \"total_ocorrencias\": 563780\n  },\n  {\n    \"NomAgente\": \"COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA COELBA\",\n    \"total_ocorrencias\": 476429\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ENERGÉTICA DO CEARÁ\",\n    \"total_ocorrencias\": 419645\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ENERGÉTICA DE PERNAMBUCO\",\n    \"total_ocorrencias\": 301800\n  },\n  {\n    \"NomAgente\": \"COMPANHIA PAULISTA DE FORÇA E LUZ\",\n    \"total_ocorrencias\": 186422\n  },\n  {\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"total_ocorrencias\": 177006\n  },\n  {\n    \"NomAgente\": \"ENERGISA TOCANTINS DISTRIBUIDORA DE ENERGIA S.A.\",\n    \"total_ocorrencias\": 172382\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ENERGÉTICA DO RIO GRANDE DO NORTE COSERN\",\n    \"total_ocorrencias\": 88307\n  },\n  {\n    \"NomAgente\": \"COMPANHIA DE ELETRICIDADE DO AMAPÁ\",\n    \"total_ocorrencias\": 38665\n  },\n  {\n    \"NomAgente\": \"COMPANHIA SUL SERGIPANA DE ELETRICIDADE\",\n    \"total_ocorrencias\": 16614\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

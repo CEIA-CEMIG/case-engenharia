@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-08-06T13:06:25.701199",
+  "mode": "FINAL_RESPONSE_ONLY",
+  "total_tests_created": 18,
+  "errors": 0,
+  "error_details": [],
+  "output_directory": "tests/final_response",
+  "config_file": "tests/final_response/test_config.json",
+  "note": "Estes testes avaliam APENAS a resposta final, ignorando ferramentas e passos intermediários"
+}

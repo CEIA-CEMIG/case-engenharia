@@ -103,6 +103,27 @@ GOOGLE_CLOUD_LOCATION=us-central1
 
 1. Interface do ADK:
 ```python
+Em agents/ 
+(~/case-engenharia/agents)
+
 # No terminal, digite
 adk web
+```
+
+## Deploy:
+
+```python
+1.
+chmod +x deploy.sh
+
+2.
+./deploy.sh
+```
+
+## Benchmark:
+
+1- Via CLI:
+
+```python
+adk eval cemig_agent ../tests/final_response/response_test_001.test.json --config_file_path=../tests/final_response/test_config.json --print_detailed_results
 ```

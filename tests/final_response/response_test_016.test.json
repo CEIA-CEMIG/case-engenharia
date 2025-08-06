@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_016",
+  "name": "Final Response Test #016",
+  "description": "Avalia apenas a resposta final para: Quero saber o valor médio da Tarifa de Uso do Sistema de Distribuição (TUSD) e da Tarifa de Energia (TE) para cada subgrupo tarifário....",
+  "eval_cases": [
+    {
+      "eval_id": "case_016",
+      "conversation": [
+        {
+          "invocation_id": "5c9c7e05-7d8a-4d59-a2ad-65a1bd555c0c",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Quero saber o valor médio da Tarifa de Uso do Sistema de Distribuição (TUSD) e da Tarifa de Energia (TE) para cada subgrupo tarifário."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_tarifas_homologadas_distribuidoras_energia_eletrica.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DscSubGrupo\": \"A1\",\n    \"MediaTusd\": \"136.9863130779392338\",\n    \"MediaTe\": \"28.6912919418758256\"\n  },\n  {\n    \"DscSubGrupo\": \"A2\",\n    \"MediaTusd\": \"10.3418716667225707\",\n    \"MediaTe\": \"22.8450555126958038\"\n  },\n  {\n    \"DscSubGrupo\": \"A3\",\n    \"MediaTusd\": \"22.7467021712412946\",\n    \"MediaTe\": \"49.9183291391116053\"\n  },\n  {\n    \"DscSubGrupo\": \"A3a\",\n    \"MediaTusd\": \"144.6752918580007065\",\n    \"MediaTe\": \"71.0018050158954433\"\n  },\n  {\n    \"DscSubGrupo\": \"A4\",\n    \"MediaTusd\": \"177.5501057795698925\",\n    \"MediaTe\": \"61.6538817204301075\"\n  },\n  {\n    \"DscSubGrupo\": \"A4a\",\n    \"MediaTusd\": \"34.4795833333333333\",\n    \"MediaTe\": \"0E-20\"\n  },\n  {\n    \"DscSubGrupo\": \"A4b\",\n    \"MediaTusd\": \"22.6841666666666667\",\n    \"MediaTe\": \"0E-20\"\n  },\n  {\n    \"DscSubGrupo\": \"AS\",\n    \"MediaTusd\": \"235.1419611848825332\",\n    \"MediaTe\": \"85.3771767109295199\"\n  },\n  {\n    \"DscSubGrupo\": \"B\",\n    \"MediaTusd\": \"14.2832627526467757\",\n    \"MediaTe\": \"0.21632820019249278152\"\n  },\n  {\n    \"DscSubGrupo\": \"B1\",\n    \"MediaTusd\": \"448.0027417731320170\",\n    \"MediaTe\": \"170.0441958962446767\"\n  },\n  {\n    \"DscSubGrupo\": \"B2\",\n    \"MediaTusd\": \"429.0939500555336606\",\n    \"MediaTe\": \"136.0773501486868976\"\n  },\n  {\n    \"DscSubGrupo\": \"B3\",\n    \"MediaTusd\": \"539.6664477211796247\",\n    \"MediaTe\": \"170.2756766756032172\"\n  },\n  {\n    \"DscSubGrupo\": \"B4\",\n    \"MediaTusd\": \"201.7464129946043165\",\n    \"MediaTe\": \"93.5038612859712230\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "tarifas_tarifas_homologadas_distribuidoras_energia_eletrica",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

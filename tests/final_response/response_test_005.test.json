@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_005",
+  "name": "Final Response Test #005",
+  "description": "Avalia apenas a resposta final para: Quero saber, para cada código IBGE, qual é o tempo médio de preparo, deslocamento e execução das ocorrências. Mostre a média de cada uma dessas etapas por código IBGE me retornando apenas 10 valores....",
+  "eval_cases": [
+    {
+      "eval_id": "case_005",
+      "conversation": [
+        {
+          "invocation_id": "7db6b254-815f-4159-b44e-0ef6feaead9f",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Quero saber, para cada código IBGE, qual é o tempo médio de preparo, deslocamento e execução das ocorrências. Mostre a média de cada uma dessas etapas por código IBGE me retornando apenas 10 valores."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"CodIBGE\": \"1600055\",\n    \"mediaexecucao\": \"64.5727923627684964\",\n    \"mediadeslocamento\": \"26.7231503579952267\",\n    \"mediapreparo\": \"51.9021479713603819\"\n  },\n  {\n    \"CodIBGE\": \"1600105\",\n    \"mediaexecucao\": \"33.8850574712643678\",\n    \"mediadeslocamento\": \"27.4281609195402299\",\n    \"mediapreparo\": \"26.5459770114942529\"\n  },\n  {\n    \"CodIBGE\": \"1600154\",\n    \"mediaexecucao\": \"37.4292343387470998\",\n    \"mediadeslocamento\": \"35.0000000000000000\",\n    \"mediapreparo\": \"51.6334106728538283\"\n  },\n  {\n    \"CodIBGE\": \"1600204\",\n    \"mediaexecucao\": \"59.3636363636363636\",\n    \"mediadeslocamento\": \"31.4969696969696970\",\n    \"mediapreparo\": \"33.4363636363636364\"\n  },\n  {\n    \"CodIBGE\": \"1600212\",\n    \"mediaexecucao\": \"46.1558704453441296\",\n    \"mediadeslocamento\": \"33.8967611336032389\",\n    \"mediapreparo\": \"42.3380566801619433\"\n  },\n  {\n    \"CodIBGE\": \"1600238\",\n    \"mediaexecucao\": \"72.0516129032258065\",\n    \"mediadeslocamento\": \"35.3397849462365591\",\n    \"mediapreparo\": \"36.1720430107526882\"\n  },\n  {\n    \"CodIBGE\": \"1600253\",\n    \"mediaexecucao\": \"55.0219435736677116\",\n    \"mediadeslocamento\": \"49.0909090909090909\",\n    \"mediapreparo\": \"52.1097178683385580\"\n  },\n  {\n    \"CodIBGE\": \"1600279\",\n    \"mediaexecucao\": \"45.6694677871148459\",\n    \"mediadeslocamento\": \"24.6708683473389356\",\n    \"mediapreparo\": \"20.3627450980392157\"\n  },\n  {\n    \"CodIBGE\": \"1600303\",\n    \"mediaexecucao\": \"28.9135437060923644\",\n    \"mediadeslocamento\": \"17.3703021229221851\",\n    \"mediapreparo\": \"42.2453721831932128\"\n  },\n  {\n    \"CodIBGE\": \"1600402\",\n    \"mediaexecucao\": \"51.5452865064695009\",\n    \"mediadeslocamento\": \"32.3696857670979667\",\n    \"mediapreparo\": \"40.1330868761552680\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

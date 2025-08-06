@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_011",
+  "name": "Final Response Test #011",
+  "description": "Avalia apenas a resposta final para: Quero saber qual é a soma da potência outorgada para cada tipo de geração (como solar, eólica, hidrelétrica, etc.). Mostre o tipo de geração e o total de potência outorgada, ordenando do maior para o menor....",
+  "eval_cases": [
+    {
+      "eval_id": "case_011",
+      "conversation": [
+        {
+          "invocation_id": "0c52c933-8c2d-4d23-99df-0c6b92485ed8",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Quero saber qual é a soma da potência outorgada para cada tipo de geração (como solar, eólica, hidrelétrica, etc.). Mostre o tipo de geração e o total de potência outorgada, ordenando do maior para o menor."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela geracao_siga_empreendimentos_geracao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"SigTipoGeracao\": \"UFV\",\n    \"potenciatotaloutorgada\": \"139891045.75\"\n  },\n  {\n    \"SigTipoGeracao\": \"UHE\",\n    \"potenciatotaloutorgada\": \"103450901.00\"\n  },\n  {\n    \"SigTipoGeracao\": \"UTE\",\n    \"potenciatotaloutorgada\": \"56336922.96\"\n  },\n  {\n    \"SigTipoGeracao\": \"EOL\",\n    \"potenciatotaloutorgada\": \"54884721.86\"\n  },\n  {\n    \"SigTipoGeracao\": \"PCH\",\n    \"potenciatotaloutorgada\": \"7071097.22\"\n  },\n  {\n    \"SigTipoGeracao\": \"UTN\",\n    \"potenciatotaloutorgada\": \"3340000.00\"\n  },\n  {\n    \"SigTipoGeracao\": \"CGH\",\n    \"potenciatotaloutorgada\": \"900924.53\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "geracao_siga_empreendimentos_geracao",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}

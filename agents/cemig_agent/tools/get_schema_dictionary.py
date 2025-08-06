@@ -9,13 +9,13 @@ BUCKET_NAME = "application-case-engenharia"
 PATH_PREFIX = "dicionario_de_dados/"
 
 tabela_para_arquivo = {
-    "distribuicao_ocorrencias_emergenciais_rede_distribuicao_2025": "dm-ocorrencias-emergenciais-nas-redes-de-distribuicao.pdf",
-    "distribuicao_ouvidoria_aneel_2025": "dm-ouvidoriaaneel.pdf",
+    "distribuicao_ocorrencias_emergenciais_rede_distribuicao": "dm-ocorrencias-emergenciais-nas-redes-de-distribuicao.pdf",
+    "distribuicao_ouvidoria_aneel": "dm-ouvidoriaaneel.pdf",
     "distribuicao_seguranca_trabalho_instalacoes": "dm-seguranca-do-trabalho-e-das-instalacoes.pdf",  
-    "geracao_componentes_tarifarias_2025": "dm-componentes-tarifarias.pdf",  
-    "geracao_ouvidoria_aneel_2025": "dm-ouvidoriaaneel.pdf", 
+    "geracao_componentes_tarifarias": "dm-componentes-tarifarias.pdf",  
+    "geracao_ouvidoria_aneel": "dm-ouvidoriaaneel.pdf", 
     "geracao_siga_empreendimentos_geracao": "dm-siga-sistema-de-informacoes-de-geracao-da-aneel.pdf",
-    "tarifas_componentes_tarifarias_2025": "dm-componentes-tarifarias.pdf",
+    "tarifas_componentes_tarifarias": "dm-componentes-tarifarias.pdf",
     "tarifas_subsidios_tarifarios": "dm-subsidios-tarifarios.pdf",  
     "tarifas_tarifas_homologadas_distribuidoras_energia_eletrica": "dd-tarifas-por-distribuidora.pdf"
 }

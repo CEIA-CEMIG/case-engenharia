@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "final_response_test_014",
+  "name": "Final Response Test #014",
+  "description": "Avalia apenas a resposta final para: Liste os 10 maiores valores de componentes tarifárias, mostrando o subgrupo tarifário e o tipo da componente. Quero identificar onde os valores estão mais altos....",
+  "eval_cases": [
+    {
+      "eval_id": "case_014",
+      "conversation": [
+        {
+          "invocation_id": "3643099d-03cb-4907-ac32-c8c5bd302101",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Liste os 10 maiores valores de componentes tarifárias, mostrando o subgrupo tarifário e o tipo da componente. Quero identificar onde os valores estão mais altos."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_componentes_tarifarias.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DscSubGrupoTarifario\": \"A4\",\n    \"DscComponenteTarifario\": \"TUSD_TFSEE\",\n    \"valormaximo\": \"9,9999010000000003E-3\"\n  },\n  {\n    \"DscSubGrupoTarifario\": \"A4\",\n    \"DscComponenteTarifario\": \"TUSD\",\n    \"valormaximo\": \"999,99000000000001\"\n  },\n  {\n    \"DscSubGrupoTarifario\": \"B2\",\n    \"DscComponenteTarifario\": \"TUSD_CUSD\",\n    \"valormaximo\": \"9,9998574090000005\"\n  },\n  {\n    \"DscSubGrupoTarifario\": \"A4\",\n    \"DscComponenteTarifario\": \"TUSD_FioB\",\n    \"valormaximo\": \"99,998133151000005\"\n  },\n  {\n    \"DscSubGrupoTarifario\": \"A3a\",\n    \"DscComponenteTarifario\": \"TUSD_FioB\",\n    \"valormaximo\": \"9,9996775580000001\"\n  },\n  {\n    \"DscSubGrupoTarifario\": \"A2\",\n    \"DscComponenteTarifario\": \"TUSD_TFSEE\",\n    \"valormaximo\": \"9,9996649999999996E-3\"\n  },\n  {\n    \"DscSubGrupoTarifario\": \"B2\",\n    \"DscComponenteTarifario\": \"TUSD_RB\",\n    \"valormaximo\": \"9,9996384240000005\"\n  },\n  {\n    \"DscSubGrupoTarifario\": \"B3\",\n    \"DscComponenteTarifario\": \"TUSD_CUSD\",\n    \"valormaximo\": \"999,95054147600001\"\n  },\n  {\n    \"DscSubGrupoTarifario\": \"B2\",\n    \"DscComponenteTarifario\": \"TUSD\",\n    \"valormaximo\": \"999,95000000000005\"\n  },\n  {\n    \"DscSubGrupoTarifario\": \"B2\",\n    \"DscComponenteTarifario\": \"TE_ENERGIA\",\n    \"valormaximo\": \"99,993826518000006\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "cemig_agent",
+        "user_id": "test_user",
+        "state": {
+          "table_name": "tarifas_componentes_tarifarias",
+          "evaluation_mode": "final_response_only"
+        }
+      }
+    }
+  ]
+}
