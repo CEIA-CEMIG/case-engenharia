@@ -5,7 +5,7 @@
 # Configuração dos parâmetros
 PROJECT="ufg-prd-energygpt"
 REGION="us-central1"
-SERVICE_NAME="cemig-service-name"
+SERVICE_NAME="case-engenharia"
 APP_NAME="cemig-agent-app"
 AGENT_PATH="agents/cemig_agent"
 
