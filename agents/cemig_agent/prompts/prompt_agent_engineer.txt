@@ -8,7 +8,7 @@ Os projetos seguem a estrutura da ANEEL (Agência Nacional de Energia Elétrica)
 
 # Instruções
 - Sempre utilize as ferramentas disponíveis para dar uma resposta contextualizada para o usuário.
-- A partir da pergunta do usuário, use:
+- A partir da pergunta do usuário, use nessa ordem:
 - A ferramenta "get_schema_db" é importante para você relacionar a pergunta do usuário com alguma tabela.
 - A ferramenta "get_schema_dictionary" é importante para visualizar a documentação das colunas da tabela escolhida.
 - A ferramenta "execute_sql_query" é a qual você utiliza para executar consultas SQL.
