@@ -4,21 +4,25 @@ import tempfile
 from google.cloud import storage
 import PyPDF2
 from typing import Dict, List, Tuple
+import yaml
+from pathlib import Path
 
 BUCKET_NAME = "application-case-engenharia"
 PATH_PREFIX = "dicionario_de_dados/"
 
-tabela_para_arquivo = {
-    "distribuicao_ocorrencias_emergenciais_rede_distribuicao": "dm-ocorrencias-emergenciais-nas-redes-de-distribuicao.pdf",
-    "distribuicao_ouvidoria_aneel": "dm-ouvidoriaaneel.pdf",
-    "distribuicao_seguranca_trabalho_instalacoes": "dm-seguranca-do-trabalho-e-das-instalacoes.pdf",  
-    "geracao_componentes_tarifarias": "dm-componentes-tarifarias.pdf",  
-    "geracao_ouvidoria_aneel": "dm-ouvidoriaaneel.pdf", 
-    "geracao_siga_empreendimentos_geracao": "dm-siga-sistema-de-informacoes-de-geracao-da-aneel.pdf",
-    "tarifas_componentes_tarifarias": "dm-componentes-tarifarias.pdf",
-    "tarifas_subsidios_tarifarios": "dm-subsidios-tarifarios.pdf",  
-    "tarifas_tarifas_homologadas_distribuidoras_energia_eletrica": "dd-tarifas-por-distribuidora.pdf"
-}
+BASE_DIR = Path(__file__).parent  
+UTILS_DIR = BASE_DIR / "utils"
+MAPPING_FILE = UTILS_DIR / "mapping_tables.yaml"
+
+try:
+    if MAPPING_FILE.exists():
+        with open(MAPPING_FILE, "r", encoding="utf-8") as f:
+            tabela_para_arquivo = yaml.safe_load(f) or {}
+    else:
+        tabela_para_arquivo = {}
+except Exception as e:
+    tabela_para_arquivo = {}
+
 
 def get_schema_dictionary(table_name: str) -> str:
     """Obtém o dicionário de dados para uma tabela específica."""

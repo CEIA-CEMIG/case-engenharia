@@ -515,232 +515,232 @@
     ""totalsolicitacoes"": 9
   }
 ]"
-"distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao","SELECT ""NomAgente"", COUNT(""NumOcorrencia"") AS total_ocorrencias FROM distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao GROUP BY ""NomAgente"" ORDER BY total_ocorrencias DESC LIMIT 10","Liste os 10 agentes que mais registraram ocorrências emergenciais na rede de distribuição. Quero ver o nome do agente e o total de ocorrências, em ordem decrescente.","[
+"distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao","SELECT ""NomAgente"", COUNT(""NumOcorrencia"") AS total_ocorrencias FROM distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao GROUP BY ""NomAgente"" ORDER BY total_ocorrencias DESC LIMIT 10"," Liste os 10 agentes que mais registraram ocorrências emergenciais na rede de distribuição. Quero ver o nome do agente e o total de ocorrências, em ordem decrescente.","[
   {
-    ""NomAgente"": ""EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A"",
-    ""total_ocorrencias"": 563780
+    ""NomAgente"": ""CEMIG DISTRIBUIÇÃO S.A"",
+    ""total_ocorrencias"": 11937061
+  },
+  {
+    ""NomAgente"": ""COPEL DISTRIBUIÇÃO S.A."",
+    ""total_ocorrencias"": 5856362
+  },
+  {
+    ""NomAgente"": ""COMPANHIA ESTADUAL DE DISTRIBUIÇÃO DE ENERGIA ELÉTRICA - CEEE-D"",
+    ""total_ocorrencias"": 5158728
+  },
+  {
+    ""NomAgente"": ""EQUATORIAL PARÁ DISTRIBUIDORA DE ENERGIA S.A."",
+    ""total_ocorrencias"": 4491556
   },
   {
     ""NomAgente"": ""COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA COELBA"",
-    ""total_ocorrencias"": 476429
+    ""total_ocorrencias"": 4217190
   },
   {
-    ""NomAgente"": ""COMPANHIA ENERGÉTICA DO CEARÁ"",
-    ""total_ocorrencias"": 419645
+    ""NomAgente"": ""EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A"",
+    ""total_ocorrencias"": 3939870
   },
   {
-    ""NomAgente"": ""COMPANHIA ENERGÉTICA DE PERNAMBUCO"",
-    ""total_ocorrencias"": 301800
+    ""NomAgente"": ""RGE SUL DISTRIBUIDORA DE ENERGIA S.A."",
+    ""total_ocorrencias"": 3370163
   },
   {
     ""NomAgente"": ""COMPANHIA PAULISTA DE FORÇA E LUZ"",
-    ""total_ocorrencias"": 186422
+    ""total_ocorrencias"": 2626384
   },
   {
-    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
-    ""total_ocorrencias"": 177006
+    ""NomAgente"": ""COMPANHIA ENERGÉTICA DO CEARÁ"",
+    ""total_ocorrencias"": 2514762
   },
   {
-    ""NomAgente"": ""ENERGISA TOCANTINS DISTRIBUIDORA DE ENERGIA S.A."",
-    ""total_ocorrencias"": 172382
-  },
-  {
-    ""NomAgente"": ""COMPANHIA ENERGÉTICA DO RIO GRANDE DO NORTE COSERN"",
-    ""total_ocorrencias"": 88307
-  },
-  {
-    ""NomAgente"": ""COMPANHIA DE ELETRICIDADE DO AMAPÁ"",
-    ""total_ocorrencias"": 38665
-  },
-  {
-    ""NomAgente"": ""COMPANHIA SUL SERGIPANA DE ELETRICIDADE"",
-    ""total_ocorrencias"": 16614
+    ""NomAgente"": ""EQUATORIAL PIAUÍ DISTRIBUIDORA DE ENERGIA S.A"",
+    ""total_ocorrencias"": 2390917
   }
 ]"
-"distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao","SELECT ""CodIBGE"", AVG(REPLACE(""MdaExecucao"", ',', '.')::numeric) AS MediaExecucao, AVG(REPLACE(""MdaDeslocamento"", ',', '.')::numeric) AS MediaDeslocamento, AVG(REPLACE(""MdaPreparo"", ',', '.')::numeric) AS MediaPreparo FROM distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao GROUP BY ""CodIBGE"" LIMIT 10","Quero saber, para cada código IBGE, qual é o tempo médio de preparo, deslocamento e execução das ocorrências. Mostre a média de cada uma dessas etapas por código IBGE me retornando apenas 10 valores.","[
+"distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao","SELECT ""CodIBGE"", AVG(NULLIF(REPLACE(""MdaExecucao"", ',', '.'), '')::numeric) AS MediaExecucao, AVG(NULLIF(REPLACE(""MdaDeslocamento"", ',', '.'), '')::numeric) AS MediaDeslocamento, AVG(NULLIF(REPLACE(""MdaPreparo"", ',', '.'), '')::numeric) AS MediaPreparo FROM distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao GROUP BY ""CodIBGE"" LIMIT 10","Quero saber, para cada código IBGE, qual é o tempo médio de preparo, deslocamento e execução das ocorrências. Mostre a média de cada uma dessas etapas por código IBGE me retornando apenas 10 valores.","[
   {
-    ""CodIBGE"": ""1600055"",
-    ""mediaexecucao"": ""64.5727923627684964"",
-    ""mediadeslocamento"": ""26.7231503579952267"",
-    ""mediapreparo"": ""51.9021479713603819""
+    ""CodIBGE"": ""1100015"",
+    ""mediaexecucao"": 52.810740728149014,
+    ""mediadeslocamento"": 51.249052148625765,
+    ""mediapreparo"": 440.2112004643741
   },
   {
-    ""CodIBGE"": ""1600105"",
-    ""mediaexecucao"": ""33.8850574712643678"",
-    ""mediadeslocamento"": ""27.4281609195402299"",
-    ""mediapreparo"": ""26.5459770114942529""
+    ""CodIBGE"": ""1100023"",
+    ""mediaexecucao"": 55.540692748247544,
+    ""mediadeslocamento"": 34.23920800632424,
+    ""mediapreparo"": 346.84294374081793
   },
   {
-    ""CodIBGE"": ""1600154"",
-    ""mediaexecucao"": ""37.4292343387470998"",
-    ""mediadeslocamento"": ""35.0000000000000000"",
-    ""mediapreparo"": ""51.6334106728538283""
+    ""CodIBGE"": ""1100031"",
+    ""mediaexecucao"": 48.62675488024852,
+    ""mediadeslocamento"": 50.10367647359455,
+    ""mediapreparo"": 370.7070117456659
   },
   {
-    ""CodIBGE"": ""1600204"",
-    ""mediaexecucao"": ""59.3636363636363636"",
-    ""mediadeslocamento"": ""31.4969696969696970"",
-    ""mediapreparo"": ""33.4363636363636364""
+    ""CodIBGE"": ""1100049"",
+    ""mediaexecucao"": 48.13268431286007,
+    ""mediadeslocamento"": 41.27188049828816,
+    ""mediapreparo"": 464.87068793961146
   },
   {
-    ""CodIBGE"": ""1600212"",
-    ""mediaexecucao"": ""46.1558704453441296"",
-    ""mediadeslocamento"": ""33.8967611336032389"",
-    ""mediapreparo"": ""42.3380566801619433""
+    ""CodIBGE"": ""1100056"",
+    ""mediaexecucao"": 34.827793395298634,
+    ""mediadeslocamento"": 33.99194146138163,
+    ""mediapreparo"": 249.87055644878868
   },
   {
-    ""CodIBGE"": ""1600238"",
-    ""mediaexecucao"": ""72.0516129032258065"",
-    ""mediadeslocamento"": ""35.3397849462365591"",
-    ""mediapreparo"": ""36.1720430107526882""
+    ""CodIBGE"": ""1100064"",
+    ""mediaexecucao"": 31.406450908795545,
+    ""mediadeslocamento"": 32.20137704571827,
+    ""mediapreparo"": 297.72067079740077
   },
   {
-    ""CodIBGE"": ""1600253"",
-    ""mediaexecucao"": ""55.0219435736677116"",
-    ""mediadeslocamento"": ""49.0909090909090909"",
-    ""mediapreparo"": ""52.1097178683385580""
+    ""CodIBGE"": ""1100072"",
+    ""mediaexecucao"": 48.10282547184366,
+    ""mediadeslocamento"": 53.90703819748007,
+    ""mediapreparo"": 429.9532682506214
   },
   {
-    ""CodIBGE"": ""1600279"",
-    ""mediaexecucao"": ""45.6694677871148459"",
-    ""mediadeslocamento"": ""24.6708683473389356"",
-    ""mediapreparo"": ""20.3627450980392157""
+    ""CodIBGE"": ""1100080"",
+    ""mediaexecucao"": 49.42462655456026,
+    ""mediadeslocamento"": 48.51648857980456,
+    ""mediapreparo"": 511.80714814087946
   },
   {
-    ""CodIBGE"": ""1600303"",
-    ""mediaexecucao"": ""28.9135437060923644"",
-    ""mediadeslocamento"": ""17.3703021229221851"",
-    ""mediapreparo"": ""42.2453721831932128""
+    ""CodIBGE"": ""1100098"",
+    ""mediaexecucao"": 56.01314112953368,
+    ""mediadeslocamento"": 58.66943353972366,
+    ""mediapreparo"": 629.8137239952505
   },
   {
-    ""CodIBGE"": ""1600402"",
-    ""mediaexecucao"": ""51.5452865064695009"",
-    ""mediadeslocamento"": ""32.3696857670979667"",
-    ""mediapreparo"": ""40.1330868761552680""
+    ""CodIBGE"": ""1100106"",
+    ""mediaexecucao"": 57.91297088081419,
+    ""mediadeslocamento"": 30.27085526240497,
+    ""mediapreparo"": 278.21488840472495
   }
 ]"
 "distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao","SELECT ""NumOcorrencia"", ""NomAgente"", ""DthInicioOcorrenciaAberta"", ""DthFimOcorrenciaAberta"", (REPLACE(""MdaPreparo"", ',', '.')::numeric + REPLACE(""MdaDeslocamento"", ',', '.')::numeric + REPLACE(""MdaExecucao"", ',', '.')::numeric) AS TempoTotal FROM distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao WHERE (REPLACE(""MdaPreparo"", ',', '.')::numeric + REPLACE(""MdaDeslocamento"", ',', '.')::numeric + REPLACE(""MdaExecucao"", ',', '.')::numeric) > 180 LIMIT 10","Liste as primeiras 10 ocorrências em que o tempo total (soma do tempo de preparo, deslocamento e execução) foi maior que 180 minutos. Mostre o número da ocorrência, o nome do agente, a data e hora de início e fim, e o tempo total calculado.","[
   {
-    ""NumOcorrencia"": ""5284"",
-    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
-    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
-    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
-    ""tempototal"": ""44639.96667""
+    ""NumOcorrencia"": ""92075"",
+    ""NomAgente"": ""ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-05-03 14:33:00"",
+    ""DthFimOcorrenciaAberta"": ""2017-05-04 00:03:59"",
+    ""tempototal"": 570.98333
   },
   {
-    ""NumOcorrencia"": ""5213"",
-    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
-    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
-    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
-    ""tempototal"": ""44639.96667""
+    ""NumOcorrencia"": ""92078"",
+    ""NomAgente"": ""ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-05-03 14:35:00"",
+    ""DthFimOcorrenciaAberta"": ""2017-05-04 09:31:59"",
+    ""tempototal"": 1136.98334
   },
   {
-    ""NumOcorrencia"": ""5252"",
-    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
-    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
-    ""DthFimOcorrenciaAberta"": ""2017-01-02 15:50:00"",
-    ""tempototal"": ""2389.98333""
+    ""NumOcorrencia"": ""92083"",
+    ""NomAgente"": ""ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-05-03 14:36:00"",
+    ""DthFimOcorrenciaAberta"": ""2017-05-03 17:40:59"",
+    ""tempototal"": 184.98334
   },
   {
-    ""NumOcorrencia"": ""5230"",
-    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
-    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
-    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
-    ""tempototal"": ""44639.96667""
+    ""NumOcorrencia"": ""92084"",
+    ""NomAgente"": ""ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-05-03 14:41:00"",
+    ""DthFimOcorrenciaAberta"": ""2017-05-03 19:40:59"",
+    ""tempototal"": 299.98333
   },
   {
-    ""NumOcorrencia"": ""5240"",
-    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
-    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
-    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
-    ""tempototal"": ""44639.96667""
+    ""NumOcorrencia"": ""92091"",
+    ""NomAgente"": ""ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-05-03 14:48:00"",
+    ""DthFimOcorrenciaAberta"": ""2017-05-03 18:09:00"",
+    ""tempototal"": 201.0
   },
   {
-    ""NumOcorrencia"": ""5266"",
-    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
-    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
-    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
-    ""tempototal"": ""44639.96667""
+    ""NumOcorrencia"": ""92095"",
+    ""NomAgente"": ""ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-05-03 14:53:00"",
+    ""DthFimOcorrenciaAberta"": ""2017-05-06 11:45:00"",
+    ""tempototal"": 4132.0
   },
   {
-    ""NumOcorrencia"": ""5222"",
-    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
-    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
-    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
-    ""tempototal"": ""44639.96667""
+    ""NumOcorrencia"": ""92108"",
+    ""NomAgente"": ""ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-05-03 14:57:00"",
+    ""DthFimOcorrenciaAberta"": ""2017-05-03 21:03:59"",
+    ""tempototal"": 366.98333
   },
   {
-    ""NumOcorrencia"": ""5223"",
-    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
-    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
-    ""DthFimOcorrenciaAberta"": ""2017-01-31 17:45:00"",
-    ""tempototal"": ""44264.98333""
+    ""NumOcorrencia"": ""92099"",
+    ""NomAgente"": ""ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-05-03 14:58:00"",
+    ""DthFimOcorrenciaAberta"": ""2017-05-03 19:56:59"",
+    ""tempototal"": 298.98334
   },
   {
-    ""NumOcorrencia"": ""5267"",
-    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
-    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
-    ""DthFimOcorrenciaAberta"": ""2017-01-17 15:42:00"",
-    ""tempototal"": ""23981.98333""
+    ""NumOcorrencia"": ""92100"",
+    ""NomAgente"": ""ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-05-03 15:01:00"",
+    ""DthFimOcorrenciaAberta"": ""2017-05-03 19:27:59"",
+    ""tempototal"": 266.98333
   },
   {
-    ""NumOcorrencia"": ""5222"",
-    ""NomAgente"": ""ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A"",
-    ""DthInicioOcorrenciaAberta"": ""2017-01-01 00:00:01"",
-    ""DthFimOcorrenciaAberta"": ""2017-01-31 23:59:59"",
-    ""tempototal"": ""44639.96667""
+    ""NumOcorrencia"": ""92105"",
+    ""NomAgente"": ""ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A"",
+    ""DthInicioOcorrenciaAberta"": ""2017-05-03 15:05:00"",
+    ""DthFimOcorrenciaAberta"": ""2017-05-03 18:15:00"",
+    ""tempototal"": 190.0
   }
 ]"
 "distribuicao_seguranca_trabalho_instalacoes","SELECT ""AnoIndice"", ""SigIndicador"", SUM(REPLACE(""VlrIndiceEnviado"", ',', '.')::numeric) AS TotalIndiceEnviado FROM distribuicao_seguranca_trabalho_instalacoes GROUP BY ""AnoIndice"", ""SigIndicador"" ORDER BY ""AnoIndice"", ""SigIndicador"" LIMIT 10","Quero saber o valor total que foi enviado para cada tipo de indicador em cada ano. Agrupe os dados por ano e pelo tipo de indicador e some os valores enviados. Organize o resultado por ano e indicador e me retorne apenas 10 resultados.","[
   {
     ""AnoIndice"": 2009,
     ""SigIndicador"": ""NACTER"",
-    ""totalindiceenviado"": ""910.00""
+    ""totalindiceenviado"": 910.0
   },
   {
     ""AnoIndice"": 2009,
     ""SigIndicador"": ""NMOFUPR"",
-    ""totalindiceenviado"": ""4.00""
+    ""totalindiceenviado"": 4.0
   },
   {
     ""AnoIndice"": 2009,
     ""SigIndicador"": ""NMOFUTE"",
-    ""totalindiceenviado"": ""58.00""
+    ""totalindiceenviado"": 58.0
   },
   {
     ""AnoIndice"": 2009,
     ""SigIndicador"": ""NMOTER"",
-    ""totalindiceenviado"": ""292.00""
+    ""totalindiceenviado"": 292.0
   },
   {
     ""AnoIndice"": 2009,
     ""SigIndicador"": ""TXFQAC"",
-    ""totalindiceenviado"": ""8110.79""
+    ""totalindiceenviado"": 8110.79
   },
   {
     ""AnoIndice"": 2009,
     ""SigIndicador"": ""TXGRAC"",
-    ""totalindiceenviado"": ""589562.73""
+    ""totalindiceenviado"": 589562.73
   },
   {
     ""AnoIndice"": 2010,
     ""SigIndicador"": ""NACTER"",
-    ""totalindiceenviado"": ""895.00""
+    ""totalindiceenviado"": 895.0
   },
   {
     ""AnoIndice"": 2010,
     ""SigIndicador"": ""NMOFUPR"",
-    ""totalindiceenviado"": ""9.00""
+    ""totalindiceenviado"": 9.0
   },
   {
     ""AnoIndice"": 2010,
     ""SigIndicador"": ""NMOFUTE"",
-    ""totalindiceenviado"": ""74.00""
+    ""totalindiceenviado"": 74.0
   },
   {
     ""AnoIndice"": 2010,
     ""SigIndicador"": ""NMOTER"",
-    ""totalindiceenviado"": ""314.00""
+    ""totalindiceenviado"": 314.0
   }
 ]"
 "distribuicao_seguranca_trabalho_instalacoes","SELECT ""AnoIndice"", ""NumPeriodoIndice"", ""VlrIndiceEnviado"" FROM distribuicao_seguranca_trabalho_instalacoes WHERE ""SigAgente"" = 'AME' AND ""SigIndicador"" = 'DIADEBPDO' ORDER BY ""AnoIndice"", ""NumPeriodoIndice""","Me mostre como o valor do indicador 'DIADEBPDO' evoluiu período a período ao longo do tempo para o agente 'AME'. Quero ver os dados ordenados de forma cronológica, por ano e período.","[
@@ -944,112 +944,112 @@
   {
     ""SigIndicador"": ""DIADEBPDO"",
     ""SigAgente"": ""CERAL ARARUAMA"",
-    ""totalporagente"": ""70.00""
+    ""totalporagente"": 70.0
   },
   {
     ""SigIndicador"": ""DIADEBPDO"",
     ""SigAgente"": ""COOPERSUL"",
-    ""totalporagente"": ""18.00""
+    ""totalporagente"": 18.0
   },
   {
     ""SigIndicador"": ""DIADEBPDO"",
     ""SigAgente"": ""COPREL"",
-    ""totalporagente"": ""4.00""
+    ""totalporagente"": 4.0
   },
   {
     ""SigIndicador"": ""DIADEBPDO"",
     ""SigAgente"": ""CEEE-D"",
-    ""totalporagente"": ""0.00""
+    ""totalporagente"": 0.0
   },
   {
     ""SigIndicador"": ""DIADEBPDO"",
     ""SigAgente"": ""CEGERO"",
-    ""totalporagente"": ""0.00""
+    ""totalporagente"": 0.0
   },
   {
     ""SigIndicador"": ""DIADEBPDO"",
     ""SigAgente"": ""CEDRAP"",
-    ""totalporagente"": ""0.00""
+    ""totalporagente"": 0.0
   },
   {
     ""SigIndicador"": ""DIADEBPDO"",
     ""SigAgente"": ""CELESC"",
-    ""totalporagente"": ""0.00""
+    ""totalporagente"": 0.0
   },
   {
     ""SigIndicador"": ""DIADEBPDO"",
     ""SigAgente"": ""CEJAMA"",
-    ""totalporagente"": ""0.00""
+    ""totalporagente"": 0.0
   },
   {
     ""SigIndicador"": ""DIADEBPDO"",
     ""SigAgente"": ""CEDRI"",
-    ""totalporagente"": ""0.00""
+    ""totalporagente"": 0.0
   },
   {
     ""SigIndicador"": ""DIADEBPDO"",
     ""SigAgente"": ""CASTRO-DIS"",
-    ""totalporagente"": ""0.00""
+    ""totalporagente"": 0.0
   }
 ]"
 "geracao_siga_empreendimentos_geracao","SELECT ""SigTipoGeracao"", SUM(REPLACE(""MdaPotenciaOutorgadaKw"", ',', '.')::numeric) AS PotenciaTotalOutorgada FROM geracao_siga_empreendimentos_geracao GROUP BY ""SigTipoGeracao"" ORDER BY PotenciaTotalOutorgada DESC","Quero saber qual é a potência total outorgada (em kW) para cada tipo de geração. Agrupe os dados por tipo de geração e some as potências outorgadas, ordenando do maior para o menor total.","[
   {
     ""SigTipoGeracao"": ""UFV"",
-    ""potenciatotaloutorgada"": ""139891045.75""
+    ""potenciatotaloutorgada"": 139891045.75
   },
   {
     ""SigTipoGeracao"": ""UHE"",
-    ""potenciatotaloutorgada"": ""103450901.00""
+    ""potenciatotaloutorgada"": 103450901.0
   },
   {
     ""SigTipoGeracao"": ""UTE"",
-    ""potenciatotaloutorgada"": ""56336922.96""
+    ""potenciatotaloutorgada"": 56336922.96
   },
   {
     ""SigTipoGeracao"": ""EOL"",
-    ""potenciatotaloutorgada"": ""54884721.86""
+    ""potenciatotaloutorgada"": 54884721.86
   },
   {
     ""SigTipoGeracao"": ""PCH"",
-    ""potenciatotaloutorgada"": ""7071097.22""
+    ""potenciatotaloutorgada"": 7071097.22
   },
   {
     ""SigTipoGeracao"": ""UTN"",
-    ""potenciatotaloutorgada"": ""3340000.00""
+    ""potenciatotaloutorgada"": 3340000.0
   },
   {
     ""SigTipoGeracao"": ""CGH"",
-    ""potenciatotaloutorgada"": ""900924.53""
+    ""potenciatotaloutorgada"": 900924.53
   }
 ]"
 "geracao_siga_empreendimentos_geracao","SELECT ""SigTipoGeracao"", SUM(REPLACE(""MdaPotenciaOutorgadaKw"", ',', '.')::numeric) AS PotenciaTotalOutorgada FROM geracao_siga_empreendimentos_geracao GROUP BY ""SigTipoGeracao"" ORDER BY PotenciaTotalOutorgada DESC","Quero saber qual é a soma da potência outorgada para cada tipo de geração (como solar, eólica, hidrelétrica, etc.). Mostre o tipo de geração e o total de potência outorgada, ordenando do maior para o menor.","[
   {
     ""SigTipoGeracao"": ""UFV"",
-    ""potenciatotaloutorgada"": ""139891045.75""
+    ""potenciatotaloutorgada"": 139891045.75
   },
   {
     ""SigTipoGeracao"": ""UHE"",
-    ""potenciatotaloutorgada"": ""103450901.00""
+    ""potenciatotaloutorgada"": 103450901.0
   },
   {
     ""SigTipoGeracao"": ""UTE"",
-    ""potenciatotaloutorgada"": ""56336922.96""
+    ""potenciatotaloutorgada"": 56336922.96
   },
   {
     ""SigTipoGeracao"": ""EOL"",
-    ""potenciatotaloutorgada"": ""54884721.86""
+    ""potenciatotaloutorgada"": 54884721.86
   },
   {
     ""SigTipoGeracao"": ""PCH"",
-    ""potenciatotaloutorgada"": ""7071097.22""
+    ""potenciatotaloutorgada"": 7071097.22
   },
   {
     ""SigTipoGeracao"": ""UTN"",
-    ""potenciatotaloutorgada"": ""3340000.00""
+    ""potenciatotaloutorgada"": 3340000.0
   },
   {
     ""SigTipoGeracao"": ""CGH"",
-    ""potenciatotaloutorgada"": ""900924.53""
+    ""potenciatotaloutorgada"": 900924.53
   }
 ]"
 "geracao_siga_empreendimentos_geracao","SELECT ""SigUFPrincipal"", ""DscFaseUsina"", COUNT(*) AS TotalEmpreendimentos FROM geracao_siga_empreendimentos_geracao GROUP BY ""SigUFPrincipal"", ""DscFaseUsina"" ORDER BY ""SigUFPrincipal"", TotalEmpreendimentos DESC","Me mostre quantos empreendimentos existem em cada Estado (UF), separados por fase da usina. Quero ver a contagem por UF e por fase, ordenando por Estado e pelo total de empreendimentos em cada fase.","[
@@ -1413,402 +1413,402 @@
   {
     ""DscComponenteTarifario"": ""TUSD"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""209.244422491923327657""
+    ""mediavalor"": 209.24442249192333
   },
   {
     ""DscComponenteTarifario"": ""TUSD_FioB"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""136.7529910396034478""
+    ""mediavalor"": 136.75299103960344
   },
   {
     ""DscComponenteTarifario"": ""TE"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""92.402446653215497951""
+    ""mediavalor"": 92.40244665321549
   },
   {
     ""DscComponenteTarifario"": ""TE_ENERGIA"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""81.3202716001130296928""
+    ""mediavalor"": 81.32027160011303
   },
   {
     ""DscComponenteTarifario"": ""TE_CFURH"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""72.8019472689751399724962337""
+    ""mediavalor"": 72.80194726897514
   },
   {
     ""DscComponenteTarifario"": ""TUSD_CUSD"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""20.5770176148620260704""
+    ""mediavalor"": 20.577017614862026
   },
   {
     ""DscComponenteTarifario"": ""TUSD_CDE"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""17.89210728341969647030""
+    ""mediavalor"": 17.892107283419698
   },
   {
     ""DscComponenteTarifario"": ""TUSD"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""10.793521571575747773""
+    ""mediavalor"": 10.793521571575749
   },
   {
     ""DscComponenteTarifario"": ""TUSD_PT"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""9.770249642603640863083""
+    ""mediavalor"": 9.770249642603641
   },
   {
     ""DscComponenteTarifario"": ""TUSD_FioB"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""7.501800502315789469""
+    ""mediavalor"": 7.501800502315789
   },
   {
     ""DscComponenteTarifario"": ""TUSD_RB"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""7.387226902413410707780""
+    ""mediavalor"": 7.387226902413411
   },
   {
     ""DscComponenteTarifario"": ""TUSD_PNT"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""4.4462790741879247986449120""
+    ""mediavalor"": 4.446279074187925
   },
   {
     ""DscComponenteTarifario"": ""TUSD_PROINFA"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""4.1993120010572416598547209""
+    ""mediavalor"": 4.199312001057241
   },
   {
     ""DscComponenteTarifario"": ""TE_ESSERR"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""3.2572704134302124312""
+    ""mediavalor"": 3.2572704134302124
   },
   {
     ""DscComponenteTarifario"": ""TUSD_FR"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""2.71313309246330480451""
+    ""mediavalor"": 2.7131330924633046
   },
   {
     ""DscComponenteTarifario"": ""TE_Per_RB"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""1.22612964426468233522""
+    ""mediavalor"": 1.2261296442646823
   },
   {
     ""DscComponenteTarifario"": ""TUSD_RB"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""1.2055635207146567969920""
+    ""mediavalor"": 1.2055635207146569
   },
   {
     ""DscComponenteTarifario"": ""TUSD_PeD"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""1.0929392363798413510655927""
+    ""mediavalor"": 1.0929392363798414
   },
   {
     ""DscComponenteTarifario"": ""TUSD_CUSD"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""1.00920961632834256570""
+    ""mediavalor"": 1.0092096163283426
   },
   {
     ""DscComponenteTarifario"": ""TUSD_CCT"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.7919100118600160110751131""
+    ""mediavalor"": 0.791910011860016
   },
   {
     ""DscComponenteTarifario"": ""TE_PeD"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.6883890579907786479647783""
+    ""mediavalor"": 0.6883890579907787
   },
   {
     ""DscComponenteTarifario"": ""TUSD_CDE_COVID"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.6577053680602113406175694""
+    ""mediavalor"": 0.6577053680602113
   },
   {
     ""DscComponenteTarifario"": ""TE_CDE_COVID"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.6126839054448564262861413""
+    ""mediavalor"": 0.6126839054448564
   },
   {
     ""DscComponenteTarifario"": ""TE_TRANSPORTE_ITAIPU"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.55740972592847773827""
+    ""mediavalor"": 0.5574097259284777
   },
   {
     ""DscComponenteTarifario"": ""TUSD_FR"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.4775120789319947823436""
+    ""mediavalor"": 0.47751207893199477
   },
   {
     ""DscComponenteTarifario"": ""TE_TUST_ITAIPU"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.47456208169494585813""
+    ""mediavalor"": 0.47456208169494585
   },
   {
     ""DscComponenteTarifario"": ""TUSD_TFSEE"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.44159532424708567844""
+    ""mediavalor"": 0.4415953242470857
   },
   {
     ""DscComponenteTarifario"": ""TUSD_RI"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.42173997373772521016""
+    ""mediavalor"": 0.4217399737377252
   },
   {
     ""DscComponenteTarifario"": ""TUSD_Per_RB_D"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.2220778695304662343322""
+    ""mediavalor"": 0.22207786953046624
   },
   {
     ""DscComponenteTarifario"": ""TUSD_CCC"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.1558860519347294067818774""
+    ""mediavalor"": 0.1558860519347294
   },
   {
     ""DscComponenteTarifario"": ""TUSD_CCT"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.13107272603351207920""
+    ""mediavalor"": 0.13107272603351208
   },
   {
     ""DscComponenteTarifario"": ""TUSD_PT"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.0578507233714088228480""
+    ""mediavalor"": 0.05785072337140882
   },
   {
     ""DscComponenteTarifario"": ""TUSD_RGR"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.0540621830397131386700414""
+    ""mediavalor"": 0.054062183039713135
   },
   {
     ""DscComponenteTarifario"": ""TUSD_PeD"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.0529336579552726334981967""
+    ""mediavalor"": 0.052933657955272634
   },
   {
     ""DscComponenteTarifario"": ""TUSDG_T"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.04357234273982987549""
+    ""mediavalor"": 0.04357234273982988
   },
   {
     ""DscComponenteTarifario"": ""TUSD_PNT"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.02972551713951103142""
+    ""mediavalor"": 0.02972551713951103
   },
   {
     ""DscComponenteTarifario"": ""TUSDG_ONS"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.027546479801614287778""
+    ""mediavalor"": 0.027546479801614288
   },
   {
     ""DscComponenteTarifario"": ""TUSD_TFSEE"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.01226572935933510965""
+    ""mediavalor"": 0.01226572935933511
   },
   {
     ""DscComponenteTarifario"": ""TUSD_RGR"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.0077301024529593417902""
+    ""mediavalor"": 0.007730102452959342
   },
   {
     ""DscComponenteTarifario"": ""TUSD_CCD"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.00726705815455985654""
+    ""mediavalor"": 0.007267058154559857
   },
   {
     ""DscComponenteTarifario"": ""TUSD_Liminar"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.00543750446848898112""
+    ""mediavalor"": 0.005437504468488981
   },
   {
     ""DscComponenteTarifario"": ""TUSD_Per_RB_D"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.005157974550162209163""
+    ""mediavalor"": 0.005157974550162209
   },
   {
     ""DscComponenteTarifario"": ""TUSD_ONS"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0.003086802215912510715""
+    ""mediavalor"": 0.0030868022159125106
   },
   {
     ""DscComponenteTarifario"": ""TUSD_ONS"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.001817178980612938821""
+    ""mediavalor"": 0.0018171789806129387
   },
   {
     ""DscComponenteTarifario"": ""TE_ENERGIA"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.00067563457657275999""
+    ""mediavalor"": 0.00067563457657276
   },
   {
     ""DscComponenteTarifario"": ""TUSD_CCD"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.00054327268378688725""
+    ""mediavalor"": 0.0005432726837868873
   },
   {
     ""DscComponenteTarifario"": ""TUSD_CDE"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.000004683967000746942775""
+    ""mediavalor"": 4.6839670007469426e-06
   },
   {
     ""DscComponenteTarifario"": ""TUSD_CCC"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.000002403779729985841514""
+    ""mediavalor"": 2.4037797299858415e-06
   },
   {
     ""DscComponenteTarifario"": ""TUSD_PROINFA"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0.000002021701501688982174""
+    ""mediavalor"": 2.021701501688982e-06
   },
   {
     ""DscComponenteTarifario"": ""TE_Liminar"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_BENEFICIO_L14299"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TUSD_CDE_COVID"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_TUST_ITAIPU"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_TUST_CI"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_TRANSPORTE_ITAIPU"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_SUBSIDIO"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TUSDG_ONS"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_Per_RB"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TUSDG_T"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TUSD_Liminar"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_PeD"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_Liminar"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_ESSERR"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_CFURH"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_CDE_GD"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_CDE_GD"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_CDE_ELET"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TE_CDE_COVID"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TUSD_RI"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""0E-24""
+    ""mediavalor"": 0.0
   },
   {
     ""DscComponenteTarifario"": ""TUSD_OUTROS"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""-0.0002032124914993478121""
+    ""mediavalor"": -0.00020321249149934782
   },
   {
     ""DscComponenteTarifario"": ""TUSD_OUTROS"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""-0.001247460829234639123""
+    ""mediavalor"": -0.0012474608292346392
   },
   {
     ""DscComponenteTarifario"": ""TUSD BENEFICIO_L14299"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""-0.00592132361825661384""
+    ""mediavalor"": -0.0059213236182566135
   },
   {
     ""DscComponenteTarifario"": ""TE_TUST_CI"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""-0.0090473145443493666806823""
+    ""mediavalor"": -0.009047314544349367
   },
   {
     ""DscComponenteTarifario"": ""TUSD_SUBSIDIO"",
     ""DscUnidade"": ""R$/kW"",
-    ""mediavalor"": ""-0.0280876025741758548724""
+    ""mediavalor"": -0.028087602574175856
   },
   {
     ""DscComponenteTarifario"": ""TE_BENEFICIO_L14299"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""-0.03445834630450903712""
+    ""mediavalor"": -0.03445834630450904
   },
   {
     ""DscComponenteTarifario"": ""TUSD BENEFICIO_L14299"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""-0.37868467511359184658""
+    ""mediavalor"": -0.37868467511359183
   },
   {
     ""DscComponenteTarifario"": ""TE_SUBSIDIO"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""-0.63324739529684350225""
+    ""mediavalor"": -0.6332473952968435
   },
   {
     ""DscComponenteTarifario"": ""TE_CDE_ELET"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""-0.80765553662507594222""
+    ""mediavalor"": -0.8076555366250759
   },
   {
     ""DscComponenteTarifario"": ""TUSD_SUBSIDIO"",
     ""DscUnidade"": ""R$/MWh"",
-    ""mediavalor"": ""-1.065138240194596650454""
+    ""mediavalor"": -1.0651382401945966
   }
 ]"
 "tarifas_componentes_tarifarias","SELECT ""DscSubGrupoTarifario"", ""DscComponenteTarifario"", MAX(""VlrComponenteTarifario"") AS ValorMaximo FROM ""tarifas_componentes_tarifarias"" GROUP BY ""DscSubGrupoTarifario"", ""DscComponenteTarifario"" ORDER BY ValorMaximo DESC LIMIT 10","Liste os 10 maiores valores de componentes tarifárias, mostrando o subgrupo tarifário e o tipo da componente. Quero identificar onde os valores estão mais altos.","[
@@ -1868,128 +1868,128 @@
     ""DscComponenteTarifario"": ""TE_CFURH"",
     ""DscClasseConsumidor"": ""Residencial"",
     ""DscUnidade"": ""R$/MWh"",
-    ""vlrcomponentetarifario"": ""1765594.1499999999""
+    ""vlrcomponentetarifario"": 1765594.15
   },
   {
     ""DscComponenteTarifario"": ""TE_CFURH"",
     ""DscClasseConsumidor"": ""Residencial"",
     ""DscUnidade"": ""R$/MWh"",
-    ""vlrcomponentetarifario"": ""1765594.1499999999""
+    ""vlrcomponentetarifario"": 1765594.15
   },
   {
     ""DscComponenteTarifario"": ""TE_CFURH"",
     ""DscClasseConsumidor"": ""Não se aplica"",
     ""DscUnidade"": ""R$/MWh"",
-    ""vlrcomponentetarifario"": ""1203635.3670000001""
+    ""vlrcomponentetarifario"": 1203635.367
   },
   {
     ""DscComponenteTarifario"": ""TE_CFURH"",
     ""DscClasseConsumidor"": ""Não se aplica"",
     ""DscUnidade"": ""R$/MWh"",
-    ""vlrcomponentetarifario"": ""1203635.3670000001""
+    ""vlrcomponentetarifario"": 1203635.367
   },
   {
     ""DscComponenteTarifario"": ""TE_CFURH"",
     ""DscClasseConsumidor"": ""Não se aplica"",
     ""DscUnidade"": ""R$/MWh"",
-    ""vlrcomponentetarifario"": ""1143895.1399999999""
+    ""vlrcomponentetarifario"": 1143895.14
   },
   {
     ""DscComponenteTarifario"": ""TE_CFURH"",
     ""DscClasseConsumidor"": ""Não se aplica"",
     ""DscUnidade"": ""R$/MWh"",
-    ""vlrcomponentetarifario"": ""1143895.1399999999""
+    ""vlrcomponentetarifario"": 1143895.14
   },
   {
     ""DscComponenteTarifario"": ""TE_CFURH"",
     ""DscClasseConsumidor"": ""Rural"",
     ""DscUnidade"": ""R$/MWh"",
-    ""vlrcomponentetarifario"": ""621722.31599999999""
+    ""vlrcomponentetarifario"": 621722.316
   },
   {
     ""DscComponenteTarifario"": ""TE_CFURH"",
     ""DscClasseConsumidor"": ""Rural"",
     ""DscUnidade"": ""R$/MWh"",
-    ""vlrcomponentetarifario"": ""621722.31599999999""
+    ""vlrcomponentetarifario"": 621722.316
   },
   {
     ""DscComponenteTarifario"": ""TE_CFURH"",
     ""DscClasseConsumidor"": ""Não se aplica"",
     ""DscUnidade"": ""R$/MWh"",
-    ""vlrcomponentetarifario"": ""488904.70899999997""
+    ""vlrcomponentetarifario"": 488904.709
   },
   {
     ""DscComponenteTarifario"": ""TE_CFURH"",
     ""DscClasseConsumidor"": ""Não se aplica"",
     ""DscUnidade"": ""R$/MWh"",
-    ""vlrcomponentetarifario"": ""488904.70899999997""
+    ""vlrcomponentetarifario"": 488904.709
   }
 ]"
 "tarifas_tarifas_homologadas_distribuidoras_energia_eletrica","SELECT ""DscSubGrupo"", AVG(CAST(REPLACE(""VlrTUSD"", ',', '.') AS NUMERIC)) AS ""MediaTusd"", AVG(CAST(REPLACE(""VlrTE"", ',', '.') AS NUMERIC)) AS ""MediaTe"" FROM tarifas_tarifas_homologadas_distribuidoras_energia_eletrica GROUP BY ""DscSubGrupo"" ORDER BY ""DscSubGrupo""","Quero saber o valor médio da Tarifa de Uso do Sistema de Distribuição (TUSD) e da Tarifa de Energia (TE) para cada subgrupo tarifário.","[
   {
     ""DscSubGrupo"": ""A1"",
-    ""MediaTusd"": ""136.9863130779392338"",
-    ""MediaTe"": ""28.6912919418758256""
+    ""MediaTusd"": 136.98631307793923,
+    ""MediaTe"": 28.691291941875825
   },
   {
     ""DscSubGrupo"": ""A2"",
-    ""MediaTusd"": ""10.3418716667225707"",
-    ""MediaTe"": ""22.8450555126958038""
+    ""MediaTusd"": 10.34187166672257,
+    ""MediaTe"": 22.845055512695804
   },
   {
     ""DscSubGrupo"": ""A3"",
-    ""MediaTusd"": ""22.7467021712412946"",
-    ""MediaTe"": ""49.9183291391116053""
+    ""MediaTusd"": 22.746702171241296,
+    ""MediaTe"": 49.918329139111606
   },
   {
     ""DscSubGrupo"": ""A3a"",
-    ""MediaTusd"": ""144.6752918580007065"",
-    ""MediaTe"": ""71.0018050158954433""
+    ""MediaTusd"": 144.67529185800072,
+    ""MediaTe"": 71.00180501589544
   },
   {
     ""DscSubGrupo"": ""A4"",
-    ""MediaTusd"": ""177.5501057795698925"",
-    ""MediaTe"": ""61.6538817204301075""
+    ""MediaTusd"": 177.5501057795699,
+    ""MediaTe"": 61.65388172043011
   },
   {
     ""DscSubGrupo"": ""A4a"",
-    ""MediaTusd"": ""34.4795833333333333"",
-    ""MediaTe"": ""0E-20""
+    ""MediaTusd"": 34.47958333333333,
+    ""MediaTe"": 0.0
   },
   {
     ""DscSubGrupo"": ""A4b"",
-    ""MediaTusd"": ""22.6841666666666667"",
-    ""MediaTe"": ""0E-20""
+    ""MediaTusd"": 22.684166666666666,
+    ""MediaTe"": 0.0
   },
   {
     ""DscSubGrupo"": ""AS"",
-    ""MediaTusd"": ""235.1419611848825332"",
-    ""MediaTe"": ""85.3771767109295199""
+    ""MediaTusd"": 235.14196118488255,
+    ""MediaTe"": 85.37717671092952
   },
   {
     ""DscSubGrupo"": ""B"",
-    ""MediaTusd"": ""14.2832627526467757"",
-    ""MediaTe"": ""0.21632820019249278152""
+    ""MediaTusd"": 14.283262752646776,
+    ""MediaTe"": 0.21632820019249277
   },
   {
     ""DscSubGrupo"": ""B1"",
-    ""MediaTusd"": ""448.0027417731320170"",
-    ""MediaTe"": ""170.0441958962446767""
+    ""MediaTusd"": 448.002741773132,
+    ""MediaTe"": 170.04419589624467
   },
   {
     ""DscSubGrupo"": ""B2"",
-    ""MediaTusd"": ""429.0939500555336606"",
-    ""MediaTe"": ""136.0773501486868976""
+    ""MediaTusd"": 429.09395005553364,
+    ""MediaTe"": 136.0773501486869
   },
   {
     ""DscSubGrupo"": ""B3"",
-    ""MediaTusd"": ""539.6664477211796247"",
-    ""MediaTe"": ""170.2756766756032172""
+    ""MediaTusd"": 539.6664477211797,
+    ""MediaTe"": 170.27567667560322
   },
   {
     ""DscSubGrupo"": ""B4"",
-    ""MediaTusd"": ""201.7464129946043165"",
-    ""MediaTe"": ""93.5038612859712230""
+    ""MediaTusd"": 201.74641299460433,
+    ""MediaTe"": 93.50386128597123
   }
 ]"
 "tarifas_tarifas_homologadas_distribuidoras_energia_eletrica","SELECT ""DatInicioVigencia"", ""DatFimVigencia"", ""DscBaseTarifaria"", ""DscSubGrupo"", ""DscModalidadeTarifaria"", ""DscClasse"", ""DscSubClasse"", ""VlrTUSD"", ""VlrTE"" FROM tarifas_tarifas_homologadas_distribuidoras_energia_eletrica WHERE ""SigAgente"" = 'CEMIG-D' AND ""DatFimVigencia""::date >= CURRENT_DATE ORDER BY ""DatInicioVigencia""::date DESC LIMIT 10","Mostre as 10 tarifas mais recentes vigentes para a distribuidora com sigla CEMIG-D, incluindo informações sobre vigência, base tarifária, subgrupo, modalidade, classe, subclasses e os valores de TUSD e TE.","[
@@ -2108,85 +2108,85 @@
   {
     ""DscModalidadeTarifaria"": ""Azul"",
     ""DscClasse"": ""Não se aplica"",
-    ""MediaTusd"": ""91.8192500000000000"",
-    ""MediaTe"": ""61.4187500000000000""
+    ""MediaTusd"": 91.81925,
+    ""MediaTe"": 61.41875
   },
   {
     ""DscModalidadeTarifaria"": ""Branca"",
     ""DscClasse"": ""Não se aplica"",
-    ""MediaTusd"": ""762.0875000000000000"",
-    ""MediaTe"": ""135.5029166666666667""
+    ""MediaTusd"": 762.0875,
+    ""MediaTe"": 135.50291666666666
   },
   {
     ""DscModalidadeTarifaria"": ""Branca"",
     ""DscClasse"": ""Residencial"",
-    ""MediaTusd"": ""732.9316666666666667"",
-    ""MediaTe"": ""135.5029166666666667""
+    ""MediaTusd"": 732.9316666666666,
+    ""MediaTe"": 135.50291666666666
   },
   {
     ""DscModalidadeTarifaria"": ""Branca"",
     ""DscClasse"": ""Rural"",
-    ""MediaTusd"": ""648.8925000000000000"",
-    ""MediaTe"": ""130.2688888888888889""
+    ""MediaTusd"": 648.8925,
+    ""MediaTe"": 130.26888888888888
   },
   {
     ""DscModalidadeTarifaria"": ""Convencional"",
     ""DscClasse"": ""Iluminação pública"",
-    ""MediaTusd"": ""265.7975000000000000"",
-    ""MediaTe"": ""72.9856250000000000""
+    ""MediaTusd"": 265.7975,
+    ""MediaTe"": 72.985625
   },
   {
     ""DscModalidadeTarifaria"": ""Convencional"",
     ""DscClasse"": ""Não se aplica"",
-    ""MediaTusd"": ""286.8912500000000000"",
-    ""MediaTe"": ""99.4337500000000000""
+    ""MediaTusd"": 286.89125,
+    ""MediaTe"": 99.43375
   },
   {
     ""DscModalidadeTarifaria"": ""Convencional"",
     ""DscClasse"": ""Residencial"",
-    ""MediaTusd"": ""415.6400000000000000"",
-    ""MediaTe"": ""126.2425000000000000""
+    ""MediaTusd"": 415.64,
+    ""MediaTe"": 126.2425
   },
   {
     ""DscModalidadeTarifaria"": ""Convencional"",
     ""DscClasse"": ""Rural"",
-    ""MediaTusd"": ""448.8666666666666667"",
-    ""MediaTe"": ""123.1954166666666667""
+    ""MediaTusd"": 448.8666666666667,
+    ""MediaTe"": 123.19541666666667
   },
   {
     ""DscModalidadeTarifaria"": ""Convencional pré-pagamento"",
     ""DscClasse"": ""Não se aplica"",
-    ""MediaTusd"": ""465.9100000000000000"",
-    ""MediaTe"": ""127.9250000000000000""
+    ""MediaTusd"": 465.91,
+    ""MediaTe"": 127.925
   },
   {
     ""DscModalidadeTarifaria"": ""Convencional pré-pagamento"",
     ""DscClasse"": ""Residencial"",
-    ""MediaTusd"": ""415.6400000000000000"",
-    ""MediaTe"": ""126.2425000000000000""
+    ""MediaTusd"": 415.64,
+    ""MediaTe"": 126.2425
   },
   {
     ""DscModalidadeTarifaria"": ""Convencional pré-pagamento"",
     ""DscClasse"": ""Rural"",
-    ""MediaTusd"": ""448.8666666666666667"",
-    ""MediaTe"": ""123.1954166666666667""
+    ""MediaTusd"": 448.8666666666667,
+    ""MediaTe"": 123.19541666666667
   },
   {
     ""DscModalidadeTarifaria"": ""Distribuição"",
     ""DscClasse"": ""Não se aplica"",
-    ""MediaTusd"": ""26.3300000000000000"",
-    ""MediaTe"": ""0E-20""
+    ""MediaTusd"": 26.33,
+    ""MediaTe"": 0.0
   },
   {
     ""DscModalidadeTarifaria"": ""Geração"",
     ""DscClasse"": ""Não se aplica"",
-    ""MediaTusd"": ""13.4245000000000000"",
-    ""MediaTe"": ""0E-20""
+    ""MediaTusd"": 13.4245,
+    ""MediaTe"": 0.0
   },
   {
     ""DscModalidadeTarifaria"": ""Verde"",
     ""DscClasse"": ""Não se aplica"",
-    ""MediaTusd"": ""600.7058333333333333"",
-    ""MediaTe"": ""74.5070833333333333""
+    ""MediaTusd"": 600.7058333333333,
+    ""MediaTe"": 74.50708333333333
   }
 ]"

@@ -7,7 +7,7 @@
       "eval_id": "case01",
       "conversation": [
         {
-          "invocation_id": "fb433472-34ab-45db-bb66-606cb100f9cc",
+          "invocation_id": "7e5ac4f2-80f3-4b4f-8f62-77f0c05e68b6",
           "user_content": {
             "parts": [
               {
@@ -34,13 +34,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case02",
       "conversation": [
         {
-          "invocation_id": "8ede1202-39f1-4306-bf24-7ebe992d9ec5",
+          "invocation_id": "3975fe64-149b-4f99-9ebc-8ff27d656e91",
           "user_content": {
             "parts": [
               {
@@ -67,13 +67,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case03",
       "conversation": [
         {
-          "invocation_id": "4cad24d3-4c55-4c60-b9e6-1afb26b7b7c6",
+          "invocation_id": "878b6633-11eb-4fce-96e5-9e1d29305563",
           "user_content": {
             "parts": [
               {
@@ -100,17 +100,17 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case04",
       "conversation": [
         {
-          "invocation_id": "75c3439a-4adc-46de-a187-bed2ad7e14c6",
+          "invocation_id": "91e404dc-e83b-4b54-b436-ad377a8eb340",
           "user_content": {
             "parts": [
               {
-                "text": "Liste os 10 agentes que mais registraram ocorrências emergenciais na rede de distribuição. Quero ver o nome do agente e o total de ocorrências, em ordem decrescente."
+                "text": " Liste os 10 agentes que mais registraram ocorrências emergenciais na rede de distribuição. Quero ver o nome do agente e o total de ocorrências, em ordem decrescente."
               }
             ],
             "role": "user"
@@ -118,7 +118,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"NomAgente\": \"EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A\",\n    \"total_ocorrencias\": 563780\n  },\n  {\n    \"NomAgente\": \"COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA COELBA\",\n    \"total_ocorrencias\": 476429\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ENERGÉTICA DO CEARÁ\",\n    \"total_ocorrencias\": 419645\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ENERGÉTICA DE PERNAMBUCO\",\n    \"total_ocorrencias\": 301800\n  },\n  {\n    \"NomAgente\": \"COMPANHIA PAULISTA DE FORÇA E LUZ\",\n    \"total_ocorrencias\": 186422\n  },\n  {\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"total_ocorrencias\": 177006\n  },\n  {\n    \"NomAgente\": \"ENERGISA TOCANTINS DISTRIBUIDORA DE ENERGIA S.A.\",\n    \"total_ocorrencias\": 172382\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ENERGÉTICA DO RIO GRANDE DO NORTE COSERN\",\n    \"total_ocorrencias\": 88307\n  },\n  {\n    \"NomAgente\": \"COMPANHIA DE ELETRICIDADE DO AMAPÁ\",\n    \"total_ocorrencias\": 38665\n  },\n  {\n    \"NomAgente\": \"COMPANHIA SUL SERGIPANA DE ELETRICIDADE\",\n    \"total_ocorrencias\": 16614\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"NomAgente\": \"CEMIG DISTRIBUIÇÃO S.A\",\n    \"total_ocorrencias\": 11937061\n  },\n  {\n    \"NomAgente\": \"COPEL DISTRIBUIÇÃO S.A.\",\n    \"total_ocorrencias\": 5856362\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ESTADUAL DE DISTRIBUIÇÃO DE ENERGIA ELÉTRICA - CEEE-D\",\n    \"total_ocorrencias\": 5158728\n  },\n  {\n    \"NomAgente\": \"EQUATORIAL PARÁ DISTRIBUIDORA DE ENERGIA S.A.\",\n    \"total_ocorrencias\": 4491556\n  },\n  {\n    \"NomAgente\": \"COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA COELBA\",\n    \"total_ocorrencias\": 4217190\n  },\n  {\n    \"NomAgente\": \"EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A\",\n    \"total_ocorrencias\": 3939870\n  },\n  {\n    \"NomAgente\": \"RGE SUL DISTRIBUIDORA DE ENERGIA S.A.\",\n    \"total_ocorrencias\": 3370163\n  },\n  {\n    \"NomAgente\": \"COMPANHIA PAULISTA DE FORÇA E LUZ\",\n    \"total_ocorrencias\": 2626384\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ENERGÉTICA DO CEARÁ\",\n    \"total_ocorrencias\": 2514762\n  },\n  {\n    \"NomAgente\": \"EQUATORIAL PIAUÍ DISTRIBUIDORA DE ENERGIA S.A\",\n    \"total_ocorrencias\": 2390917\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"
@@ -133,13 +133,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case05",
       "conversation": [
         {
-          "invocation_id": "7db6b254-815f-4159-b44e-0ef6feaead9f",
+          "invocation_id": "cde06c3b-8739-4787-8aad-5ec7422e4350",
           "user_content": {
             "parts": [
               {
@@ -151,7 +151,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"CodIBGE\": \"1600055\",\n    \"mediaexecucao\": \"64.5727923627684964\",\n    \"mediadeslocamento\": \"26.7231503579952267\",\n    \"mediapreparo\": \"51.9021479713603819\"\n  },\n  {\n    \"CodIBGE\": \"1600105\",\n    \"mediaexecucao\": \"33.8850574712643678\",\n    \"mediadeslocamento\": \"27.4281609195402299\",\n    \"mediapreparo\": \"26.5459770114942529\"\n  },\n  {\n    \"CodIBGE\": \"1600154\",\n    \"mediaexecucao\": \"37.4292343387470998\",\n    \"mediadeslocamento\": \"35.0000000000000000\",\n    \"mediapreparo\": \"51.6334106728538283\"\n  },\n  {\n    \"CodIBGE\": \"1600204\",\n    \"mediaexecucao\": \"59.3636363636363636\",\n    \"mediadeslocamento\": \"31.4969696969696970\",\n    \"mediapreparo\": \"33.4363636363636364\"\n  },\n  {\n    \"CodIBGE\": \"1600212\",\n    \"mediaexecucao\": \"46.1558704453441296\",\n    \"mediadeslocamento\": \"33.8967611336032389\",\n    \"mediapreparo\": \"42.3380566801619433\"\n  },\n  {\n    \"CodIBGE\": \"1600238\",\n    \"mediaexecucao\": \"72.0516129032258065\",\n    \"mediadeslocamento\": \"35.3397849462365591\",\n    \"mediapreparo\": \"36.1720430107526882\"\n  },\n  {\n    \"CodIBGE\": \"1600253\",\n    \"mediaexecucao\": \"55.0219435736677116\",\n    \"mediadeslocamento\": \"49.0909090909090909\",\n    \"mediapreparo\": \"52.1097178683385580\"\n  },\n  {\n    \"CodIBGE\": \"1600279\",\n    \"mediaexecucao\": \"45.6694677871148459\",\n    \"mediadeslocamento\": \"24.6708683473389356\",\n    \"mediapreparo\": \"20.3627450980392157\"\n  },\n  {\n    \"CodIBGE\": \"1600303\",\n    \"mediaexecucao\": \"28.9135437060923644\",\n    \"mediadeslocamento\": \"17.3703021229221851\",\n    \"mediapreparo\": \"42.2453721831932128\"\n  },\n  {\n    \"CodIBGE\": \"1600402\",\n    \"mediaexecucao\": \"51.5452865064695009\",\n    \"mediadeslocamento\": \"32.3696857670979667\",\n    \"mediapreparo\": \"40.1330868761552680\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"CodIBGE\": \"1100015\",\n    \"mediaexecucao\": 52.810740728149014,\n    \"mediadeslocamento\": 51.249052148625765,\n    \"mediapreparo\": 440.2112004643741\n  },\n  {\n    \"CodIBGE\": \"1100023\",\n    \"mediaexecucao\": 55.540692748247544,\n    \"mediadeslocamento\": 34.23920800632424,\n    \"mediapreparo\": 346.84294374081793\n  },\n  {\n    \"CodIBGE\": \"1100031\",\n    \"mediaexecucao\": 48.62675488024852,\n    \"mediadeslocamento\": 50.10367647359455,\n    \"mediapreparo\": 370.7070117456659\n  },\n  {\n    \"CodIBGE\": \"1100049\",\n    \"mediaexecucao\": 48.13268431286007,\n    \"mediadeslocamento\": 41.27188049828816,\n    \"mediapreparo\": 464.87068793961146\n  },\n  {\n    \"CodIBGE\": \"1100056\",\n    \"mediaexecucao\": 34.827793395298634,\n    \"mediadeslocamento\": 33.99194146138163,\n    \"mediapreparo\": 249.87055644878868\n  },\n  {\n    \"CodIBGE\": \"1100064\",\n    \"mediaexecucao\": 31.406450908795545,\n    \"mediadeslocamento\": 32.20137704571827,\n    \"mediapreparo\": 297.72067079740077\n  },\n  {\n    \"CodIBGE\": \"1100072\",\n    \"mediaexecucao\": 48.10282547184366,\n    \"mediadeslocamento\": 53.90703819748007,\n    \"mediapreparo\": 429.9532682506214\n  },\n  {\n    \"CodIBGE\": \"1100080\",\n    \"mediaexecucao\": 49.42462655456026,\n    \"mediadeslocamento\": 48.51648857980456,\n    \"mediapreparo\": 511.80714814087946\n  },\n  {\n    \"CodIBGE\": \"1100098\",\n    \"mediaexecucao\": 56.01314112953368,\n    \"mediadeslocamento\": 58.66943353972366,\n    \"mediapreparo\": 629.8137239952505\n  },\n  {\n    \"CodIBGE\": \"1100106\",\n    \"mediaexecucao\": 57.91297088081419,\n    \"mediadeslocamento\": 30.27085526240497,\n    \"mediapreparo\": 278.21488840472495\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"
@@ -166,13 +166,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case06",
       "conversation": [
         {
-          "invocation_id": "a445cd70-432d-4fbe-abe9-aa941c3ca72d",
+          "invocation_id": "a723bdfa-50bc-4ee7-9fe8-1f3e59935d8a",
           "user_content": {
             "parts": [
               {
@@ -184,7 +184,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"NumOcorrencia\": \"5284\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  },\n  {\n    \"NumOcorrencia\": \"5213\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  },\n  {\n    \"NumOcorrencia\": \"5252\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-02 15:50:00\",\n    \"tempototal\": \"2389.98333\"\n  },\n  {\n    \"NumOcorrencia\": \"5230\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  },\n  {\n    \"NumOcorrencia\": \"5240\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  },\n  {\n    \"NumOcorrencia\": \"5266\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  },\n  {\n    \"NumOcorrencia\": \"5222\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  },\n  {\n    \"NumOcorrencia\": \"5223\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 17:45:00\",\n    \"tempototal\": \"44264.98333\"\n  },\n  {\n    \"NumOcorrencia\": \"5267\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-17 15:42:00\",\n    \"tempototal\": \"23981.98333\"\n  },\n  {\n    \"NumOcorrencia\": \"5222\",\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-01-01 00:00:01\",\n    \"DthFimOcorrenciaAberta\": \"2017-01-31 23:59:59\",\n    \"tempototal\": \"44639.96667\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"NumOcorrencia\": \"92075\",\n    \"NomAgente\": \"ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-05-03 14:33:00\",\n    \"DthFimOcorrenciaAberta\": \"2017-05-04 00:03:59\",\n    \"tempototal\": 570.98333\n  },\n  {\n    \"NumOcorrencia\": \"92078\",\n    \"NomAgente\": \"ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-05-03 14:35:00\",\n    \"DthFimOcorrenciaAberta\": \"2017-05-04 09:31:59\",\n    \"tempototal\": 1136.98334\n  },\n  {\n    \"NumOcorrencia\": \"92083\",\n    \"NomAgente\": \"ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-05-03 14:36:00\",\n    \"DthFimOcorrenciaAberta\": \"2017-05-03 17:40:59\",\n    \"tempototal\": 184.98334\n  },\n  {\n    \"NumOcorrencia\": \"92084\",\n    \"NomAgente\": \"ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-05-03 14:41:00\",\n    \"DthFimOcorrenciaAberta\": \"2017-05-03 19:40:59\",\n    \"tempototal\": 299.98333\n  },\n  {\n    \"NumOcorrencia\": \"92091\",\n    \"NomAgente\": \"ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-05-03 14:48:00\",\n    \"DthFimOcorrenciaAberta\": \"2017-05-03 18:09:00\",\n    \"tempototal\": 201.0\n  },\n  {\n    \"NumOcorrencia\": \"92095\",\n    \"NomAgente\": \"ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-05-03 14:53:00\",\n    \"DthFimOcorrenciaAberta\": \"2017-05-06 11:45:00\",\n    \"tempototal\": 4132.0\n  },\n  {\n    \"NumOcorrencia\": \"92108\",\n    \"NomAgente\": \"ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-05-03 14:57:00\",\n    \"DthFimOcorrenciaAberta\": \"2017-05-03 21:03:59\",\n    \"tempototal\": 366.98333\n  },\n  {\n    \"NumOcorrencia\": \"92099\",\n    \"NomAgente\": \"ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-05-03 14:58:00\",\n    \"DthFimOcorrenciaAberta\": \"2017-05-03 19:56:59\",\n    \"tempototal\": 298.98334\n  },\n  {\n    \"NumOcorrencia\": \"92100\",\n    \"NomAgente\": \"ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-05-03 15:01:00\",\n    \"DthFimOcorrenciaAberta\": \"2017-05-03 19:27:59\",\n    \"tempototal\": 266.98333\n  },\n  {\n    \"NumOcorrencia\": \"92105\",\n    \"NomAgente\": \"ENERGISA RONDÔNIA - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"DthInicioOcorrenciaAberta\": \"2017-05-03 15:05:00\",\n    \"DthFimOcorrenciaAberta\": \"2017-05-03 18:15:00\",\n    \"tempototal\": 190.0\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"
@@ -199,13 +199,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case07",
       "conversation": [
         {
-          "invocation_id": "02232db8-c24a-49f7-83b3-b52b7acaac24",
+          "invocation_id": "859de13f-daac-46a1-977a-de48bff07951",
           "user_content": {
             "parts": [
               {
@@ -217,7 +217,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_seguranca_trabalho_instalacoes.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NACTER\",\n    \"totalindiceenviado\": \"910.00\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOFUPR\",\n    \"totalindiceenviado\": \"4.00\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOFUTE\",\n    \"totalindiceenviado\": \"58.00\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOTER\",\n    \"totalindiceenviado\": \"292.00\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"TXFQAC\",\n    \"totalindiceenviado\": \"8110.79\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"TXGRAC\",\n    \"totalindiceenviado\": \"589562.73\"\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NACTER\",\n    \"totalindiceenviado\": \"895.00\"\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOFUPR\",\n    \"totalindiceenviado\": \"9.00\"\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOFUTE\",\n    \"totalindiceenviado\": \"74.00\"\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOTER\",\n    \"totalindiceenviado\": \"314.00\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_seguranca_trabalho_instalacoes.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NACTER\",\n    \"totalindiceenviado\": 910.0\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOFUPR\",\n    \"totalindiceenviado\": 4.0\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOFUTE\",\n    \"totalindiceenviado\": 58.0\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOTER\",\n    \"totalindiceenviado\": 292.0\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"TXFQAC\",\n    \"totalindiceenviado\": 8110.79\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"TXGRAC\",\n    \"totalindiceenviado\": 589562.73\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NACTER\",\n    \"totalindiceenviado\": 895.0\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOFUPR\",\n    \"totalindiceenviado\": 9.0\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOFUTE\",\n    \"totalindiceenviado\": 74.0\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOTER\",\n    \"totalindiceenviado\": 314.0\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"
@@ -232,13 +232,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case08",
       "conversation": [
         {
-          "invocation_id": "08c0f57c-e1f6-4a96-b6e6-a0d170d6bf72",
+          "invocation_id": "af1eabe7-2f8b-45df-836f-b6faa4599822",
           "user_content": {
             "parts": [
               {
@@ -265,13 +265,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case09",
       "conversation": [
         {
-          "invocation_id": "ac0b6644-c9d4-4eec-a849-7b274c444484",
+          "invocation_id": "4c1959e6-6443-4e17-857f-bd82132c5ee5",
           "user_content": {
             "parts": [
               {
@@ -283,7 +283,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_seguranca_trabalho_instalacoes.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CERAL ARARUAMA\",\n    \"totalporagente\": \"70.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"COOPERSUL\",\n    \"totalporagente\": \"18.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"COPREL\",\n    \"totalporagente\": \"4.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEEE-D\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEGERO\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEDRAP\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CELESC\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEJAMA\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEDRI\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CASTRO-DIS\",\n    \"totalporagente\": \"0.00\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_seguranca_trabalho_instalacoes.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CERAL ARARUAMA\",\n    \"totalporagente\": 70.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"COOPERSUL\",\n    \"totalporagente\": 18.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"COPREL\",\n    \"totalporagente\": 4.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEEE-D\",\n    \"totalporagente\": 0.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEGERO\",\n    \"totalporagente\": 0.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEDRAP\",\n    \"totalporagente\": 0.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CELESC\",\n    \"totalporagente\": 0.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEJAMA\",\n    \"totalporagente\": 0.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEDRI\",\n    \"totalporagente\": 0.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CASTRO-DIS\",\n    \"totalporagente\": 0.0\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"
@@ -298,13 +298,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case10",
       "conversation": [
         {
-          "invocation_id": "3686d6a0-44b3-48d7-80ea-20cc9ffa44d5",
+          "invocation_id": "4cdc7957-4141-48a5-9fed-607d72902cfb",
           "user_content": {
             "parts": [
               {
@@ -316,7 +316,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela geracao_siga_empreendimentos_geracao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"SigTipoGeracao\": \"UFV\",\n    \"potenciatotaloutorgada\": \"139891045.75\"\n  },\n  {\n    \"SigTipoGeracao\": \"UHE\",\n    \"potenciatotaloutorgada\": \"103450901.00\"\n  },\n  {\n    \"SigTipoGeracao\": \"UTE\",\n    \"potenciatotaloutorgada\": \"56336922.96\"\n  },\n  {\n    \"SigTipoGeracao\": \"EOL\",\n    \"potenciatotaloutorgada\": \"54884721.86\"\n  },\n  {\n    \"SigTipoGeracao\": \"PCH\",\n    \"potenciatotaloutorgada\": \"7071097.22\"\n  },\n  {\n    \"SigTipoGeracao\": \"UTN\",\n    \"potenciatotaloutorgada\": \"3340000.00\"\n  },\n  {\n    \"SigTipoGeracao\": \"CGH\",\n    \"potenciatotaloutorgada\": \"900924.53\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela geracao_siga_empreendimentos_geracao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"SigTipoGeracao\": \"UFV\",\n    \"potenciatotaloutorgada\": 139891045.75\n  },\n  {\n    \"SigTipoGeracao\": \"UHE\",\n    \"potenciatotaloutorgada\": 103450901.0\n  },\n  {\n    \"SigTipoGeracao\": \"UTE\",\n    \"potenciatotaloutorgada\": 56336922.96\n  },\n  {\n    \"SigTipoGeracao\": \"EOL\",\n    \"potenciatotaloutorgada\": 54884721.86\n  },\n  {\n    \"SigTipoGeracao\": \"PCH\",\n    \"potenciatotaloutorgada\": 7071097.22\n  },\n  {\n    \"SigTipoGeracao\": \"UTN\",\n    \"potenciatotaloutorgada\": 3340000.0\n  },\n  {\n    \"SigTipoGeracao\": \"CGH\",\n    \"potenciatotaloutorgada\": 900924.53\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"
@@ -331,13 +331,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case11",
       "conversation": [
         {
-          "invocation_id": "0c52c933-8c2d-4d23-99df-0c6b92485ed8",
+          "invocation_id": "602be97f-2e3d-4d9a-9d5a-82a9e6a12a93",
           "user_content": {
             "parts": [
               {
@@ -349,7 +349,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela geracao_siga_empreendimentos_geracao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"SigTipoGeracao\": \"UFV\",\n    \"potenciatotaloutorgada\": \"139891045.75\"\n  },\n  {\n    \"SigTipoGeracao\": \"UHE\",\n    \"potenciatotaloutorgada\": \"103450901.00\"\n  },\n  {\n    \"SigTipoGeracao\": \"UTE\",\n    \"potenciatotaloutorgada\": \"56336922.96\"\n  },\n  {\n    \"SigTipoGeracao\": \"EOL\",\n    \"potenciatotaloutorgada\": \"54884721.86\"\n  },\n  {\n    \"SigTipoGeracao\": \"PCH\",\n    \"potenciatotaloutorgada\": \"7071097.22\"\n  },\n  {\n    \"SigTipoGeracao\": \"UTN\",\n    \"potenciatotaloutorgada\": \"3340000.00\"\n  },\n  {\n    \"SigTipoGeracao\": \"CGH\",\n    \"potenciatotaloutorgada\": \"900924.53\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela geracao_siga_empreendimentos_geracao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"SigTipoGeracao\": \"UFV\",\n    \"potenciatotaloutorgada\": 139891045.75\n  },\n  {\n    \"SigTipoGeracao\": \"UHE\",\n    \"potenciatotaloutorgada\": 103450901.0\n  },\n  {\n    \"SigTipoGeracao\": \"UTE\",\n    \"potenciatotaloutorgada\": 56336922.96\n  },\n  {\n    \"SigTipoGeracao\": \"EOL\",\n    \"potenciatotaloutorgada\": 54884721.86\n  },\n  {\n    \"SigTipoGeracao\": \"PCH\",\n    \"potenciatotaloutorgada\": 7071097.22\n  },\n  {\n    \"SigTipoGeracao\": \"UTN\",\n    \"potenciatotaloutorgada\": 3340000.0\n  },\n  {\n    \"SigTipoGeracao\": \"CGH\",\n    \"potenciatotaloutorgada\": 900924.53\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"
@@ -364,13 +364,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case12",
       "conversation": [
         {
-          "invocation_id": "671cc462-f1a9-4517-a54a-ad1702fdfb33",
+          "invocation_id": "6b604f6d-5505-4e99-8176-e34a9c7debd0",
           "user_content": {
             "parts": [
               {
@@ -397,13 +397,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case13",
       "conversation": [
         {
-          "invocation_id": "4460374b-9cce-40f2-b637-8c6f9ad4a3f0",
+          "invocation_id": "03a19c6e-264e-4ee6-80ff-f8771de188d7",
           "user_content": {
             "parts": [
               {
@@ -415,7 +415,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_componentes_tarifarias.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DscComponenteTarifario\": \"TUSD\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"209.244422491923327657\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_FioB\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"136.7529910396034478\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"92.402446653215497951\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_ENERGIA\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"81.3202716001130296928\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"72.8019472689751399724962337\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CUSD\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"20.5770176148620260704\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CDE\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"17.89210728341969647030\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"10.793521571575747773\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PT\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"9.770249642603640863083\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_FioB\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"7.501800502315789469\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_RB\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"7.387226902413410707780\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PNT\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"4.4462790741879247986449120\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PROINFA\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"4.1993120010572416598547209\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_ESSERR\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"3.2572704134302124312\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_FR\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"2.71313309246330480451\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_Per_RB\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"1.22612964426468233522\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_RB\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"1.2055635207146567969920\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PeD\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"1.0929392363798413510655927\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CUSD\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"1.00920961632834256570\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CCT\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.7919100118600160110751131\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_PeD\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.6883890579907786479647783\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CDE_COVID\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.6577053680602113406175694\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CDE_COVID\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.6126839054448564262861413\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_TRANSPORTE_ITAIPU\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.55740972592847773827\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_FR\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.4775120789319947823436\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_TUST_ITAIPU\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.47456208169494585813\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_TFSEE\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.44159532424708567844\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_RI\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.42173997373772521016\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_Per_RB_D\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.2220778695304662343322\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CCC\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.1558860519347294067818774\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CCT\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.13107272603351207920\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PT\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.0578507233714088228480\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_RGR\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.0540621830397131386700414\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PeD\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.0529336579552726334981967\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSDG_T\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.04357234273982987549\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PNT\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.02972551713951103142\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSDG_ONS\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.027546479801614287778\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_TFSEE\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.01226572935933510965\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_RGR\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.0077301024529593417902\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CCD\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.00726705815455985654\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_Liminar\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.00543750446848898112\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_Per_RB_D\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.005157974550162209163\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_ONS\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0.003086802215912510715\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_ONS\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.001817178980612938821\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_ENERGIA\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.00067563457657275999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CCD\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.00054327268378688725\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CDE\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.000004683967000746942775\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CCC\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.000002403779729985841514\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PROINFA\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0.000002021701501688982174\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_Liminar\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_BENEFICIO_L14299\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CDE_COVID\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_TUST_ITAIPU\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_TUST_CI\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_TRANSPORTE_ITAIPU\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_SUBSIDIO\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSDG_ONS\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_Per_RB\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSDG_T\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_Liminar\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_PeD\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_Liminar\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_ESSERR\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CDE_GD\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CDE_GD\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CDE_ELET\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CDE_COVID\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_RI\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"0E-24\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_OUTROS\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"-0.0002032124914993478121\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_OUTROS\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"-0.001247460829234639123\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD BENEFICIO_L14299\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"-0.00592132361825661384\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_TUST_CI\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"-0.0090473145443493666806823\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_SUBSIDIO\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": \"-0.0280876025741758548724\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_BENEFICIO_L14299\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"-0.03445834630450903712\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD BENEFICIO_L14299\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"-0.37868467511359184658\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_SUBSIDIO\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"-0.63324739529684350225\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CDE_ELET\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"-0.80765553662507594222\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_SUBSIDIO\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": \"-1.065138240194596650454\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_componentes_tarifarias.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DscComponenteTarifario\": \"TUSD\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 209.24442249192333\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_FioB\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 136.75299103960344\n  },\n  {\n    \"DscComponenteTarifario\": \"TE\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 92.40244665321549\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_ENERGIA\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 81.32027160011303\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 72.80194726897514\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CUSD\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 20.577017614862026\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CDE\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 17.892107283419698\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 10.793521571575749\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PT\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 9.770249642603641\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_FioB\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 7.501800502315789\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_RB\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 7.387226902413411\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PNT\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 4.446279074187925\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PROINFA\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 4.199312001057241\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_ESSERR\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 3.2572704134302124\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_FR\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 2.7131330924633046\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_Per_RB\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 1.2261296442646823\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_RB\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 1.2055635207146569\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PeD\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 1.0929392363798414\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CUSD\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 1.0092096163283426\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CCT\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.791910011860016\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_PeD\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.6883890579907787\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CDE_COVID\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.6577053680602113\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CDE_COVID\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.6126839054448564\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_TRANSPORTE_ITAIPU\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.5574097259284777\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_FR\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.47751207893199477\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_TUST_ITAIPU\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.47456208169494585\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_TFSEE\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.4415953242470857\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_RI\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.4217399737377252\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_Per_RB_D\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.22207786953046624\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CCC\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.1558860519347294\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CCT\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.13107272603351208\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PT\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.05785072337140882\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_RGR\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.054062183039713135\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PeD\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.052933657955272634\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSDG_T\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.04357234273982988\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PNT\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.02972551713951103\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSDG_ONS\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.027546479801614288\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_TFSEE\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.01226572935933511\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_RGR\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.007730102452959342\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CCD\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.007267058154559857\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_Liminar\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.005437504468488981\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_Per_RB_D\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.005157974550162209\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_ONS\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.0030868022159125106\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_ONS\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0018171789806129387\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_ENERGIA\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.00067563457657276\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CCD\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0005432726837868873\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CDE\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 4.6839670007469426e-06\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CCC\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 2.4037797299858415e-06\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_PROINFA\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 2.021701501688982e-06\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_Liminar\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_BENEFICIO_L14299\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_CDE_COVID\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_TUST_ITAIPU\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_TUST_CI\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_TRANSPORTE_ITAIPU\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_SUBSIDIO\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSDG_ONS\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_Per_RB\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSDG_T\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_Liminar\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_PeD\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_Liminar\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_ESSERR\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CDE_GD\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CDE_GD\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CDE_ELET\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CDE_COVID\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_RI\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": 0.0\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_OUTROS\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": -0.00020321249149934782\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_OUTROS\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": -0.0012474608292346392\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD BENEFICIO_L14299\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": -0.0059213236182566135\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_TUST_CI\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": -0.009047314544349367\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_SUBSIDIO\",\n    \"DscUnidade\": \"R$/kW\",\n    \"mediavalor\": -0.028087602574175856\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_BENEFICIO_L14299\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": -0.03445834630450904\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD BENEFICIO_L14299\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": -0.37868467511359183\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_SUBSIDIO\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": -0.6332473952968435\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CDE_ELET\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": -0.8076555366250759\n  },\n  {\n    \"DscComponenteTarifario\": \"TUSD_SUBSIDIO\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"mediavalor\": -1.0651382401945966\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"
@@ -430,13 +430,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case14",
       "conversation": [
         {
-          "invocation_id": "3643099d-03cb-4907-ac32-c8c5bd302101",
+          "invocation_id": "08328a01-34a4-4c4e-b203-79f05a98bf70",
           "user_content": {
             "parts": [
               {
@@ -463,13 +463,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case15",
       "conversation": [
         {
-          "invocation_id": "6aaa390a-168b-4cee-bfc4-fb9e96d2706c",
+          "invocation_id": "8b452cdb-516b-474c-bdd0-38228df7d6e5",
           "user_content": {
             "parts": [
               {
@@ -481,7 +481,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_componentes_tarifarias.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Residencial\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"1765594.1499999999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Residencial\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"1765594.1499999999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"1203635.3670000001\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"1203635.3670000001\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"1143895.1399999999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"1143895.1399999999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Rural\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"621722.31599999999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Rural\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"621722.31599999999\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"488904.70899999997\"\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": \"488904.70899999997\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_componentes_tarifarias.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Residencial\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": 1765594.15\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Residencial\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": 1765594.15\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": 1203635.367\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": 1203635.367\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": 1143895.14\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": 1143895.14\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Rural\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": 621722.316\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Rural\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": 621722.316\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": 488904.709\n  },\n  {\n    \"DscComponenteTarifario\": \"TE_CFURH\",\n    \"DscClasseConsumidor\": \"Não se aplica\",\n    \"DscUnidade\": \"R$/MWh\",\n    \"vlrcomponentetarifario\": 488904.709\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"
@@ -496,13 +496,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case16",
       "conversation": [
         {
-          "invocation_id": "5c9c7e05-7d8a-4d59-a2ad-65a1bd555c0c",
+          "invocation_id": "196b6ab1-a834-4057-88e2-11e6b05e3d5f",
           "user_content": {
             "parts": [
               {
@@ -514,7 +514,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_tarifas_homologadas_distribuidoras_energia_eletrica.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DscSubGrupo\": \"A1\",\n    \"MediaTusd\": \"136.9863130779392338\",\n    \"MediaTe\": \"28.6912919418758256\"\n  },\n  {\n    \"DscSubGrupo\": \"A2\",\n    \"MediaTusd\": \"10.3418716667225707\",\n    \"MediaTe\": \"22.8450555126958038\"\n  },\n  {\n    \"DscSubGrupo\": \"A3\",\n    \"MediaTusd\": \"22.7467021712412946\",\n    \"MediaTe\": \"49.9183291391116053\"\n  },\n  {\n    \"DscSubGrupo\": \"A3a\",\n    \"MediaTusd\": \"144.6752918580007065\",\n    \"MediaTe\": \"71.0018050158954433\"\n  },\n  {\n    \"DscSubGrupo\": \"A4\",\n    \"MediaTusd\": \"177.5501057795698925\",\n    \"MediaTe\": \"61.6538817204301075\"\n  },\n  {\n    \"DscSubGrupo\": \"A4a\",\n    \"MediaTusd\": \"34.4795833333333333\",\n    \"MediaTe\": \"0E-20\"\n  },\n  {\n    \"DscSubGrupo\": \"A4b\",\n    \"MediaTusd\": \"22.6841666666666667\",\n    \"MediaTe\": \"0E-20\"\n  },\n  {\n    \"DscSubGrupo\": \"AS\",\n    \"MediaTusd\": \"235.1419611848825332\",\n    \"MediaTe\": \"85.3771767109295199\"\n  },\n  {\n    \"DscSubGrupo\": \"B\",\n    \"MediaTusd\": \"14.2832627526467757\",\n    \"MediaTe\": \"0.21632820019249278152\"\n  },\n  {\n    \"DscSubGrupo\": \"B1\",\n    \"MediaTusd\": \"448.0027417731320170\",\n    \"MediaTe\": \"170.0441958962446767\"\n  },\n  {\n    \"DscSubGrupo\": \"B2\",\n    \"MediaTusd\": \"429.0939500555336606\",\n    \"MediaTe\": \"136.0773501486868976\"\n  },\n  {\n    \"DscSubGrupo\": \"B3\",\n    \"MediaTusd\": \"539.6664477211796247\",\n    \"MediaTe\": \"170.2756766756032172\"\n  },\n  {\n    \"DscSubGrupo\": \"B4\",\n    \"MediaTusd\": \"201.7464129946043165\",\n    \"MediaTe\": \"93.5038612859712230\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_tarifas_homologadas_distribuidoras_energia_eletrica.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DscSubGrupo\": \"A1\",\n    \"MediaTusd\": 136.98631307793923,\n    \"MediaTe\": 28.691291941875825\n  },\n  {\n    \"DscSubGrupo\": \"A2\",\n    \"MediaTusd\": 10.34187166672257,\n    \"MediaTe\": 22.845055512695804\n  },\n  {\n    \"DscSubGrupo\": \"A3\",\n    \"MediaTusd\": 22.746702171241296,\n    \"MediaTe\": 49.918329139111606\n  },\n  {\n    \"DscSubGrupo\": \"A3a\",\n    \"MediaTusd\": 144.67529185800072,\n    \"MediaTe\": 71.00180501589544\n  },\n  {\n    \"DscSubGrupo\": \"A4\",\n    \"MediaTusd\": 177.5501057795699,\n    \"MediaTe\": 61.65388172043011\n  },\n  {\n    \"DscSubGrupo\": \"A4a\",\n    \"MediaTusd\": 34.47958333333333,\n    \"MediaTe\": 0.0\n  },\n  {\n    \"DscSubGrupo\": \"A4b\",\n    \"MediaTusd\": 22.684166666666666,\n    \"MediaTe\": 0.0\n  },\n  {\n    \"DscSubGrupo\": \"AS\",\n    \"MediaTusd\": 235.14196118488255,\n    \"MediaTe\": 85.37717671092952\n  },\n  {\n    \"DscSubGrupo\": \"B\",\n    \"MediaTusd\": 14.283262752646776,\n    \"MediaTe\": 0.21632820019249277\n  },\n  {\n    \"DscSubGrupo\": \"B1\",\n    \"MediaTusd\": 448.002741773132,\n    \"MediaTe\": 170.04419589624467\n  },\n  {\n    \"DscSubGrupo\": \"B2\",\n    \"MediaTusd\": 429.09395005553364,\n    \"MediaTe\": 136.0773501486869\n  },\n  {\n    \"DscSubGrupo\": \"B3\",\n    \"MediaTusd\": 539.6664477211797,\n    \"MediaTe\": 170.27567667560322\n  },\n  {\n    \"DscSubGrupo\": \"B4\",\n    \"MediaTusd\": 201.74641299460433,\n    \"MediaTe\": 93.50386128597123\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"
@@ -529,13 +529,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case17",
       "conversation": [
         {
-          "invocation_id": "f13bd9e5-213b-4a3e-928a-ccb60dc5edba",
+          "invocation_id": "3822d6be-a2f4-4420-a32a-fb1859bc0b80",
           "user_content": {
             "parts": [
               {
@@ -562,13 +562,13 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     },
     {
       "eval_id": "case18",
       "conversation": [
         {
-          "invocation_id": "be1443ec-2bf2-4a70-b370-7c69326afa77",
+          "invocation_id": "87d146e4-64ce-47fc-ad7a-9243169f4ab9",
           "user_content": {
             "parts": [
               {
@@ -580,7 +580,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_tarifas_homologadas_distribuidoras_energia_eletrica.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"91.8192500000000000\",\n    \"MediaTe\": \"61.4187500000000000\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Branca\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"762.0875000000000000\",\n    \"MediaTe\": \"135.5029166666666667\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Branca\",\n    \"DscClasse\": \"Residencial\",\n    \"MediaTusd\": \"732.9316666666666667\",\n    \"MediaTe\": \"135.5029166666666667\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Branca\",\n    \"DscClasse\": \"Rural\",\n    \"MediaTusd\": \"648.8925000000000000\",\n    \"MediaTe\": \"130.2688888888888889\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional\",\n    \"DscClasse\": \"Iluminação pública\",\n    \"MediaTusd\": \"265.7975000000000000\",\n    \"MediaTe\": \"72.9856250000000000\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"286.8912500000000000\",\n    \"MediaTe\": \"99.4337500000000000\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional\",\n    \"DscClasse\": \"Residencial\",\n    \"MediaTusd\": \"415.6400000000000000\",\n    \"MediaTe\": \"126.2425000000000000\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional\",\n    \"DscClasse\": \"Rural\",\n    \"MediaTusd\": \"448.8666666666666667\",\n    \"MediaTe\": \"123.1954166666666667\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional pré-pagamento\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"465.9100000000000000\",\n    \"MediaTe\": \"127.9250000000000000\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional pré-pagamento\",\n    \"DscClasse\": \"Residencial\",\n    \"MediaTusd\": \"415.6400000000000000\",\n    \"MediaTe\": \"126.2425000000000000\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional pré-pagamento\",\n    \"DscClasse\": \"Rural\",\n    \"MediaTusd\": \"448.8666666666666667\",\n    \"MediaTe\": \"123.1954166666666667\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Distribuição\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"26.3300000000000000\",\n    \"MediaTe\": \"0E-20\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Geração\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"13.4245000000000000\",\n    \"MediaTe\": \"0E-20\"\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Verde\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": \"600.7058333333333333\",\n    \"MediaTe\": \"74.5070833333333333\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela tarifas_tarifas_homologadas_distribuidoras_energia_eletrica.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"DscModalidadeTarifaria\": \"Azul\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": 91.81925,\n    \"MediaTe\": 61.41875\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Branca\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": 762.0875,\n    \"MediaTe\": 135.50291666666666\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Branca\",\n    \"DscClasse\": \"Residencial\",\n    \"MediaTusd\": 732.9316666666666,\n    \"MediaTe\": 135.50291666666666\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Branca\",\n    \"DscClasse\": \"Rural\",\n    \"MediaTusd\": 648.8925,\n    \"MediaTe\": 130.26888888888888\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional\",\n    \"DscClasse\": \"Iluminação pública\",\n    \"MediaTusd\": 265.7975,\n    \"MediaTe\": 72.985625\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": 286.89125,\n    \"MediaTe\": 99.43375\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional\",\n    \"DscClasse\": \"Residencial\",\n    \"MediaTusd\": 415.64,\n    \"MediaTe\": 126.2425\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional\",\n    \"DscClasse\": \"Rural\",\n    \"MediaTusd\": 448.8666666666667,\n    \"MediaTe\": 123.19541666666667\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional pré-pagamento\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": 465.91,\n    \"MediaTe\": 127.925\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional pré-pagamento\",\n    \"DscClasse\": \"Residencial\",\n    \"MediaTusd\": 415.64,\n    \"MediaTe\": 126.2425\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Convencional pré-pagamento\",\n    \"DscClasse\": \"Rural\",\n    \"MediaTusd\": 448.8666666666667,\n    \"MediaTe\": 123.19541666666667\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Distribuição\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": 26.33,\n    \"MediaTe\": 0.0\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Geração\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": 13.4245,\n    \"MediaTe\": 0.0\n  },\n  {\n    \"DscModalidadeTarifaria\": \"Verde\",\n    \"DscClasse\": \"Não se aplica\",\n    \"MediaTusd\": 600.7058333333333,\n    \"MediaTe\": 74.50708333333333\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"
@@ -595,7 +595,7 @@
           "evaluation_mode": "final_response_only"
         }
       },
-      "creation_timestamp": 1754968678.6607525
+      "creation_timestamp": 1756655909.5180557
     }
   ]
 }

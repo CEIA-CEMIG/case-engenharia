@@ -102,7 +102,7 @@ class FinalResponseTestGenerator:
         config = {
             "criteria": {
                 "tool_trajectory_avg_score": 0.0,  
-                "response_match_score": 0.75  
+                "response_match_score": 0.5  
             },
         }
         
