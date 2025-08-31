@@ -16,6 +16,7 @@ chardet = "5.2.0"
 python-dotenv = "1.1.1"
 google-adk = "^1.6.1"
 pypdf2 = "^3.0.1"
+pyyaml = "^6.0.2"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

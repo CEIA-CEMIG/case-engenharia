@@ -7,7 +7,7 @@
       "eval_id": "case_009",
       "conversation": [
         {
-          "invocation_id": "ac0b6644-c9d4-4eec-a849-7b274c444484",
+          "invocation_id": "4c1959e6-6443-4e17-857f-bd82132c5ee5",
           "user_content": {
             "parts": [
               {
@@ -19,7 +19,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_seguranca_trabalho_instalacoes.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CERAL ARARUAMA\",\n    \"totalporagente\": \"70.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"COOPERSUL\",\n    \"totalporagente\": \"18.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"COPREL\",\n    \"totalporagente\": \"4.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEEE-D\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEGERO\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEDRAP\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CELESC\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEJAMA\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEDRI\",\n    \"totalporagente\": \"0.00\"\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CASTRO-DIS\",\n    \"totalporagente\": \"0.00\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_seguranca_trabalho_instalacoes.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CERAL ARARUAMA\",\n    \"totalporagente\": 70.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"COOPERSUL\",\n    \"totalporagente\": 18.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"COPREL\",\n    \"totalporagente\": 4.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEEE-D\",\n    \"totalporagente\": 0.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEGERO\",\n    \"totalporagente\": 0.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEDRAP\",\n    \"totalporagente\": 0.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CELESC\",\n    \"totalporagente\": 0.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEJAMA\",\n    \"totalporagente\": 0.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CEDRI\",\n    \"totalporagente\": 0.0\n  },\n  {\n    \"SigIndicador\": \"DIADEBPDO\",\n    \"SigAgente\": \"CASTRO-DIS\",\n    \"totalporagente\": 0.0\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"

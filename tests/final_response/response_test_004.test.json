@@ -1,17 +1,17 @@
 {
   "eval_set_id": "final_response_test_004",
   "name": "Final Response Test #004",
-  "description": "Avalia apenas a resposta final para: Liste os 10 agentes que mais registraram ocorrências emergenciais na rede de distribuição. Quero ver o nome do agente e o total de ocorrências, em ordem decrescente....",
+  "description": "Avalia apenas a resposta final para:  Liste os 10 agentes que mais registraram ocorrências emergenciais na rede de distribuição. Quero ver o nome do agente e o total de ocorrências, em ordem decrescente....",
   "eval_cases": [
     {
       "eval_id": "case_004",
       "conversation": [
         {
-          "invocation_id": "75c3439a-4adc-46de-a187-bed2ad7e14c6",
+          "invocation_id": "91e404dc-e83b-4b54-b436-ad377a8eb340",
           "user_content": {
             "parts": [
               {
-                "text": "Liste os 10 agentes que mais registraram ocorrências emergenciais na rede de distribuição. Quero ver o nome do agente e o total de ocorrências, em ordem decrescente."
+                "text": " Liste os 10 agentes que mais registraram ocorrências emergenciais na rede de distribuição. Quero ver o nome do agente e o total de ocorrências, em ordem decrescente."
               }
             ],
             "role": "user"
@@ -19,7 +19,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"NomAgente\": \"EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A\",\n    \"total_ocorrencias\": 563780\n  },\n  {\n    \"NomAgente\": \"COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA COELBA\",\n    \"total_ocorrencias\": 476429\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ENERGÉTICA DO CEARÁ\",\n    \"total_ocorrencias\": 419645\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ENERGÉTICA DE PERNAMBUCO\",\n    \"total_ocorrencias\": 301800\n  },\n  {\n    \"NomAgente\": \"COMPANHIA PAULISTA DE FORÇA E LUZ\",\n    \"total_ocorrencias\": 186422\n  },\n  {\n    \"NomAgente\": \"ENERGISA ACRE - DISTRIBUIDORA DE ENERGIA S.A\",\n    \"total_ocorrencias\": 177006\n  },\n  {\n    \"NomAgente\": \"ENERGISA TOCANTINS DISTRIBUIDORA DE ENERGIA S.A.\",\n    \"total_ocorrencias\": 172382\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ENERGÉTICA DO RIO GRANDE DO NORTE COSERN\",\n    \"total_ocorrencias\": 88307\n  },\n  {\n    \"NomAgente\": \"COMPANHIA DE ELETRICIDADE DO AMAPÁ\",\n    \"total_ocorrencias\": 38665\n  },\n  {\n    \"NomAgente\": \"COMPANHIA SUL SERGIPANA DE ELETRICIDADE\",\n    \"total_ocorrencias\": 16614\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_ocorrencias_emergenciais_nas_redes_de_distribuicao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"NomAgente\": \"CEMIG DISTRIBUIÇÃO S.A\",\n    \"total_ocorrencias\": 11937061\n  },\n  {\n    \"NomAgente\": \"COPEL DISTRIBUIÇÃO S.A.\",\n    \"total_ocorrencias\": 5856362\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ESTADUAL DE DISTRIBUIÇÃO DE ENERGIA ELÉTRICA - CEEE-D\",\n    \"total_ocorrencias\": 5158728\n  },\n  {\n    \"NomAgente\": \"EQUATORIAL PARÁ DISTRIBUIDORA DE ENERGIA S.A.\",\n    \"total_ocorrencias\": 4491556\n  },\n  {\n    \"NomAgente\": \"COMPANHIA DE ELETRICIDADE DO ESTADO DA BAHIA COELBA\",\n    \"total_ocorrencias\": 4217190\n  },\n  {\n    \"NomAgente\": \"EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A\",\n    \"total_ocorrencias\": 3939870\n  },\n  {\n    \"NomAgente\": \"RGE SUL DISTRIBUIDORA DE ENERGIA S.A.\",\n    \"total_ocorrencias\": 3370163\n  },\n  {\n    \"NomAgente\": \"COMPANHIA PAULISTA DE FORÇA E LUZ\",\n    \"total_ocorrencias\": 2626384\n  },\n  {\n    \"NomAgente\": \"COMPANHIA ENERGÉTICA DO CEARÁ\",\n    \"total_ocorrencias\": 2514762\n  },\n  {\n    \"NomAgente\": \"EQUATORIAL PIAUÍ DISTRIBUIDORA DE ENERGIA S.A\",\n    \"total_ocorrencias\": 2390917\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"

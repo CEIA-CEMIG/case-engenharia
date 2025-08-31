@@ -7,7 +7,7 @@
       "eval_id": "case_011",
       "conversation": [
         {
-          "invocation_id": "0c52c933-8c2d-4d23-99df-0c6b92485ed8",
+          "invocation_id": "602be97f-2e3d-4d9a-9d5a-82a9e6a12a93",
           "user_content": {
             "parts": [
               {
@@ -19,7 +19,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela geracao_siga_empreendimentos_geracao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"SigTipoGeracao\": \"UFV\",\n    \"potenciatotaloutorgada\": \"139891045.75\"\n  },\n  {\n    \"SigTipoGeracao\": \"UHE\",\n    \"potenciatotaloutorgada\": \"103450901.00\"\n  },\n  {\n    \"SigTipoGeracao\": \"UTE\",\n    \"potenciatotaloutorgada\": \"56336922.96\"\n  },\n  {\n    \"SigTipoGeracao\": \"EOL\",\n    \"potenciatotaloutorgada\": \"54884721.86\"\n  },\n  {\n    \"SigTipoGeracao\": \"PCH\",\n    \"potenciatotaloutorgada\": \"7071097.22\"\n  },\n  {\n    \"SigTipoGeracao\": \"UTN\",\n    \"potenciatotaloutorgada\": \"3340000.00\"\n  },\n  {\n    \"SigTipoGeracao\": \"CGH\",\n    \"potenciatotaloutorgada\": \"900924.53\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela geracao_siga_empreendimentos_geracao.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"SigTipoGeracao\": \"UFV\",\n    \"potenciatotaloutorgada\": 139891045.75\n  },\n  {\n    \"SigTipoGeracao\": \"UHE\",\n    \"potenciatotaloutorgada\": 103450901.0\n  },\n  {\n    \"SigTipoGeracao\": \"UTE\",\n    \"potenciatotaloutorgada\": 56336922.96\n  },\n  {\n    \"SigTipoGeracao\": \"EOL\",\n    \"potenciatotaloutorgada\": 54884721.86\n  },\n  {\n    \"SigTipoGeracao\": \"PCH\",\n    \"potenciatotaloutorgada\": 7071097.22\n  },\n  {\n    \"SigTipoGeracao\": \"UTN\",\n    \"potenciatotaloutorgada\": 3340000.0\n  },\n  {\n    \"SigTipoGeracao\": \"CGH\",\n    \"potenciatotaloutorgada\": 900924.53\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"

@@ -7,7 +7,7 @@
       "eval_id": "case_007",
       "conversation": [
         {
-          "invocation_id": "02232db8-c24a-49f7-83b3-b52b7acaac24",
+          "invocation_id": "859de13f-daac-46a1-977a-de48bff07951",
           "user_content": {
             "parts": [
               {
@@ -19,7 +19,7 @@
           "final_response": {
             "parts": [
               {
-                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_seguranca_trabalho_instalacoes.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NACTER\",\n    \"totalindiceenviado\": \"910.00\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOFUPR\",\n    \"totalindiceenviado\": \"4.00\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOFUTE\",\n    \"totalindiceenviado\": \"58.00\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOTER\",\n    \"totalindiceenviado\": \"292.00\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"TXFQAC\",\n    \"totalindiceenviado\": \"8110.79\"\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"TXGRAC\",\n    \"totalindiceenviado\": \"589562.73\"\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NACTER\",\n    \"totalindiceenviado\": \"895.00\"\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOFUPR\",\n    \"totalindiceenviado\": \"9.00\"\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOFUTE\",\n    \"totalindiceenviado\": \"74.00\"\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOTER\",\n    \"totalindiceenviado\": \"314.00\"\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
+                "text": "Com base na sua solicitação, executei a análise na tabela distribuicao_seguranca_trabalho_instalacoes.\n\n                        Aqui estão os principais resultados:\n                        [\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NACTER\",\n    \"totalindiceenviado\": 910.0\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOFUPR\",\n    \"totalindiceenviado\": 4.0\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOFUTE\",\n    \"totalindiceenviado\": 58.0\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"NMOTER\",\n    \"totalindiceenviado\": 292.0\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"TXFQAC\",\n    \"totalindiceenviado\": 8110.79\n  },\n  {\n    \"AnoIndice\": 2009,\n    \"SigIndicador\": \"TXGRAC\",\n    \"totalindiceenviado\": 589562.73\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NACTER\",\n    \"totalindiceenviado\": 895.0\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOFUPR\",\n    \"totalindiceenviado\": 9.0\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOFUTE\",\n    \"totalindiceenviado\": 74.0\n  },\n  {\n    \"AnoIndice\": 2010,\n    \"SigIndicador\": \"NMOTER\",\n    \"totalindiceenviado\": 314.0\n  }\n]\n\n                        A consulta foi processada com sucesso e os dados foram organizados conforme solicitado."
               }
             ],
             "role": "model"
