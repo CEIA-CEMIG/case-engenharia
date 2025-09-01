@@ -18,9 +18,9 @@ generate_tests() {
     
     if [ $? -eq 0 ]; then
         COUNT=$(ls -1 tests/final_response/*.test.json 2>/dev/null | wc -l)
-        echo -e "${GREEN} $COUNT arquivos de teste gerados${NC}"
+        echo -e "${GREEN}$COUNT arquivos de teste gerados${NC}"
     else
-        echo -e "${RED} Erro ao gerar testes${NC}"
+        echo -e "${RED}Erro ao gerar testes${NC}"
         exit 1
     fi
 }
@@ -28,12 +28,20 @@ generate_tests() {
 run_tests() {
     echo -e "${BLUE}Executando testes...${NC}"
     
-    pytest tests/test_final_response.py -v --tb=short
+    if [ ! -d "tests/final_response" ] || [ -z "$(ls -A tests/final_response/*.test.json 2>/dev/null)" ]; then
+        echo -e "${YELLOW}Nenhum arquivo de teste encontrado. Execute 'generate' primeiro.${NC}"
+        return 1
+    fi
+    
+    TEST_COUNT=$(ls -1 tests/final_response/*.test.json 2>/dev/null | wc -l)
+    echo -e "${BLUE}Executando $TEST_COUNT testes...${NC}"
+    
+    pytest tests/test_final_response.py::test_agent_with_file --all-files -v --tb=short --color=yes
     
     if [ $? -eq 0 ]; then
-        echo -e "${GREEN} Testes executados com sucesso${NC}"
+        echo -e "${GREEN}Todos os testes executados com sucesso${NC}"
     else
-        echo -e "${YELLOW} Alguns testes falharam${NC}"
+        echo -e "${YELLOW}Alguns testes falharam${NC}"
     fi
 }
 
@@ -44,7 +52,6 @@ echo ""
 
 case "${1:-help}" in
     generate)
-
         SAMPLE=""
         if [ "$2" = "--sample" ] && [ -n "$3" ]; then
             SAMPLE="--sample $3"
@@ -57,20 +64,18 @@ case "${1:-help}" in
         ;;
         
     test)
-
-        echo -e "${YELLOW}Modo:${NC} Executar testes"
+        echo -e "${YELLOW}Modo:${NC} Executar todos os testes"
         echo ""
         run_tests
         ;;
         
     both)
-
         SAMPLE=""
         if [ "$2" = "--sample" ] && [ -n "$3" ]; then
             SAMPLE="--sample $3"
-            echo -e "${YELLOW}Modo:${NC} Gerar (amostra de $3) e executar"
+            echo -e "${YELLOW}Modo:${NC} Gerar (amostra de $3) e executar todos"
         else
-            echo -e "${YELLOW}Modo:${NC} Gerar todos e executar"
+            echo -e "${YELLOW}Modo:${NC} Gerar todos e executar todos"
         fi
         echo ""
         generate_tests "$SAMPLE"
@@ -79,13 +84,12 @@ case "${1:-help}" in
         ;;
         
     clean)
-
         echo -e "${YELLOW}Modo:${NC} Limpar arquivos de teste"
         echo ""
         if [ -d "tests/final_response" ]; then
             rm -f tests/final_response/*.test.json
             rm -f tests/final_response/*.json
-            echo -e "${GREEN} Arquivos limpos${NC}"
+            echo -e "${GREEN}✓ Arquivos limpos${NC}"
         else
             echo -e "${YELLOW}Nada para limpar${NC}"
         fi
@@ -96,15 +100,15 @@ case "${1:-help}" in
         echo ""
         echo "Comandos:"
         echo "  generate [--sample N]  - Gera arquivos de teste"
-        echo "  test                   - Executa os testes"
-        echo "  both [--sample N]      - Gera e executa"
+        echo "  test                   - Executa todos os testes"
+        echo "  both [--sample N]      - Gera e executa todos"
         echo "  clean                  - Remove arquivos de teste"
         echo ""
         echo "Exemplos:"
         echo "  $0 generate            # Gera todos os testes"
         echo "  $0 generate --sample 5  # Gera 5 testes de amostra"
-        echo "  $0 test                 # Executa testes existentes"
-        echo "  $0 both --sample 10     # Gera 10 e executa"
+        echo "  $0 test                 # Executa todos os testes existentes"
+        echo "  $0 both --sample 10     # Gera 10 e executa todos"
         echo "  $0 clean                # Limpa arquivos gerados"
         ;;
 esac

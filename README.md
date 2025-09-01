@@ -194,23 +194,23 @@ Ao fim, caso tudo dê certo, devemos ter queries_with_results.csv atualizado:
     #Tornar executável
     chmod +x scripts/run_generate_tests.sh
 
-    # Gerar todos os testes
-    ./scripts/run_generate_tests.sh generate
+    # Gera todos os testes
+    ./scripts/run_generate_tests.sh generate  
 
-    # Gerar apenas uma amostra (ex: 5 testes)
-    ./scripts/run_generate_tests.sh generate --sample 5
-
-    # Executar os testes existentes
-    ./scripts/run_generate_tests.sh test
-
-    # Gerar e executar todos os testes
-    ./scripts/run_generate_tests.sh both
-
-    # Gerar e executar apenas uma amostra
-    ./scripts/run_generate_tests.sh both --sample 10
-
-    # Limpar arquivos de teste gerados
-    ./scripts/run_generate_tests.sh clean
+    # Gera 5 testes             
+    ./scripts/run_generate_tests.sh generate --sample 5  
+    
+    # Executa todos os testes
+    ./scripts/run_generate_tests.sh test                  
+    
+    # Gera + executa todos
+    ./scripts/run_generate_tests.sh both                  
+    
+     # Gera 10 + executa
+    ./scripts/run_generate_tests.sh both --sample 10      
+    
+    # Limpa arquivos
+    ./scripts/run_generate_tests.sh clean                
 
     ```
 ---
