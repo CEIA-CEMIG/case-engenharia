@@ -142,7 +142,7 @@ chmod +x deploy.sh
 agents/cemig_agent/evals/data_for_benchmark/querie.csv
 ```
 ---
-2. Após alterar adicionar as queries, inicie uma conexão com o banco via ssh.
+2. Após adicionar as queries, inicie uma conexão com o banco.
 
 ```python
 # Iniciar túnel para o banco PostgreSQL
