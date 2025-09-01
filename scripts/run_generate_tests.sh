@@ -11,7 +11,7 @@ cd "$(dirname "$0")/.."
 generate_tests() {
     echo -e "${BLUE}Gerando arquivos de teste...${NC}"
     
-    python agents/cemig_agent/evals/utils/final_response_evaluator_with_pytest.py.py generate \
+    python agents/cemig_agent/evals/utils/final_response_evaluator_with_pytest.py generate \
         agents/cemig_agent/evals/data_for_benchmark/queries_with_results.csv \
         --output-dir tests/final_response \
         $1
