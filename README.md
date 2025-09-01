@@ -146,7 +146,10 @@ agents/cemig_agent/evals/data_for_benchmark/querie.csv
 
 ```python
 # Iniciar túnel para o banco PostgreSQL
-gcloud compute start-iap-tunnel application-bastion-vm 5432 --local-host-port=localhost:5435 --zone=us-central1-a --project=ufg-prd-energygpt
+gcloud compute start-iap-tunnel application-bastion-vm 5433 \
+  --local-host-port=localhost:5436 \
+  --zone=us-central1-a \
+  --project=ufg-prd-energygpt
 ```
 ---
 3. Execute o script *'run_generate_csv_with_responses.sh'* para rodar as consultas e armazenar os resultados da sua query.
